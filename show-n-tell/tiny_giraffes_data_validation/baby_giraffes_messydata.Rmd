@@ -1,0 +1,229 @@
+---
+title: "Tiny Giraffe Data Check"
+author: "Kristie Ellickson"
+date: "9/22/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Teacup Giraffe Day
+
+Today we will in part be working from this website. Open this website and your R Studio program.
+
+<br>
+
+https://tinystats.github.io/teacups-giraffes-and-statistics/01_introToR.html
+
+<br>
+
+First thing we will do is make a teacup giraffe data set and we will make sure its normal.
+
+<br>
+
+So, copy and paste the following code into R studio and run it.
+
+<br>
+
+```{r make normal data, message = F, warnings = F}
+
+library(tidyverse)
+
+set.seed(12)
+x <- rnorm(50, 10, 2)
+x2 <- rnorm(50, 18, 1.2)
+x <- data.frame(height=x, type="Island #1", stringsAsFactors = F)
+x2 <- data.frame(height=x2, type="Island #2", stringsAsFactors = F)
+d <- rbind(x,x2) 
+d <- as.data.frame(d)
+
+```
+
+We will run through the steps here to test if this data set is normal.
+
+https://tinystats.github.io/teacups-giraffes-and-statistics/02_bellCurve.html
+
+
+First you always want to look at your data - plot the data, plot the data, plot the data
+
+```{r norm check, message = F, warnings = F}
+
+library(ggplot2)
+
+
+
+p <- ggplot(data = d, aes(x = height, fill = type)) +
+  geom_histogram(binwidth = 1) +
+  scale_fill_manual(values = c("blue", "green")) 
+  
+
+p
+
+```
+
+
+But we want the normal curves around each of our filled histgrams
+
+```{r draw curves, message=F}
+
+island_1 <- filter(d, type == "Island #1")
+island_2 <- filter(d, type == "Island #2")
+
+p <- ggplot(data = d, aes(x = height, fill = type)) +
+  geom_histogram(aes(y = ..density..), binwidth = 1) +
+  scale_fill_manual(values = c("blue", "green")) +
+  stat_function(fun = dnorm, args = list(mean = mean(island_1$height), sd = sd(island_1$height))) +
+  stat_function(fun = dnorm, args = list(mean = mean(island_2$height), sd = sd(island_2$height)))
+
+p
+
+```
+
+There are many ways to test for normality of a data set.
+We will do a shapiro wilks test, described here: https://www.r-bloggers.com/2019/08/shapiro-wilk-test-for-normality-in-r/. Shapiro Wilks test is appropriate for N < 50 samples. It compares your data distribution to a normal distribution and tests if they are different.
+
+You are testing the NULL hypothesis that data are different than a normal distribution. So, if p value is above 0.05, data can be treated as normal.
+
+*If the test p-value is less than the predefined significance level, you can reject the null hypothesis and conclude the data are not from a population with a normal distribution.*
+
+```{r normtest, message = F, warnings = F}
+
+shapiro.test(island_1$height)
+shapiro.test(island_2$height)
+
+  
+```
+
+
+Do the points fall in approximately a straight line?
+https://data.library.virginia.edu/understanding-q-q-plots/
+
+
+```{r qplots, message = F, warnings = F}
+qqnorm(island_1$height)
+qqnorm(island_2$height)
+
+```
+
+
+We also wanted to look for sticking values, i.e. what if you decided to take a nap and just add the same height for each tiny giraffe for several days of measuring giraffes?
+
+First, let's make our data messier.
+
+```{r make messy data, message = F, warnings = F}
+
+y = rep(10.0000001, 10)
+y2 = rep(5.0000002, 10)
+
+y <- data.frame(height = y, type = "Island #1", stringsAsFactors = F)
+y2 <- data.frame(height = y2, type = "Island #2", stringsAsFactors = F)
+
+d2 <- rbind(y, y2)
+
+tiny_giraffes <- rbind(d, d2)
+tiny_giraffes <- as.data.frame(tiny_giraffes, stringsAsFactors = F)
+
+
+```
+
+Let's add some fake dates for the time we were on an island studying tiny giraffes
+
+```{r fake dates, message = F, warnings = F}
+
+
+tiny_giraffes <- tiny_giraffes %>%
+  group_by(type) %>%
+  mutate(sample_date = seq(as.Date("2019-03-01"), as.Date("2019-03-01") + 59, by = "1 day")) %>% ungroup()
+
+```
+check for sticking values
+
+```{r sticking values, message = F, warnings = F}
+
+giraffe_repeats <- tiny_giraffes %>%
+  group_by(type) %>%
+  arrange(sample_date) %>% 
+  mutate(previous_day   = lag(height, 1), 
+         two_days_prior = lag(height, 2),
+         next_day = lead(height, 1),
+         two_days_now = lead(height, 2)) %>% ungroup()
+
+giraffe_repeats <- giraffe_repeats %>%
+  rowwise() %>%
+  mutate_at(c(1,4:7), round, 3) 
+
+giraffe_repeats <- pivot_longer(giraffe_repeats, cols = c(height, previous_day, two_days_prior, next_day, two_days_now), names_to = "variables", values_to = "heights")
+
+giraffe_repeats <- giraffe_repeats %>%
+  group_by(type, sample_date) %>%
+  mutate(same = n_distinct(heights) == 1)
+
+```
+
+
+Let's check for very high values. "Very high" values are study specific. Sometimes you want to only see high values that could possibly be an error. Other times you want to find data that are likely outside of the distribution. Find if any of your data are either 3 * the standard deviation OR 2 * the 90th percentile of the data. There are some hints in the code below.
+
+```{r outliers, eval = F}
+
+tiny_giraffes <- tiny_giraffes %>%
+  group_by() %>%
+  mutate(std_dev = ,
+         quantile( ,.9)) %>%
+  rowwise() %>%
+  mutate()
+
+```
+
+Working with characters
+
+But, what if we wanted to create identical identifiers for these tiny giraffes. 
+
+
+```{r identifers}
+
+cuteness <- c("very", "extremely", "omg")
+
+tiny_giraffes <- tiny_giraffes %>%
+  rowwise() %>%
+  mutate(giraffe_id = paste(sample(cuteness, 1), sample_date, type, sep = "_"))
+
+```
+
+
+Run the code above to create some giraffe ids. And, then modify the identifiers to make them useful and not different lengths.
+
+1. Add zeroes befor the first character to make all of the characters before the first hyphen the same. Use str_pad(). Use ?str_pad to remind yourself how to use this function.
+2. Get rid of the #, since that will be troublesome in R code, and replace it with an underscore. Use gsub(), or a similar function.
+3. Remove all spaces in the identifiers. Use the function str_replace_all(). You can use gsub(), but try something new!
+4. Remove all the hyphens! 
+
+```{r fix ids}
+
+#tiny_giraffes <- tiny_giraffes %>%
+ # mutate(giraffe_id = str_pad(),
+         #giraffe_id = gsub(),
+         #giraffe_id = gsub())
+
+head(tiny_giraffes)
+```
+
+But, in order to report your tiny giraffe data, you must have at least 80% non-missing height counts in a month.
+1. load the lubridate package
+2. find the month for each of your dates
+3. group_by month, type, and count your data using n()
+4. group_by month and type and count your non-missing data. You can use a combination of !is.na() [is not NA] and sum().
+
+```{r completeness, eval = F}
+
+library(lubridate)
+
+tiny_giraffes <- tiny_giraffes %>%
+  rowwise() %>%
+  mutate(month = month(sample_date)) %>%
+  group_by(type, month) %>%
+  mutate(total_count = n(),
+         complete_count = sum(!is.na(height)))
+
+```

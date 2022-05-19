@@ -1,0 +1,15 @@
+
+## Map the Data
+
+```{r ozone map, message = FALSE}
+library(leaflet)
+
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng = ozone_summary$Longitude, lat = ozone_summary$Latitude)
+
+
+```
+
+<br>
+

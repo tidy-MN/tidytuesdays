@@ -1,0 +1,15 @@
+
+## Get the data
+
+```{r get data, message = F}
+
+library(tidyverse)
+library(kableExtra)
+
+ozone_data <- read_csv("C:/Users/kmell/Desktop/RChats with Angie and Melinda/data/ozone_2016.csv") 
+
+knitr::kable(ozone_data) %>%
+  scroll_box(width = "100%", height = "200px")
+
+
+```

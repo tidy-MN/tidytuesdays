@@ -1,0 +1,192 @@
+---
+title: "Solid Waste Facilities Near Seed Manufacturer"
+author: "Barbara Monaco"
+date: "8/17/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(rgdal)
+library(tidyverse)
+library(leaflet)
+library(fontawesome)
+library(sf)
+library(units)
+```
+Exploration of existing solid waste facility data to identidy the most likely (closest) landfills, transfer station or WTE/RDF facilities that the below companies would be using.
+
+```{r, include = FALSE}
+fgdb <- "R:/mpca/util_solid_waste.gdb"
+
+fc_list <- ogrListLayers(fgdb)
+
+# Read the feature class
+fc <- readOGR(dsn=fgdb,layer="solid_waste") %>% 
+  st_as_sf()
+
+#list of AIs of WTE/RDF facilities are also included in the 
+#filter statement, then to get one location per facility, we use the
+#group by and summarise statements to get distinct facilities
+transfer_msw_ld <- fc %>% 
+  filter(si_type_desc %in% c("Transfer Station",
+                             "Transfer Area",
+                             "MSW Land Disposal")|ai_id %in% 
+           c(1143,726,4218,1156,4386,736,1609,40520)) %>% 
+  group_by(ai_id, ai_name, permit, address1, city, state, zip) %>% 
+  summarise(longitude = max(longitude), latitude = max(latitude))
+```
+
+
+```{r}
+#Locations were determined using Google maps which uses the webmercator
+#projection.
+projcrs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+
+treated_seed_locs <- read.csv("https://raw.githubusercontent.com/MPCA-data/tidytuesdays/master/show-n-tell/maps/Treated%20Seed%20Locations%208-12-21.csv")
+treated_seed_sf <- st_as_sf(x = treated_seed_locs,
+                              coords = c("Long", "Lat"),
+                              crs = projcrs,
+                            remove = FALSE)
+
+#We need both datasets to be in the same projection so we transform
+#the treated seed locations to UTM to match our facility data
+treated_seed_sf <- st_transform(treated_seed_sf, crs = 26915)
+#Calculates distances in miles. Each row is a seed mfg and each
+#column is a SW facility
+distances <- st_distance(treated_seed_sf, transfer_msw_ld) %>% 
+  set_units("miles")
+
+t_distances <- t(distances) %>% as.data.frame() %>% round(2)
+names(t_distances) <- paste(treated_seed_locs$Entity.Name, "Distance")
+combined_data <- bind_cols(transfer_msw_ld, t_distances)
+```
+
+```{r}
+treated_seed_locs %>% 
+  dplyr::select(Name = Entity.Name, Address = Address1, City, County, 
+         Zip = Postal.Code, Comments) %>% 
+  knitr::kable()
+```
+# Map of Facilities
+
+Use the ruler icon to draw and measure the distances between one point and another, you can zoom and click on each marker to bring up a pop-up for each facility/location.
+```{r}
+trash_icons <- awesomeIcons(
+  icon = 'trash',
+  iconColor = 'black',
+  library = 'fa',
+  markerColor = 'green'
+)
+
+seed <- awesomeIcons(text = fa('seedling', height = '22px'),                          
+                     iconColor   = 'green', 
+                     library     = 'fa',
+                     markerColor = 'white')
+
+leaflet(data = transfer_msw_ld) %>%
+  addTiles() %>% 
+  addAwesomeMarkers(~longitude, ~latitude, icon = trash_icons, 
+                    popup = ~paste0(permit, "<br>" ,ai_name, 
+                                    "<br>", address1, "<br>",
+                                    city, ", MN ", zip)) %>% 
+  addAwesomeMarkers(data = treated_seed_locs, ~Long, ~Lat, 
+                    icon = seed, popup = ~paste0(Entity.Name, "<br>",
+                                                 Address1, "<br>",
+                                                 City, ", MN ", Postal.Code)) %>% 
+  addMeasure()
+
+```
+
+Below are the top 5 facilities closest to each of the locations with their address and distances (in miles) reported
+
+## AgReliant Genetics LLC
+```{r}
+combined_data %>% 
+  as.data.frame() %>% 
+  dplyr::select(Name = ai_name, Permit = permit, Address = address1, 
+                City = city, State = state, Zip = zip, 
+                starts_with("AgReli")) %>% 
+  slice_min(order_by = `AgReliant Genetics LLC Distance`, n = 5) %>% 
+  knitr::kable()
+```
+
+## Centra Sota Cooperative
+```{r}
+combined_data %>% 
+  as.data.frame() %>% 
+  dplyr::select(Name = ai_name, Permit = permit, Address = address1, 
+                City = city, State = state, Zip = zip, 
+                starts_with("Centra S")) %>% 
+  slice_min(order_by = `Centra Sota Cooperative Distance`, n = 5) %>% 
+  knitr::kable()
+```
+
+## Dahlco Seeds Inc
+```{r}
+combined_data %>% 
+  as.data.frame() %>% 
+  dplyr::select(Name = ai_name, Permit = permit, Address = address1, 
+                City = city, State = state, Zip = zip, 
+                starts_with("Dahlco")) %>% 
+  slice_min(order_by = `Dahlco Seeds Inc Distance`, n = 5) %>% 
+  knitr::kable()
+```
+
+## Dekalb
+```{r}
+combined_data %>% 
+  as.data.frame() %>% 
+  dplyr::select(Name = ai_name, Permit = permit, Address = address1, 
+                City = city, State = state, Zip = zip, 
+                starts_with("Dekalb")) %>% 
+  slice_min(order_by = `Dekalb Distance`, n = 5) %>% 
+  knitr::kable()
+```
+
+## Dupont Pioneer
+```{r}
+combined_data %>% 
+  as.data.frame() %>% 
+  dplyr::select(Name = ai_name, Permit = permit, Address = address1, 
+                City = city, State = state, Zip = zip, 
+                starts_with("DuPont")) %>% 
+  slice_min(order_by = `DuPont Pioneer Distance`, n = 5) %>% 
+  knitr::kable()
+```
+
+## Monsanto Co
+```{r}
+combined_data %>% 
+  as.data.frame() %>% 
+  dplyr::select(Name = ai_name, Permit = permit, Address = address1, 
+                City = city, State = state, Zip = zip, 
+                starts_with("Monsanto")) %>% 
+  slice_min(order_by = `Monsanto Co Distance`, n = 5) %>% 
+  knitr::kable()
+```
+
+## Remington Seeds
+```{r}
+combined_data %>% 
+  as.data.frame() %>% 
+  dplyr::select(Name = ai_name, Permit = permit, Address = address1, 
+                City = city, State = state, Zip = zip, 
+                starts_with("Reming")) %>% 
+  slice_min(order_by = `Remington Seeds Distance`, n = 5) %>% 
+  knitr::kable()
+```
+
+## Syngenta Seeds, LLC
+```{r}
+combined_data %>% 
+  as.data.frame() %>% 
+  dplyr::select(Name = ai_name, Permit = permit, Address = address1, 
+                City = city, State = state, Zip = zip, 
+                starts_with("Syngenta")) %>% 
+  slice_min(order_by = `Syngenta Seeds, LLC Distance`, n = 5) %>% 
+  knitr::kable()
+```
+
+
+

@@ -1,0 +1,182 @@
+indicator,country,country_code,edulit_ind,year,student_ratio,flag_codes,flags,name,alpha.2,alpha.3,country.code,iso_3166.2,region,sub.region,region.code,sub.region.code,x,y,student_ratio_region
+Primary Education,Afghanistan,AFG,PTRHC_1,2017,44.00995,NA,NA,Afghanistan,AF,AFG,004,ISO 3166-2:AF,Asia,Southern Asia,142,034,22,8,19.642780000000002
+Primary Education,Albania,ALB,PTRHC_1,2017,17.94478,NA,NA,Albania,AL,ALB,008,ISO 3166-2:AL,Europe,Southern Europe,150,039,15,9,13.01069
+Primary Education,Algeria,DZA,PTRHC_1,2017,24.22505,NA,NA,Algeria,DZ,DZA,012,ISO 3166-2:DZ,Africa,Northern Africa,002,015,13,11,36.38758
+Primary Education,Angola,AGO,PTRHC_1,2015,50.02951,NA,NA,Angola,AO,AGO,024,ISO 3166-2:AO,Africa,Middle Africa,002,017,13,17,36.38758
+Primary Education,Antigua and Barbuda,ATG,PTRHC_1,2017,12.05576,NA,NA,Antigua & Barbuda,AG,ATG,028,ISO 3166-2:AG,North America,Caribbean,019,029,7,4,16.18269
+Primary Education,Argentina,ARG,NA,NA,NA,NA,NA,Argentina,AR,ARG,032,ISO 3166-2:AR,South America,South America,019,005,6,14,19.53971
+Primary Education,Armenia,ARM,NA,NA,NA,NA,NA,Armenia,AM,ARM,051,ISO 3166-2:AM,Asia,Western Asia,142,145,20,6,19.642780000000002
+Primary Education,Austria,AUT,PTRHC_1,2017,10.01653,NA,NA,Austria,AT,AUT,040,ISO 3166-2:AT,Europe,Western Europe,150,155,15,6,13.01069
+Primary Education,Azerbaijan,AZE,PTRHC_1,2017,15.458,NA,NA,Azerbaijan,AZ,AZE,031,ISO 3166-2:AZ,Asia,Western Asia,142,145,21,7,19.642780000000002
+Primary Education,Bahamas,BHS,PTRHC_1,2016,19.02855,NA,NA,Bahamas,BS,BHS,044,ISO 3166-2:BS,North America,Caribbean,019,029,4,2,16.18269
+Primary Education,Bahrain,BHR,PTRHC_1,2017,12.15924,NA,NA,Bahrain,BH,BHR,048,ISO 3166-2:BH,Asia,Western Asia,142,145,20,9,19.642780000000002
+Primary Education,Bangladesh,BGD,PTRHC_1,2017,30.05456,NA,NA,Bangladesh,BD,BGD,050,ISO 3166-2:BD,Asia,Southern Asia,142,034,23,8,19.642780000000002
+Primary Education,Barbados,BRB,PTRHC_1,2017,14.09682,NA,NA,Barbados,BB,BRB,052,ISO 3166-2:BB,North America,Caribbean,019,029,8,6,16.18269
+Primary Education,Belarus,BLR,PTRHC_1,2017,18.80255,NA,NA,Belarus,BY,BLR,112,ISO 3166-2:BY,Europe,Eastern Europe,150,151,17,4,13.01069
+Primary Education,Belgium,BEL,PTRHC_1,2016,11.30569,NA,NA,Belgium,BE,BEL,056,ISO 3166-2:BE,Europe,Western Europe,150,155,13,5,13.01069
+Primary Education,Belize,BLZ,PTRHC_1,2017,19.58631,NA,NA,Belize,BZ,BLZ,084,ISO 3166-2:BZ,North America,Central America,019,013,2,3,16.18269
+Primary Education,Benin,BEN,PTRHC_1,2017,43.56977,NA,NA,Benin,BJ,BEN,204,ISO 3166-2:BJ,Africa,Western Africa,002,011,15,14,36.38758
+Primary Education,Bhutan,BTN,PTRHC_1,2017,34.56294,NA,NA,Bhutan,BT,BTN,064,ISO 3166-2:BT,Asia,Southern Asia,142,034,24,7,19.642780000000002
+Primary Education,Bolivia (Plurinational State of),BOL,PTRHC_1,2017,18.76043,NA,NA,Bolivia,BO,BOL,068,ISO 3166-2:BO,South America,South America,019,005,6,11,19.53971
+Primary Education,Bosnia and Herzegovina,BIH,PTRHC_1,2017,17.19917,NA,NA,Bosnia & Herzegovina,BA,BIH,070,ISO 3166-2:BA,Europe,Southern Europe,150,039,15,7,13.01069
+Primary Education,Botswana,BWA,PTRHC_1,2013,22.61822,NA,NA,Botswana,BW,BWA,072,ISO 3166-2:BW,Africa,Southern Africa,002,018,15,18,36.38758
+Primary Education,Brazil,BRA,PTRHC_1,2016,20.31899,NA,NA,Brazil,BR,BRA,076,ISO 3166-2:BR,South America,South America,019,005,8,11,19.53971
+Primary Education,Brunei Darussalam,BRN,PTRHC_1,2017,10.18252,NA,NA,Brunei Darussalam,BN,BRN,096,ISO 3166-2:BN,Asia,South-Eastern Asia,142,035,25,12,19.642780000000002
+Primary Education,Bulgaria,BGR,PTRHC_1,2016,17.61018,NA,NA,Bulgaria,BG,BGR,100,ISO 3166-2:BG,Europe,Eastern Europe,150,151,17,7,13.01069
+Primary Education,Burkina Faso,BFA,PTRHC_1,2017,40.68126,NA,NA,Burkina Faso,BF,BFA,854,ISO 3166-2:BF,Africa,Western Africa,002,011,13,13,36.38758
+Primary Education,Burundi,BDI,PTRHC_1,2017,49.61434,NA,NA,Burundi,BI,BDI,108,ISO 3166-2:BI,Africa,Eastern Africa,002,014,15,16,36.38758
+Primary Education,Cabo Verde,CPV,PTRHC_1,2017,21.08156,NA,NA,Cabo Verde,CV,CPV,132,ISO 3166-2:CV,Africa,Western Africa,002,011,10,15,36.38758
+Primary Education,Cambodia,KHM,PTRHC_1,2017,41.66267,NA,NA,Cambodia,KH,KHM,116,ISO 3166-2:KH,Asia,South-Eastern Asia,142,035,25,10,19.642780000000002
+Primary Education,Cameroon,CMR,PTRHC_1,2017,44.61321,NA,NA,Cameroon,CM,CMR,120,ISO 3166-2:CM,Africa,Middle Africa,002,017,14,15,36.38758
+Primary Education,Canada,CAN,NA,NA,NA,NA,NA,Canada,CA,CAN,124,ISO 3166-2:CA,North America,Northern America,019,021,1,1,16.18269
+Primary Education,Central African Republic,CAF,PTRHC_1,2016,83.41195,NA,NA,Central African Republic,CF,CAF,140,ISO 3166-2:CF,Africa,Middle Africa,002,017,16,14,36.38758
+Primary Education,Chad,TCD,PTRHC_1,2016,56.88788,NA,NA,Chad,TD,TCD,148,ISO 3166-2:TD,Africa,Middle Africa,002,017,14,13,36.38758
+Primary Education,Chile,CHL,PTRHC_1,2017,17.79358,NA,NA,Chile,CL,CHL,152,ISO 3166-2:CL,South America,South America,019,005,6,13,19.53971
+Primary Education,China,CHN,PTRHC_1,2017,16.59383,NA,NA,China,CN,CHN,156,ISO 3166-2:CN,Asia,Eastern Asia,142,030,24,6,19.642780000000002
+Primary Education,Colombia,COL,PTRHC_1,2017,23.60132,NA,NA,Colombia,CO,COL,170,ISO 3166-2:CO,South America,South America,019,005,5,9,19.53971
+Primary Education,Comoros,COM,PTRHC_1,2017,18.90138,NA,NA,Comoros,KM,COM,174,ISO 3166-2:KM,Africa,Eastern Africa,002,014,18,18,36.38758
+Primary Education,Congo,COG,PTRHC_1,2012,44.442,NA,NA,Congo,CG,COG,178,ISO 3166-2:CG,Africa,Middle Africa,002,017,14,16,36.38758
+Primary Education,Costa Rica,CRI,PTRHC_1,2016,11.97865,NA,NA,Costa Rica,CR,CRI,188,ISO 3166-2:CR,North America,Central America,019,013,3,7,16.18269
+Primary Education,Côte d'Ivoire,CIV,PTRHC_1,2017,42.42645,NA,NA,Côte d'Ivoire,CI,CIV,384,ISO 3166-2:CI,Africa,Western Africa,002,011,12,15,36.38758
+Primary Education,Croatia,HRV,PTRHC_1,2016,13.50611,NA,NA,Croatia,HR,HRV,191,ISO 3166-2:HR,Europe,Southern Europe,150,039,14,7,13.01069
+Primary Education,Cuba,CUB,PTRHC_1,2017,8.82731,NA,NA,Cuba,CU,CUB,192,ISO 3166-2:CU,North America,Caribbean,019,029,4,3,16.18269
+Primary Education,Cyprus,CYP,PTRHC_1,2015,11.91513,NA,NA,Cyprus,CY,CYP,196,ISO 3166-2:CY,Asia,Western Asia,142,145,17,10,19.642780000000002
+Primary Education,Czechia,CZE,PTRHC_1,2013,18.93175,NA,NA,Czech Republic,CZ,CZE,203,ISO 3166-2:CZ,Europe,Eastern Europe,150,151,15,5,13.01069
+Primary Education,Democratic People's Republic of Korea,PRK,PTRHC_1,2018,20.30024,NA,NA,North Korea,KP,PRK,408,ISO 3166-2:KP,Asia,Eastern Asia,142,030,25,6,19.642780000000002
+Primary Education,Democratic Republic of the Congo,COD,PTRHC_1,2015,33.19793,NA,NA,Congo (Democratic Republic of the),CD,COD,180,ISO 3166-2:CD,Africa,Middle Africa,002,017,15,15,36.38758
+Primary Education,Denmark,DNK,PTRHC_1,2014,10.73738,NA,NA,Denmark,DK,DNK,208,ISO 3166-2:DK,Europe,Northern Europe,150,154,14,3,13.01069
+Primary Education,Djibouti,DJI,PTRHC_1,2018,29.37453,NA,NA,Djibouti,DJ,DJI,262,ISO 3166-2:DJ,Africa,Eastern Africa,002,014,17,13,36.38758
+Primary Education,Dominica,DMA,PTRHC_1,2016,13.07679,NA,NA,Dominica,DM,DMA,212,ISO 3166-2:DM,North America,Caribbean,019,029,7,7,16.18269
+Primary Education,Dominican Republic,DOM,PTRHC_1,2017,18.91694,NA,NA,Dominican Republic,DO,DOM,214,ISO 3166-2:DO,North America,Caribbean,019,029,6,4,16.18269
+Primary Education,Ecuador,ECU,PTRHC_1,2016,25.09592,NA,NA,Ecuador,EC,ECU,218,ISO 3166-2:EC,South America,South America,019,005,5,10,19.53971
+Primary Education,Egypt,EGY,PTRHC_1,2017,23.77693,NA,NA,Egypt,EG,EGY,818,ISO 3166-2:EG,Africa,Northern Africa,002,015,16,11,36.38758
+Primary Education,El Salvador,SLV,PTRHC_1,2017,28.27102,NA,NA,El Salvador,SV,SLV,222,ISO 3166-2:SV,North America,Central America,019,013,1,5,16.18269
+Primary Education,Equatorial Guinea,GNQ,PTRHC_1,2015,23.22706,NA,NA,Equatorial Guinea,GQ,GNQ,226,ISO 3166-2:GQ,Africa,Middle Africa,002,017,13,16,36.38758
+Primary Education,Eritrea,ERI,PTRHC_1,2017,39.24553,NA,NA,Eritrea,ER,ERI,232,ISO 3166-2:ER,Africa,Eastern Africa,002,014,16,13,36.38758
+Primary Education,Estonia,EST,PTRHC_1,2016,11.26704,NA,NA,Estonia,EE,EST,233,ISO 3166-2:EE,Europe,Northern Europe,150,154,17,2,13.01069
+Primary Education,Eswatini,SWZ,PTRHC_1,2016,27.27385,NA,NA,Swaziland,SZ,SWZ,748,ISO 3166-2:SZ,Africa,Southern Africa,002,018,16,19,36.38758
+Primary Education,Ethiopia,ETH,NA,NA,NA,NA,NA,Ethiopia,ET,ETH,231,ISO 3166-2:ET,Africa,Eastern Africa,002,014,17,14,36.38758
+Primary Education,Fiji,FJI,PTRHC_1,2016,19.7431,NA,NA,Fiji,FJ,FJI,242,ISO 3166-2:FJ,Oceania,Melanesia,009,054,27,19,23.560835
+Primary Education,Finland,FIN,PTRHC_1,2016,13.32179,NA,NA,Finland,FI,FIN,246,ISO 3166-2:FI,Europe,Northern Europe,150,154,17,1,13.01069
+Primary Education,France,FRA,PTRHC_1,2013,18.1766,NA,NA,France,FR,FRA,250,ISO 3166-2:FR,Europe,Western Europe,150,155,12,5,13.01069
+Primary Education,Gambia,GMB,PTRHC_1,2018,36.13813,NA,NA,Gambia,GM,GMB,270,ISO 3166-2:GM,Africa,Western Africa,002,011,12,12,36.38758
+Primary Education,Georgia,GEO,PTRHC_1,2017,9.01533,NA,NA,Georgia,GE,GEO,268,ISO 3166-2:GE,Asia,Western Asia,142,145,21,6,19.642780000000002
+Primary Education,Germany,DEU,PTRHC_1,2016,12.14626,NA,NA,Germany,DE,DEU,276,ISO 3166-2:DE,Europe,Western Europe,150,155,14,4,13.01069
+Primary Education,Ghana,GHA,PTRHC_1,2018,27.24556,NA,NA,Ghana,GH,GHA,288,ISO 3166-2:GH,Africa,Western Africa,002,011,13,14,36.38758
+Primary Education,Greece,GRC,PTRHC_1,2016,9.27444,NA,NA,Greece,GR,GRC,300,ISO 3166-2:GR,Europe,Southern Europe,150,039,16,9,13.01069
+Primary Education,Grenada,GRD,PTRHC_1,2017,16.18269,NA,NA,Grenada,GD,GRD,308,ISO 3166-2:GD,North America,Caribbean,019,029,7,8,16.18269
+Primary Education,Guatemala,GTM,PTRHC_1,2017,20.17993,NA,NA,Guatemala,GT,GTM,320,ISO 3166-2:GT,North America,Central America,019,013,1,4,16.18269
+Primary Education,Guinea,GIN,PTRHC_1,2016,47.14862,NA,NA,Guinea,GN,GIN,324,ISO 3166-2:GN,Africa,Western Africa,002,011,11,14,36.38758
+Primary Education,Guyana,GUY,PTRHC_1,2012,23.1645,NA,NA,Guyana,GY,GUY,328,ISO 3166-2:GY,South America,South America,019,005,6,10,19.53971
+Primary Education,Honduras,HND,PTRHC_1,2017,25.59773,NA,NA,Honduras,HN,HND,340,ISO 3166-2:HN,North America,Central America,019,013,2,5,16.18269
+Primary Education,Hungary,HUN,PTRHC_1,2016,10.76744,NA,NA,Hungary,HU,HUN,348,ISO 3166-2:HU,Europe,Eastern Europe,150,151,16,6,13.01069
+Primary Education,Iceland,ISL,PTRHC_1,2015,10.14405,NA,NA,Iceland,IS,ISL,352,ISO 3166-2:IS,Europe,Northern Europe,150,154,10,1,13.01069
+Primary Education,India,IND,PTRHC_1,2016,35.21588,NA,NA,India,IN,IND,356,ISO 3166-2:IN,Asia,Southern Asia,142,034,22,9,19.642780000000002
+Primary Education,Indonesia,IDN,PTRHC_1,2017,16.06371,NA,NA,Indonesia,ID,IDN,360,ISO 3166-2:ID,Asia,South-Eastern Asia,142,035,25,13,19.642780000000002
+Primary Education,Iran (Islamic Republic of),IRN,PTRHC_1,2017,28.52479,NA,NA,Iran (Islamic Republic of),IR,IRN,364,ISO 3166-2:IR,Asia,Southern Asia,142,034,20,8,19.642780000000002
+Primary Education,Ireland,IRL,PTRHC_1,2012,16.06046,NA,NA,Ireland,IE,IRL,372,ISO 3166-2:IE,Europe,Northern Europe,150,154,10,4,13.01069
+Primary Education,Israel,ISR,PTRHC_1,2016,12.07069,NA,NA,Israel,IL,ISR,376,ISO 3166-2:IL,Asia,Western Asia,142,145,18,10,19.642780000000002
+Primary Education,Italy,ITA,PTRHC_1,2016,11.12385,NA,NA,Italy,IT,ITA,380,ISO 3166-2:IT,Europe,Southern Europe,150,039,13,7,13.01069
+Primary Education,Jamaica,JAM,PTRHC_1,2017,22.10634,NA,NA,Jamaica,JM,JAM,388,ISO 3166-2:JM,North America,Caribbean,019,029,4,4,16.18269
+Primary Education,Japan,JPN,PTRHC_1,2016,15.87224,NA,NA,Japan,JP,JPN,392,ISO 3166-2:JP,Asia,Eastern Asia,142,030,27,6,19.642780000000002
+Primary Education,Jordan,JOR,PTRHC_1,2017,21.03903,NA,NA,Jordan,JO,JOR,400,ISO 3166-2:JO,Asia,Western Asia,142,145,18,8,19.642780000000002
+Primary Education,Kazakhstan,KAZ,PTRHC_1,2018,19.63913,NA,NA,Kazakhstan,KZ,KAZ,398,ISO 3166-2:KZ,Asia,Central Asia,142,143,24,5,19.642780000000002
+Primary Education,Kenya,KEN,PTRHC_1,2015,30.65055,‡,UIS Estimation,Kenya,KE,KEN,404,ISO 3166-2:KE,Africa,Eastern Africa,002,014,17,15,36.38758
+Primary Education,Kiribati,KIR,PTRHC_1,2017,25.48855,NA,NA,Kiribati,KI,KIR,296,ISO 3166-2:KI,Oceania,Micronesia,009,057,27,17,23.560835
+Primary Education,Kuwait,KWT,PTRHC_1,2017,8.8586,NA,NA,Kuwait,KW,KWT,414,ISO 3166-2:KW,Asia,Western Asia,142,145,19,8,19.642780000000002
+Primary Education,Kyrgyzstan,KGZ,PTRHC_1,2017,24.91353,NA,NA,Kyrgyzstan,KG,KGZ,417,ISO 3166-2:KG,Asia,Central Asia,142,143,23,6,19.642780000000002
+Primary Education,Lao People's Democratic Republic,LAO,PTRHC_1,2017,22.33745,NA,NA,Lao People's Democratic Republic,LA,LAO,418,ISO 3166-2:LA,Asia,South-Eastern Asia,142,035,25,9,19.642780000000002
+Primary Education,Latvia,LVA,PTRHC_1,2016,11.3295,NA,NA,Latvia,LV,LVA,428,ISO 3166-2:LV,Europe,Northern Europe,150,154,17,3,13.01069
+Primary Education,Lebanon,LBN,PTRHC_1,2017,12.48274,NA,NA,Lebanon,LB,LBN,422,ISO 3166-2:LB,Asia,Western Asia,142,145,18,9,19.642780000000002
+Primary Education,Lesotho,LSO,PTRHC_1,2017,32.94806,NA,NA,Lesotho,LS,LSO,426,ISO 3166-2:LS,Africa,Southern Africa,002,018,17,19,36.38758
+Primary Education,Liberia,LBR,PTRHC_1,2016,27.0679,NA,NA,Liberia,LR,LBR,430,ISO 3166-2:LR,Africa,Western Africa,002,011,12,14,36.38758
+Primary Education,Lithuania,LTU,PTRHC_1,2016,13.22845,NA,NA,Lithuania,LT,LTU,440,ISO 3166-2:LT,Europe,Northern Europe,150,154,16,4,13.01069
+Primary Education,Luxembourg,LUX,PTRHC_1,2016,8.30333,NA,NA,Luxembourg,LU,LUX,442,ISO 3166-2:LU,Europe,Western Europe,150,155,13,6,13.01069
+Primary Education,Madagascar,MDG,PTRHC_1,2016,40.606,NA,NA,Madagascar,MG,MDG,450,ISO 3166-2:MG,Africa,Eastern Africa,002,014,19,19,36.38758
+Primary Education,Malawi,MWI,PTRHC_1,2015,69.50969,‡,UIS Estimation,Malawi,MW,MWI,454,ISO 3166-2:MW,Africa,Eastern Africa,002,014,15,17,36.38758
+Primary Education,Malaysia,MYS,PTRHC_1,2017,11.6556,NA,NA,Malaysia,MY,MYS,458,ISO 3166-2:MY,Asia,South-Eastern Asia,142,035,24,11,19.642780000000002
+Primary Education,Maldives,MDV,PTRHC_1,2017,10.16278,NA,NA,Maldives,MV,MDV,462,ISO 3166-2:MV,Asia,Southern Asia,142,034,21,12,19.642780000000002
+Primary Education,Mali,MLI,PTRHC_1,2017,38.22009,NA,NA,Mali,ML,MLI,466,ISO 3166-2:ML,Africa,Western Africa,002,011,14,12,36.38758
+Primary Education,Malta,MLT,PTRHC_1,2016,13.02685,NA,NA,Malta,MT,MLT,470,ISO 3166-2:MT,Europe,Southern Europe,150,039,11,8,13.01069
+Primary Education,Marshall Islands,MHL,NA,NA,NA,NA,NA,Marshall Islands,MH,MHL,584,ISO 3166-2:MH,Oceania,Micronesia,009,057,26,15,23.560835
+Primary Education,Mauritania,MRT,PTRHC_1,2016,36.36696,NA,NA,Mauritania,MR,MRT,478,ISO 3166-2:MR,Africa,Western Africa,002,011,11,12,36.38758
+Primary Education,Mauritius,MUS,PTRHC_1,2017,17.93769,NA,NA,Mauritius,MU,MUS,480,ISO 3166-2:MU,Africa,Eastern Africa,002,014,19,20,36.38758
+Primary Education,Mexico,MEX,PTRHC_1,2017,26.55228,NA,NA,Mexico,MX,MEX,484,ISO 3166-2:MX,North America,Central America,019,013,1,3,16.18269
+Primary Education,Micronesia (Federated States of),FSM,PTRHC_1,2015,19.7106,‡,UIS Estimation,Micronesia (Federated States of),FM,FSM,583,ISO 3166-2:FM,Oceania,Micronesia,009,057,26,16,23.560835
+Primary Education,Mongolia,MNG,PTRHC_1,2017,30.37955,NA,NA,Mongolia,MN,MNG,496,ISO 3166-2:MN,Asia,Eastern Asia,142,030,25,5,19.642780000000002
+Primary Education,Montenegro,MNE,NA,NA,NA,NA,NA,Montenegro,ME,MNE,499,ISO 3166-2:ME,Europe,Southern Europe,150,039,15,8,13.01069
+Primary Education,Morocco,MAR,PTRHC_1,2017,28.03417,NA,NA,Morocco,MA,MAR,504,ISO 3166-2:MA,Africa,Northern Africa,002,015,12,11,36.38758
+Primary Education,Mozambique,MOZ,PTRHC_1,2017,52.43683,NA,NA,Mozambique,MZ,MOZ,508,ISO 3166-2:MZ,Africa,Eastern Africa,002,014,16,17,36.38758
+Primary Education,Myanmar,MMR,PTRHC_1,2017,23.04535,NA,NA,Myanmar,MM,MMR,104,ISO 3166-2:MM,Asia,South-Eastern Asia,142,035,24,8,19.642780000000002
+Primary Education,Namibia,NAM,NA,NA,NA,NA,NA,Namibia,"NA",NAM,516,ISO 3166-2:NA,Africa,Southern Africa,002,018,15,19,36.38758
+Primary Education,Nauru,NRU,PTRHC_1,2016,40.17778,NA,NA,Nauru,NR,NRU,520,ISO 3166-2:NR,Oceania,Micronesia,009,057,26,17,23.560835
+Primary Education,Nepal,NPL,PTRHC_1,2017,20.90655,NA,NA,Nepal,NP,NPL,524,ISO 3166-2:NP,Asia,Southern Asia,142,034,23,9,19.642780000000002
+Primary Education,Netherlands,NLD,PTRHC_1,2016,11.72995,NA,NA,Netherlands,NL,NLD,528,ISO 3166-2:NL,Europe,Western Europe,150,155,13,4,13.01069
+Primary Education,New Zealand,NZL,PTRHC_1,2017,14.91552,NA,NA,New Zealand,NZ,NZL,554,ISO 3166-2:NZ,Oceania,Australia and New Zealand,009,053,26,21,23.560835
+Primary Education,Niger,NER,PTRHC_1,2017,36.33661,NA,NA,Niger,NE,NER,562,ISO 3166-2:NE,Africa,Western Africa,002,011,15,12,36.38758
+Primary Education,Nigeria,NGA,NA,NA,NA,NA,NA,Nigeria,NG,NGA,566,ISO 3166-2:NG,Africa,Western Africa,002,011,13,15,36.38758
+Primary Education,Norway,NOR,PTRHC_1,2016,9.01206,NA,NA,Norway,NO,NOR,578,ISO 3166-2:NO,Europe,Northern Europe,150,154,15,1,13.01069
+Primary Education,Oman,OMN,PTRHC_1,2017,10.12768,NA,NA,Oman,OM,OMN,512,ISO 3166-2:OM,Asia,Western Asia,142,145,19,11,19.642780000000002
+Primary Education,Pakistan,PAK,PTRHC_1,2017,44.78201,NA,NA,Pakistan,PK,PAK,586,ISO 3166-2:PK,Asia,Southern Asia,142,034,21,8,19.642780000000002
+Primary Education,Palau,PLW,NA,NA,NA,NA,NA,Palau,PW,PLW,585,ISO 3166-2:PW,Oceania,Micronesia,009,057,25,16,23.560835
+Primary Education,Panama,PAN,PTRHC_1,2016,21.44301,NA,NA,Panama,PA,PAN,591,ISO 3166-2:PA,North America,Central America,019,013,4,8,16.18269
+Primary Education,Papua New Guinea,PNG,PTRHC_1,2016,35.52165,NA,NA,Papua New Guinea,PG,PNG,598,ISO 3166-2:PG,Oceania,Melanesia,009,054,25,17,23.560835
+Primary Education,Paraguay,PRY,PTRHC_1,2012,24.15974,NA,NA,Paraguay,PY,PRY,600,ISO 3166-2:PY,South America,South America,019,005,6,12,19.53971
+Primary Education,Peru,PER,PTRHC_1,2018,17.38724,NA,NA,Peru,PE,PER,604,ISO 3166-2:PE,South America,South America,019,005,5,11,19.53971
+Primary Education,Philippines,PHL,PTRHC_1,2016,28.98824,NA,NA,Philippines,PH,PHL,608,ISO 3166-2:PH,Asia,South-Eastern Asia,142,035,26,11,19.642780000000002
+Primary Education,Poland,POL,PTRHC_1,2016,10.81003,NA,NA,Poland,PL,POL,616,ISO 3166-2:PL,Europe,Eastern Europe,150,151,15,4,13.01069
+Primary Education,Portugal,PRT,PTRHC_1,2016,12.7774,NA,NA,Portugal,PT,PRT,620,ISO 3166-2:PT,Europe,Southern Europe,150,039,11,6,13.01069
+Primary Education,Qatar,QAT,PTRHC_1,2017,11.77467,NA,NA,Qatar,QA,QAT,634,ISO 3166-2:QA,Asia,Western Asia,142,145,19,10,19.642780000000002
+Primary Education,Republic of Korea,KOR,PTRHC_1,2016,16.30703,NA,NA,South Korea,KR,KOR,410,ISO 3166-2:KR,Asia,Eastern Asia,142,030,25,7,19.642780000000002
+Primary Education,Republic of Moldova,MDA,PTRHC_1,2017,17.68211,NA,NA,Moldova (Republic of),MD,MDA,498,ISO 3166-2:MD,Europe,Eastern Europe,150,151,18,5,13.01069
+Primary Education,Romania,ROU,PTRHC_1,2016,19.32759,NA,NA,Romania,RO,ROU,642,ISO 3166-2:RO,Europe,Eastern Europe,150,151,17,6,13.01069
+Primary Education,Russian Federation,RUS,PTRHC_1,2016,20.61869,NA,NA,Russian Federation,RU,RUS,643,ISO 3166-2:RU,Europe,Eastern Europe,150,151,25,4,13.01069
+Primary Education,Rwanda,RWA,PTRHC_1,2017,57.85938,NA,NA,Rwanda,RW,RWA,646,ISO 3166-2:RW,Africa,Eastern Africa,002,014,16,16,36.38758
+Primary Education,Saint Kitts and Nevis,KNA,PTRHC_1,2016,13.87277,NA,NA,St. Kitts & Nevis,KN,KNA,659,ISO 3166-2:KN,North America,Caribbean,019,029,6,5,16.18269
+Primary Education,Saint Lucia,LCA,PTRHC_1,2017,15.2315,NA,NA,St. Lucia,LC,LCA,662,ISO 3166-2:LC,North America,Caribbean,019,029,7,5,16.18269
+Primary Education,Saint Vincent and the Grenadines,VCT,PTRHC_1,2017,14.393370000000001,NA,NA,St. Vincent & the Grenadines,VC,VCT,670,ISO 3166-2:VC,North America,Caribbean,019,029,7,6,16.18269
+Primary Education,Samoa,WSM,NA,NA,NA,NA,NA,Samoa,WS,WSM,882,ISO 3166-2:WS,Oceania,Polynesia,009,061,28,18,23.560835
+Primary Education,Sao Tome and Principe,STP,PTRHC_1,2017,31.15842,NA,NA,Sao Tome and Principe,ST,STP,678,ISO 3166-2:ST,Africa,Middle Africa,002,017,11,16,36.38758
+Primary Education,Saudi Arabia,SAU,PTRHC_1,2016,11.68136,NA,NA,Saudi Arabia,SA,SAU,682,ISO 3166-2:SA,Asia,Western Asia,142,145,19,9,19.642780000000002
+Primary Education,Senegal,SEN,PTRHC_1,2017,32.81273,NA,NA,Senegal,SN,SEN,686,ISO 3166-2:SN,Africa,Western Africa,002,011,13,12,36.38758
+Primary Education,Serbia,SRB,PTRHC_1,2017,14.28392,NA,NA,Serbia,RS,SRB,688,ISO 3166-2:RS,Europe,Southern Europe,150,039,16,7,13.01069
+Primary Education,Seychelles,SYC,PTRHC_1,2017,14.03261,NA,NA,Seychelles,SC,SYC,690,ISO 3166-2:SC,Africa,Eastern Africa,002,014,18,17,36.38758
+Primary Education,Sierra Leone,SLE,PTRHC_1,2017,39.43821,NA,NA,Sierra Leone,SL,SLE,694,ISO 3166-2:SL,Africa,Western Africa,002,011,12,13,36.38758
+Primary Education,Singapore,SGP,PTRHC_1,2016,15.0593,NA,NA,Singapore,SG,SGP,702,ISO 3166-2:SG,Asia,South-Eastern Asia,142,035,24,13,19.642780000000002
+Primary Education,Slovakia,SVK,PTRHC_1,2015,15.24933,NA,NA,Slovakia,SK,SVK,703,ISO 3166-2:SK,Europe,Eastern Europe,150,151,16,5,13.01069
+Primary Education,Slovenia,SVN,PTRHC_1,2016,13.80157,NA,NA,Slovenia,SI,SVN,705,ISO 3166-2:SI,Europe,Southern Europe,150,039,14,6,13.01069
+Primary Education,Solomon Islands,SLB,PTRHC_1,2017,25.77788,NA,NA,Solomon Islands,SB,SLB,090,ISO 3166-2:SB,Oceania,Melanesia,009,054,26,18,23.560835
+Primary Education,South Africa,ZAF,PTRHC_1,2015,30.3322,NA,NA,South Africa,ZA,ZAF,710,ISO 3166-2:ZA,Africa,Southern Africa,002,018,16,20,36.38758
+Primary Education,South Sudan,SSD,PTRHC_1,2015,46.75029,‡,UIS Estimation,South Sudan,SS,SSD,728,ISO 3166-2:SS,Africa,Eastern Africa,002,014,15,13,36.38758
+Primary Education,Spain,ESP,PTRHC_1,2016,12.99102,NA,NA,Spain,ES,ESP,724,ISO 3166-2:ES,Europe,Southern Europe,150,039,12,6,13.01069
+Primary Education,Sri Lanka,LKA,PTRHC_1,2017,22.93257,NA,NA,Sri Lanka,LK,LKA,144,ISO 3166-2:LK,Asia,Southern Asia,142,034,22,11,19.642780000000002
+Primary Education,Sudan,SDN,NA,NA,NA,NA,NA,Sudan,SD,SDN,729,ISO 3166-2:SD,Africa,Northern Africa,002,015,16,12,36.38758
+Primary Education,Suriname,SUR,PTRHC_1,2017,12.92371,NA,NA,Suriname,SR,SUR,740,ISO 3166-2:SR,South America,South America,019,005,7,11,19.53971
+Primary Education,Sweden,SWE,PTRHC_1,2016,12.3537,NA,NA,Sweden,SE,SWE,752,ISO 3166-2:SE,Europe,Northern Europe,150,154,16,1,13.01069
+Primary Education,Switzerland,CHE,PTRHC_1,2016,10.13562,NA,NA,Switzerland,CH,CHE,756,ISO 3166-2:CH,Europe,Western Europe,150,155,14,5,13.01069
+Primary Education,Syrian Arab Republic,SYR,NA,NA,NA,NA,NA,Syria,SY,SYR,760,ISO 3166-2:SY,Asia,Western Asia,142,145,19,7,19.642780000000002
+Primary Education,Tajikistan,TJK,PTRHC_1,2017,22.30051,NA,NA,Tajikistan,TJ,TJK,762,ISO 3166-2:TJ,Asia,Central Asia,142,143,23,7,19.642780000000002
+Primary Education,Thailand,THA,PTRHC_1,2017,16.22081,NA,NA,Thailand,TH,THA,764,ISO 3166-2:TH,Asia,South-Eastern Asia,142,035,24,10,19.642780000000002
+Primary Education,The former Yugoslav Republic of Macedonia,MKD,PTRHC_1,2015,14.40654,NA,NA,Macedonia,MK,MKD,807,ISO 3166-2:MK,Europe,Southern Europe,150,039,17,8,13.01069
+Primary Education,Timor-Leste,TLS,NA,NA,NA,NA,NA,Timor-Leste,TL,TLS,626,ISO 3166-2:TL,Asia,South-Eastern Asia,142,035,25,14,19.642780000000002
+Primary Education,Togo,TGO,PTRHC_1,2017,40.12613,NA,NA,Togo,TG,TGO,768,ISO 3166-2:TG,Africa,Western Africa,002,011,14,14,36.38758
+Primary Education,Tonga,TON,PTRHC_1,2015,21.63312,NA,NA,Tonga,TO,TON,776,ISO 3166-2:TO,Oceania,Polynesia,009,061,28,19,23.560835
+Primary Education,Tunisia,TUN,PTRHC_1,2016,16.18367,NA,NA,Tunisia,TN,TUN,788,ISO 3166-2:TN,Africa,Northern Africa,002,015,14,11,36.38758
+Primary Education,Turkey,TUR,PTRHC_1,2015,18.40513,NA,NA,Turkey,TR,TUR,792,ISO 3166-2:TR,Asia,Western Asia,142,145,18,7,19.642780000000002
+Primary Education,Turkmenistan,TKM,NA,NA,NA,NA,NA,Turkmenistan,TM,TKM,795,ISO 3166-2:TM,Asia,Central Asia,142,143,22,7,19.642780000000002
+Primary Education,Tuvalu,TUV,PTRHC_1,2016,17.19481,NA,NA,Tuvalu,TV,TUV,798,ISO 3166-2:TV,Oceania,Polynesia,009,061,27,18,23.560835
+Primary Education,Uganda,UGA,PTRHC_1,2017,42.65911,NA,NA,Uganda,UG,UGA,800,ISO 3166-2:UG,Africa,Eastern Africa,002,014,16,15,36.38758
+Primary Education,Ukraine,UKR,PTRHC_1,2017,12.99453,NA,NA,Ukraine,UA,UKR,804,ISO 3166-2:UA,Europe,Eastern Europe,150,151,17,5,13.01069
+Primary Education,United Arab Emirates,ARE,PTRHC_1,2016,24.52278,NA,NA,United Arab Emirates,AE,ARE,784,ISO 3166-2:AE,Asia,Western Asia,142,145,20,10,19.642780000000002
+Primary Education,United Kingdom of Great Britain and Northern Ireland,GBR,PTRHC_1,2016,15.05392,NA,NA,Great Britain and Northern Ireland,GB,GBR,826,ISO 3166-2:GB,Europe,Northern Europe,150,154,11,4,13.01069
+Primary Education,United Republic of Tanzania,TZA,PTRHC_1,2017,47.15284,NA,NA,Tanzania,TZ,TZA,834,ISO 3166-2:TZ,Africa,Eastern Africa,002,014,17,16,36.38758
+Primary Education,United States of America,USA,PTRHC_1,2015,14.45723,NA,NA,United States of America,US,USA,840,ISO 3166-2:US,North America,Northern America,019,021,1,2,16.18269
+Primary Education,Uruguay,URY,PTRHC_1,2016,11.13129,NA,NA,Uruguay,UY,URY,858,ISO 3166-2:UY,South America,South America,019,005,7,12,19.53971
+Primary Education,Uzbekistan,UZB,PTRHC_1,2017,21.15014,NA,NA,Uzbekistan,UZ,UZB,860,ISO 3166-2:UZ,Asia,Central Asia,142,143,22,6,19.642780000000002
+Primary Education,Vanuatu,VUT,PTRHC_1,2015,26.56507,NA,NA,Vanuatu,VU,VUT,548,ISO 3166-2:VU,Oceania,Melanesia,009,054,26,19,23.560835
+Primary Education,Venezuela (Bolivarian Republic of),VEN,NA,NA,NA,NA,NA,Venezuela,VE,VEN,862,ISO 3166-2:VE,South America,South America,019,005,6,9,19.53971
+Primary Education,Viet Nam,VNM,PTRHC_1,2017,19.64643,NA,NA,Viet Nam,VN,VNM,704,ISO 3166-2:VN,Asia,South-Eastern Asia,142,035,26,9,19.642780000000002
+Primary Education,Yemen,YEM,PTRHC_1,2016,26.93016,NA,NA,Yemen,YE,YEM,887,ISO 3166-2:YE,Asia,Western Asia,142,145,18,11,19.642780000000002
+Primary Education,Zambia,ZMB,PTRHC_1,2017,42.05996,NA,NA,Zambia,ZM,ZMB,894,ISO 3166-2:ZM,Africa,Eastern Africa,002,014,14,18,36.38758
+Primary Education,Zimbabwe,ZWE,PTRHC_1,2013,36.4082,NA,NA,Zimbabwe,ZW,ZWE,716,ISO 3166-2:ZW,Africa,Eastern Africa,002,014,16,18,36.38758
+

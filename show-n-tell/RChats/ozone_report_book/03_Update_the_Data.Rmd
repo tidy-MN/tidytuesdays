@@ -1,0 +1,20 @@
+
+## Update the Data
+
+```{r update data, message = FALSE}
+
+library(tidyverse)
+library(kableExtra)
+
+setwd("C:/Users/kmell/Desktop/RChats with Angie and Melinda/data")
+
+all_ozone_files <- list.files()
+
+all_ozone_data <- all_ozone_files %>%
+  lapply(read_csv) %>%
+  bind_rows()
+
+knitr::kable(all_ozone_data) %>%
+  scroll_box(width = "100%", height = "200px")
+
+```

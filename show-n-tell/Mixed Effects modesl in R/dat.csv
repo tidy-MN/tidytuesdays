@@ -1,0 +1,847 @@
+Exposure.ID,wasp.lineage,wasp.age.days,host.species,host.plant,pupa.mass,pupa.age.days,attempted2,wasp_success,bfly_success,attempted_binary,host.fate.no8,start3
+a1,P. puparum,0.042,D. plexippus,A. curassavica,1.29,0.506944444,1b,0,1,Attempt,Butterfly,0013-09
+a2,P. puparum,0.042,D. plexippus,A. incarnata,0.96,0.166666667,0,0,1,No attempt,Butterfly,0013-09
+b1,P. puparum,0.042,D. plexippus,A. curassavica,1.28,0.166666667,1b,0,1,Attempt,Butterfly,0013-09
+b2,P. puparum,0.059,D. plexippus,A. curassavica,1.31,0,0,0,1,No attempt,Butterfly,0013-09
+C4,P. cassotis,0.069,D. plexippus,A. curassavica,1.31,0.986111111,2,1,0,Attempt,Wasps emerged,0014-06
+C6,P. cassotis,0.069,D. plexippus,A. curassavica,1.34,0.961805556,0,0,1,No attempt,Butterfly,0014-06
+I4,P. cassotis,0.069,D. plexippus,A. incarnata,1.38,0.986111111,2,1,0,Attempt,Wasps emerged,0014-06
+I5,P. cassotis,0.069,D. plexippus,A. incarnata,1.119,0.958333333,1b,0,1,Attempt,Butterfly,0014-06
+I6,P. cassotis,0.069,D. plexippus,A. incarnata,1.22,0.944444444,2,1,0,Attempt,Wasps emerged,0014-06
+C7,P. cassotis,0.083,D. plexippus,A. curassavica,1.37,0.96875,0,0,1,No attempt,Butterfly,0014-06
+C8,P. cassotis,0.083,D. plexippus,A. curassavica,1.29,0.958333333,1b,0,1,Attempt,Butterfly,0014-06
+C9,P. cassotis,0.083,D. plexippus,A. curassavica,1.38,0.9375,2,1,0,Attempt,Wasps emerged,0014-06
+I7,P. cassotis,0.083,D. plexippus,A. incarnata,1.24,0.958333333,0,0,1,No attempt,Butterfly,0014-06
+I8,P. cassotis,0.083,D. plexippus,A. incarnata,1.38,0.9375,0,0,1,No attempt,Butterfly,0014-06
+I9,P. cassotis,0.083,D. plexippus,A. incarnata,1.55,0.916666667,2,1,0,Attempt,Wasps emerged,0014-06
+dptim3,P. puparum,0.111,D. plexippus,A. incarnata,1.12,0,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+PC14.9.20.10,P. cassotis,0.135,D. plexippus,A. curassavica,1.22,0.135416667,2,1,0,Attempt,Wasps emerged,0014-09
+PC14.9.20.9,P. cassotis,0.135,D. plexippus,A. curassavica,1.21,0.135416667,2,1,0,Attempt,Wasps emerged,0014-09
+PC15.7.29.11,P. cassotis,0.188,D. plexippus,A. incarnata,0.738,0.111111111,2,1,0,Attempt,Wasps emerged,0015-07
+PC15.7.29.12,P. cassotis,0.188,D. plexippus,A. incarnata,1.236,0.052083333,2,1,0,Attempt,Wasps emerged,0015-07
+PC14.8.6.1,P. cassotis,0.222,D. plexippus,A. curassavica,1.19,0.055555556,2,1,0,Attempt,Wasps emerged,0014-08
+PC14.8.6.4,P. cassotis,0.222,D. plexippus,A. curassavica,1.18,0.055555556,2,1,0,Attempt,Wasps emerged,0014-08
+PC14.8.6.5,P. cassotis,0.222,D. plexippus,A. curassavica,1.34,0.034722222,2,1,0,Attempt,Wasps emerged,0014-08
+PC15.7.29.7,P. cassotis,0.25,D. plexippus,A. incarnata,NA,0.166666667,2,1,0,Attempt,Wasps emerged,0015-07
+PC15.7.29.8,P. cassotis,0.25,D. plexippus,A. incarnata,NA,0.166666667,2,1,0,Attempt,Wasps emerged,0015-07
+PC15.7.29.9,P. cassotis,0.25,D. plexippus,A. incarnata,NA,0.125,2,1,0,Attempt,Wasps emerged,0015-07
+dptim10,P. puparum,0.305,D. plexippus,A. incarnata,1.19,0.043055556,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+dptim11,P. puparum,0.313,D. plexippus,A. incarnata,1.12,0.041666667,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+dptim12,P. puparum,0.313,D. plexippus,A. incarnata,1.06,0.041666667,0,0,0,No attempt,"Dead butterfly, no wasps",0013-09
+dptim13,P. puparum,0.313,D. plexippus,A. incarnata,1.09,0.041666667,0,0,1,No attempt,Butterfly,0013-09
+dptim14,P. puparum,0.313,D. plexippus,A. incarnata,1.15,0.041666667,0,0,1,No attempt,Butterfly,0013-09
+dptim15,P. puparum,0.316,D. plexippus,A. incarnata,1.1,0,0,0,1,No attempt,Butterfly,0013-09
+dptim16,P. puparum,0.41,D. plexippus,A. incarnata,0.86,0.125,0,0,0,No attempt,"Dead butterfly, no wasps",0013-09
+dptim21,P. puparum,0.729,D. plexippus,A. incarnata,1.08,0.5625,1b,0,1,Attempt,Butterfly,0013-09
+PC15.6.26.1,P. cassotis,0.788,D. plexippus,A. curassavica,1.608,0.017361111,0,0,1,No attempt,Butterfly,0015-06
+PC15.6.26.2,P. cassotis,0.792,D. plexippus,A. curassavica,1.396,0.003472222,2,1,0,Attempt,Wasps emerged,0015-06
+I54,P. cassotis,0.844,D. plexippus,A. incarnata,1.33,0.142361111,2,1,0,Attempt,Wasps emerged,0014-10
+I55,P. cassotis,0.844,D. plexippus,A. incarnata,1.56,0.142361111,2,1,0,Attempt,Wasps emerged,0014-10
+I56,P. cassotis,0.844,D. plexippus,A. incarnata,1.56,0.142361111,2,1,0,Attempt,Wasps emerged,0014-10
+I57,P. cassotis,0.844,D. plexippus,A. incarnata,1.43,0.114583333,2,1,0,Attempt,Wasps emerged,0014-10
+C16,P. cassotis,0.91,D. plexippus,A. curassavica,1.08,0.892361111,2,1,0,Attempt,Wasps emerged,0014-07
+C17,P. cassotis,0.91,D. plexippus,A. curassavica,1.39,-0.027777778,2,1,0,Attempt,Wasps emerged,0014-07
+C18,P. cassotis,0.91,D. plexippus,A. curassavica,1.37,0.034722222,2,1,0,Attempt,Wasps emerged,0014-07
+C19,P. cassotis,0.91,D. plexippus,A. curassavica,1.33,0.034722222,2,1,0,Attempt,Wasps emerged,0014-07
+C20,P. cassotis,0.91,D. plexippus,A. curassavica,1.24,0.034722222,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-07
+C21,P. cassotis,0.91,D. plexippus,A. curassavica,1.44,0.013888889,2,1,0,Attempt,Wasps emerged,0014-07
+C22,P. cassotis,0.91,D. plexippus,A. curassavica,1.43,0.006944444,2,1,0,Attempt,Wasps emerged,0014-07
+I16,P. cassotis,0.91,D. plexippus,A. incarnata,1.25,0.836805556,2,1,0,Attempt,Wasps emerged,0014-07
+I17,P. cassotis,0.91,D. plexippus,A. incarnata,1.16,0.055555556,2,1,0,Attempt,Wasps emerged,0014-07
+I18,P. cassotis,0.91,D. plexippus,A. incarnata,1.28,0.055555556,2,1,0,Attempt,Wasps emerged,0014-07
+I19,P. cassotis,0.91,D. plexippus,A. incarnata,1.226,0.034722222,2,1,0,Attempt,Wasps emerged,0014-07
+I20,P. cassotis,0.91,D. plexippus,A. incarnata,1.31,0.034722222,1b,0,1,Attempt,Butterfly,0014-07
+I21,P. cassotis,0.91,D. plexippus,A. incarnata,1.29,0.020833333,2,1,0,Attempt,Wasps emerged,0014-07
+I22,P. cassotis,0.91,D. plexippus,A. incarnata,1.4,0.020833333,2,1,0,Attempt,Wasps emerged,0014-07
+PC14.8.1.1,P. cassotis,0.983,D. plexippus,A. curassavica,1.31,0.940972222,2,1,0,Attempt,Wasps emerged,0014-08
+C23,P. cassotis,0.99,D. plexippus,A. curassavica,1.3,0.010416667,2,1,0,Attempt,Wasps emerged,0014-07
+I23,P. cassotis,0.99,D. plexippus,A. incarnata,1.27,0.09375,2,1,0,Attempt,Wasps emerged,0014-07
+I24,P. cassotis,0.99,D. plexippus,A. incarnata,1.23,0.09375,2,1,0,Attempt,Wasps emerged,0014-07
+I25,P. cassotis,0.99,D. plexippus,A. incarnata,1.25,0.03125,2,1,0,Attempt,Wasps emerged,0014-07
+PC14.9.20.5,P. cassotis,1.042,D. plexippus,A. curassavica,1.31,0.135416667,2,1,0,Attempt,Wasps emerged,0014-09
+PC14.9.20.6,P. cassotis,1.042,D. plexippus,A. curassavica,1.3,0.135416667,2,1,0,Attempt,Wasps emerged,0014-09
+PC16.9.8.1,P. cassotis,1.049,D. plexippus,A. incarnata,1.277,0.548611111,2,1,0,Attempt,Wasps emerged,0016-09
+C24,P. cassotis,1.063,D. plexippus,A. curassavica,0.92,0.006944444,2,1,0,Attempt,Wasps emerged,0014-07
+PC15.5.23.2,P. cassotis,1.073,D. plexippus,A. curassavica,1.254,0.5,0,0,1,No attempt,Butterfly,0015-05
+dptim22,P. puparum,1.104,D. plexippus,A. incarnata,0.99,0.760416667,0,0,1,No attempt,Butterfly,0013-09
+PC14.9.20.1,P. cassotis,1.135,D. plexippus,A. curassavica,1.23,0.135416667,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-09
+PC14.9.20.2,P. cassotis,1.135,D. plexippus,A. curassavica,1.21,0.135416667,2,1,0,Attempt,Wasps emerged,0014-09
+PCO16.8.12.1,P. cassotis,1.156,D. plexippus,A. incarnata,1.244,0.947916667,2,1,0,Attempt,Wasps emerged,0016-08
+dptim24,P. puparum,1.229,D. plexippus,A. incarnata,1.02,1,0,0,1,No attempt,Butterfly,0013-09
+dptim25,P. puparum,1.229,D. plexippus,A. incarnata,1.06,1,0,0,1,No attempt,Butterfly,0013-09
+dptim27,P. puparum,1.271,D. plexippus,A. incarnata,0.75,0.75,0,0,1,No attempt,Butterfly,0013-10
+dptim28,P. puparum,1.271,D. plexippus,A. incarnata,0.66,0.75,0,0,1,No attempt,Butterfly,0013-10
+C69,P. puparum,1.333,D. plexippus,A. curassavica,0.86,0.041666667,0,0,1,No attempt,Butterfly,0014-10
+PCF16.8.12.1,P. cassotis,1.365,D. plexippus,A. incarnata,1.179,0.947916667,2,1,0,Attempt,Wasps emerged,0016-08
+dptim29,P. puparum,1.389,D. plexippus,A. incarnata,0.86,0.892361111,0,0,1,No attempt,Butterfly,0013-10
+dptim31,P. puparum,1.389,D. plexippus,A. incarnata,0.8,0.98125,0,0,0,No attempt,"Dead butterfly, no wasps",0013-10
+sc1zg1,P. puparum,1.458,D. plexippus,A. incarnata,0.74,0.041666667,0,0,1,No attempt,Butterfly,0013-10
+sc1zg2,P. puparum,1.458,D. plexippus,A. incarnata,0.67,0.041666667,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-10
+5c1zl1,P. puparum,1.583,D. plexippus,A. curassavica,0.97,0.666666667,0,0,1,No attempt,Butterfly,0013-10
+C50,P. cassotis,1.806,D. plexippus,A. curassavica,1.06,-0.027777778,2,1,0,Attempt,Wasps emerged,0014-10
+C51,P. cassotis,1.806,D. plexippus,A. curassavica,1.06,-0.069444444,2,1,0,Attempt,Wasps emerged,0014-10
+C52,P. cassotis,1.806,D. plexippus,A. curassavica,1.1,0.055555556,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-10
+C53,P. cassotis,1.806,D. plexippus,A. curassavica,1.34,0.121527778,2,1,0,Attempt,Wasps emerged,0014-10
+I58,P. cassotis,1.806,D. plexippus,A. incarnata,1.26,0.180555556,2,1,0,Attempt,Wasps emerged,0014-10
+I59,P. cassotis,1.806,D. plexippus,A. incarnata,1.39,0.104166667,2,1,0,Attempt,Wasps emerged,0014-10
+I60,P. cassotis,1.806,D. plexippus,A. incarnata,1.21,0.097222222,2,1,0,Attempt,Wasps emerged,0014-10
+I61,P. cassotis,1.806,D. plexippus,A. incarnata,0.91,0.055555556,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-10
+I62,P. cassotis,1.806,D. plexippus,A. incarnata,0.75,0.034722222,2,1,0,Attempt,Wasps emerged,0014-10
+PC16.2.5.1,P. cassotis,1.955,D. plexippus,A. incarnata,1.146,0.059027778,0,0,1,No attempt,Butterfly,0016-02
+h1,P. puparum,1.958,D. plexippus,A. curassavica,1.34,0.166666667,0,0,0,No attempt,"Dead butterfly, no wasps",0013-09
+PCO16.3.9.4,P. cassotis,1.99,D. plexippus,A. curassavica,1.164,0.28125,2,1,0,Attempt,Wasps emerged,0016-03
+PC15.6.29.1,P. cassotis,2,D. plexippus,A. incarnata,1.42,0.006944444,1b,0,1,Attempt,Butterfly,0015-06
+PCO16.4.3.1,P. cassotis,2.01,D. plexippus,A. incarnata,1.18,0.510416667,2,1,0,Attempt,Wasps emerged,0016-04
+PC14.9.15.3,P. cassotis,2.014,D. plexippus,A. curassavica,1.27,0.680555556,2,1,0,Attempt,Wasps emerged,0014-09
+I52,P. cassotis,2.069,D. plexippus,A. incarnata,1.21,0.402777778,1b,0,1,Attempt,Butterfly,0014-10
+PC15.9.5.3,P. cassotis,2.083,D. plexippus,A. curassavica,1.071,0.208333333,2,1,0,Attempt,Wasps emerged,0015-09
+PC14.9.20.3,P. cassotis,2.135,D. plexippus,A. curassavica,1.36,0.135416667,0,0,1,No attempt,Butterfly,0014-09
+PC14.9.20.4,P. cassotis,2.135,D. plexippus,A. curassavica,1.43,0.135416667,0,0,1,No attempt,Butterfly,0014-09
+PCF16.8.13.1,P. cassotis,2.156,D. plexippus,A. curassavica,0.862,0.489583333,1d,0,0,Attempt,Dead wasps in host,0016-08
+PCO16.4.8.1,P. cassotis,2.167,D. plexippus,A. incarnata,0.984,0.541666667,1d,0,0,Attempt,Dead wasps in host,0016-04
+PC16.2.21.1,P. cassotis,2.174,D. plexippus,A. curassavica,0.841,0.173611111,2,1,0,Attempt,Wasps emerged,0016-02
+PC16.2.21.2,P. cassotis,2.174,D. plexippus,A. curassavica,1.112,0.173611111,2,1,0,Attempt,Wasps emerged,0016-02
+PC16.3.25.2,P. cassotis,2.188,D. plexippus,A. incarnata,1.332,-0.291666667,2,1,0,Attempt,Wasps emerged,0016-03
+PCO16.2.28.1,P. cassotis,2.215,D. plexippus,A. incarnata,0.917,0.381944444,2,1,0,Attempt,Wasps emerged,0016-02
+PC16.2.23.1,P. cassotis,2.302,D. plexippus,A. curassavica,0.801,0.635416667,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-02
+PCO16.2.23.1,P. cassotis,2.302,D. plexippus,A. curassavica,0.658,0.125,2,1,0,Attempt,Wasps emerged,0016-02
+5c4i1,P. puparum,2.344,D. plexippus,A. curassavica,0.9,0.59375,0,0,0,No attempt,Butterfly,0013-10
+PC14.8.6.2,P. cassotis,2.389,D. plexippus,A. curassavica,1.15,0.055555556,2,1,0,Attempt,Wasps emerged,0014-08
+PC14.8.6.3,P. cassotis,2.389,D. plexippus,A. curassavica,1.38,0.055555556,2,1,0,Attempt,Wasps emerged,0014-08
+PC15.9.1.3,P. cassotis,2.51,D. plexippus,A. curassavica,1.43,0.260416667,1d,0,0,Attempt,"Dead butterfly, no wasps",0015-09
+PC15.9.1.4,P. cassotis,2.51,D. plexippus,A. curassavica,1.18,0.197916667,1d,0,0,Attempt,"Dead butterfly, no wasps",0015-09
+5c1zk1,P. puparum,2.639,D. plexippus,A. curassavica,0.78,0.003472222,0,0,1,No attempt,Butterfly,0013-10
+C54,P. cassotis,2.833,D. plexippus,A. curassavica,1.21,0.0625,2,1,0,Attempt,Wasps emerged,0014-10
+PCO16.8.14.2,P. cassotis,2.875,D. plexippus,A. curassavica,1.193,0.416666667,2,1,0,Attempt,Wasps emerged,0016-08
+PCO16.8.14.3,P. cassotis,2.875,D. plexippus,A. curassavica,0.964,0.416666667,0,0,1,No attempt,Butterfly,0016-08
+PC16.2.13.2,P. cassotis,2.896,D. plexippus,A. incarnata,0.844,0.020833333,2,1,0,Attempt,Wasps emerged,0016-02
+PC15.5.14.2,P. cassotis,2.944,D. plexippus,A. incarnata,1.113,0.152777778,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.5.6.1,P. cassotis,2.948,D. plexippus,A. incarnata,1.33,0.114583333,1b,0,1,Attempt,Butterfly,0015-05
+PC15.5.20.6,P. cassotis,2.958,D. plexippus,A. incarnata,1.271,0.0625,2,1,0,Attempt,Wasps emerged,0015-05
+h2,P. puparum,2.976,D. plexippus,A. curassavica,1.22,0.833333333,0,0,1,No attempt,Butterfly,0013-09
+h3,P. puparum,2.976,D. plexippus,A. curassavica,1.16,0.833333333,0,0,1,No attempt,Butterfly,0013-09
+h4,P. puparum,2.976,D. plexippus,A. curassavica,1.21,0.833333333,0,0,1,No attempt,Butterfly,0013-09
+h5,P. puparum,2.976,D. plexippus,A. curassavica,1.36,0.833333333,0,0,1,No attempt,Butterfly,0013-09
+h6,P. puparum,2.979,D. plexippus,A. incarnata,0.76,0.083333333,0,0,1,No attempt,Butterfly,0013-09
+h7,P. puparum,2.979,D. plexippus,A. incarnata,0.64,0.166666667,0,0,1,No attempt,Butterfly,0013-09
+PC15.7.29.5,P. cassotis,2.979,D. plexippus,A. curassavica,NA,0.1875,2,1,0,Attempt,Wasps emerged,0015-07
+PCO16.2.27.1,P. cassotis,2.983,D. plexippus,A. incarnata,1.073,0.045138889,2,1,0,Attempt,Wasps emerged,0016-02
+PC15.5.14.3,P. cassotis,2.986,D. plexippus,A. incarnata,0.992,0.152777778,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.5.19.2,P. cassotis,2.993,D. plexippus,A. curassavica,1.306,0.076388889,2,1,0,Attempt,Wasps emerged,0015-05
+PC14.9.24.1,P. cassotis,3.01,D. plexippus,A. curassavica,1.61,0.65625,2,1,0,Attempt,Wasps emerged,0014-09
+PC16.3.9.1,P. cassotis,3.01,D. plexippus,A. curassavica,1.258,0.28125,2,1,0,Attempt,Wasps emerged,0016-03
+PC16.9.28.2,P. cassotis,3.021,D. plexippus,A. curassavica,1.071,0.479166609,1d,0,0,Attempt,Dead wasps in host,0016-09
+PCO16.9.28.3,P. cassotis,3.021,D. plexippus,A. incarnata,0.971,0.479166609,2,1,0,Attempt,Wasps emerged,0016-09
+I50,P. cassotis,3.038,D. plexippus,A. incarnata,1.29,0.652777778,2,1,0,Attempt,Wasps emerged,0014-10
+I53,P. cassotis,3.038,D. plexippus,A. incarnata,1.41,0.027777778,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-10
+5c1n,P. puparum,3.042,D. plexippus,A. incarnata,1.08,0.958333333,1b,0,1,Attempt,Butterfly,0013-09
+5c1o,P. puparum,3.042,D. plexippus,A. incarnata,0.97,0.958333333,0,0,1,No attempt,Butterfly,0013-09
+5c1q,P. puparum,3.042,D. plexippus,A. incarnata,1.09,0.958333333,1b,0,1,Attempt,Butterfly,0013-09
+5c1r,P. puparum,3.042,D. plexippus,A. incarnata,1.04,0.958333333,0,0,1,No attempt,Butterfly,0013-09
+5c1t,P. puparum,3.042,D. plexippus,A. incarnata,1.18,0.958333333,0,0,1,No attempt,Butterfly,0013-09
+5c1y,P. puparum,3.063,D. plexippus,A. incarnata,1.08,-0.041666667,0,0,1,No attempt,Butterfly,0013-09
+5c1z,P. puparum,3.063,D. plexippus,A. incarnata,1.26,-0.041666667,1b,0,1,Attempt,Butterfly,0013-09
+PC15.5.14.1,P. cassotis,3.069,D. plexippus,A. incarnata,1.303,0.152777778,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.9.4.2,P. cassotis,3.083,D. plexippus,A. curassavica,1.286,0.020833333,2,1,0,Attempt,Wasps emerged,0015-09
+PC15.5.20.9,P. cassotis,3.104,D. plexippus,A. curassavica,1.132,0.041666667,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.7.13.1,P. cassotis,3.104,D. plexippus,A. curassavica,1.237,0.229166667,0,0,1,No attempt,Butterfly,0015-07
+PC16.2.13.1,P. cassotis,3.104,D. plexippus,A. incarnata,0.831,0.020833333,2,1,0,Attempt,Wasps emerged,0016-02
+PC16.8.25.2,P. cassotis,3.104,D. plexippus,A. incarnata,1.034,0.059027778,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-08
+5c1zd,P. puparum,3.132,D. plexippus,A. curassavica,1.1,-0.083333333,1b,0,1,Attempt,Butterfly,0013-09
+5c1zf,P. puparum,3.132,D. plexippus,A. curassavica,1.16,0,1b,0,1,Attempt,Butterfly,0013-09
+PC15.9.6.4,P. cassotis,3.156,D. plexippus,A. curassavica,1.121,0.28125,2,1,0,Attempt,Wasps emerged,0015-09
+PCO16.2.12.1,P. cassotis,3.167,D. plexippus,A. incarnata,0.848,0.041666667,2,1,0,Attempt,Wasps emerged,0016-02
+I65,P. cassotis,3.177,D. plexippus,A. incarnata,1.09,0.760416667,2,1,0,Attempt,Wasps emerged,0014-10
+I66,P. cassotis,3.177,D. plexippus,A. incarnata,1.18,0.760416667,2,1,0,Attempt,Wasps emerged,0014-10
+I67,P. cassotis,3.177,D. plexippus,A. incarnata,0.933,0.71875,2,1,0,Attempt,Wasps emerged,0014-10
+PC16.3.8.1,P. cassotis,3.198,D. plexippus,A. curassavica,1.11,0.010416667,2,1,0,Attempt,Wasps emerged,0016-03
+PC16.3.7.1,P. cassotis,3.201,D. plexippus,A. curassavica,1.086,0.201388889,2,1,0,Attempt,Wasps emerged,0016-03
+PC15.9.9.1,P. cassotis,3.208,D. plexippus,A. incarnata,0.869,0.625,0,0,0,No attempt,"Dead butterfly, no wasps",0015-09
+PCO16.4.20.1,P. cassotis,3.208,D. plexippus,A. curassavica,0.923,0.583333333,2,1,0,Attempt,Wasps emerged,0016-04
+PC15.9.1.6,P. cassotis,3.219,D. plexippus,A. curassavica,1.42,0.197916667,1b,0,1,Attempt,Butterfly,0015-09
+PC15.7.12.2,P. cassotis,3.256,D. plexippus,A. curassavica,1.3,0.505555556,2,1,0,Attempt,Wasps emerged,0015-07
+PC16.2.22.1,P. cassotis,3.257,D. plexippus,A. curassavica,1.307,0.215277778,2,1,0,Attempt,Wasps emerged,0016-02
+PC14.9.4.10,P. cassotis,3.292,D. plexippus,A. incarnata,1.39,0.090277778,2,1,0,Attempt,Wasps emerged,0014-09
+PC14.9.4.11,P. cassotis,3.292,D. plexippus,A. incarnata,1.52,0.020833333,2,1,0,Attempt,Wasps emerged,0014-09
+PC14.9.4.12,P. cassotis,3.292,D. plexippus,A. incarnata,1.28,0.020833333,2,1,0,Attempt,Wasps emerged,0014-09
+PCO16.2.24.1,P. cassotis,3.309,D. plexippus,A. curassavica,0.799,0.642361111,2,1,0,Attempt,Wasps emerged,0016-02
+PC15.7.19.3,P. cassotis,3.319,D. plexippus,A. curassavica,1.328,0.611111111,2,1,0,Attempt,Wasps emerged,0015-07
+PC16.2.11.1,P. cassotis,3.326,D. plexippus,A. incarnata,0.88,0.118055556,1b,0,1,Attempt,Butterfly,0016-02
+I68,P. cassotis,3.347,D. plexippus,A. incarnata,1.28,0.138888889,2,1,0,Attempt,Wasps emerged,0014-10
+I69,P. cassotis,3.347,D. plexippus,A. incarnata,1.03,0.118055556,2,1,0,Attempt,Wasps emerged,0014-10
+I70,P. cassotis,3.347,D. plexippus,A. incarnata,0.872,0.097222222,2,1,0,Attempt,Wasps emerged,0014-10
+I71,P. cassotis,3.347,D. plexippus,A. incarnata,1.1,0.138888889,2,1,0,Attempt,Wasps emerged,0014-10
+I72,P. cassotis,3.347,D. plexippus,A. incarnata,1.17,0.034722222,2,1,0,Attempt,Wasps emerged,0014-10
+I73,P. cassotis,3.347,D. plexippus,A. incarnata,0.777,0,2,1,0,Attempt,Wasps emerged,0014-10
+PCN16.9.17.1,P. cassotis,3.521,D. plexippus,A. incarnata,1.149,0.083333333,2,1,0,Attempt,Wasps emerged,0016-09
+5c4j1,P. puparum,3.535,D. plexippus,A. curassavica,1.07,0.034722222,0,0,1,No attempt,Butterfly,0013-10
+PCF16.9.13.2,P. cassotis,3.556,D. plexippus,A. incarnata,1.291,0.222222222,2,1,0,Attempt,Wasps emerged,0016-09
+h10,P. puparum,3.969,D. plexippus,A. incarnata,0.84,0.041666667,1b,0,1,Attempt,Butterfly,0013-10
+h9,P. puparum,3.969,D. plexippus,A. incarnata,0.95,0.041666667,0,0,1,No attempt,Butterfly,0013-10
+PC15.5.26.1,P. cassotis,3.976,D. plexippus,A. curassavica,1.176,0.152777778,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.5.20.3,P. cassotis,4,D. plexippus,A. curassavica,1.089,0.083333333,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.7.30.3,P. cassotis,4.014,D. plexippus,A. incarnata,NA,0.222222222,2,1,0,Attempt,Wasps emerged,0015-07
+PC15.9.7.1,P. cassotis,4.014,D. plexippus,A. curassavica,0.875,0.138888889,1d,0,0,Attempt,Dead wasps in host,0015-09
+PC16.3.27.1,P. cassotis,4.014,D. plexippus,A. curassavica,0.775,0.388888889,1d,0,0,Attempt,Dead wasps in host,0016-03
+BEC.3.11.3.W,P. cassotis,4.069,D. plexippus,A. curassavica,1.244,0.222222164,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-03
+BEC.3.11.4.C,P. cassotis,4.069,D. plexippus,A. curassavica,1.269,0.229166609,1d,0,0,Attempt,Dead wasps in host,0016-03
+BEC.3.11.2.W,P. cassotis,4.069,D. plexippus,A. curassavica,1.323,0.243055556,0,0,1,No attempt,Butterfly,0016-03
+PC15.5.21.2,P. cassotis,4.083,D. plexippus,A. curassavica,1.134,0.104166667,2,1,0,Attempt,Wasps emerged,0015-05
+BEC.3.25.1.C,P. cassotis,4.09,D. plexippus,A. incarnata,1.177,0.298611111,1d,0,0,Attempt,Dead wasps in host,0016-03
+BEC.3.25.1.M,P. cassotis,4.09,D. plexippus,A. incarnata,1.3,0.222222222,2,1,0,Attempt,Wasps emerged,0016-03
+BEC.3.25.1.W,P. cassotis,4.09,D. plexippus,A. incarnata,1.437,0.236111111,2,1,0,Attempt,Wasps emerged,0016-03
+BEC.3.25.2.C,P. cassotis,4.09,D. plexippus,A. incarnata,1.329,0.25,1d,0,0,Attempt,Dead wasps in host,0016-03
+BEC.3.25.2.M,P. cassotis,4.09,D. plexippus,A. incarnata,1.167,0.340277778,0,0,1,No attempt,Butterfly,0016-03
+BEC.3.25.2.W,P. cassotis,4.09,D. plexippus,A. incarnata,1.259,0.256944444,2,1,0,Attempt,Wasps emerged,0016-03
+BEC.3.25.3.C,P. cassotis,4.09,D. plexippus,A. incarnata,1.171,0.222222222,1d,0,0,Attempt,Dead wasps in host,0016-03
+BEC.3.25.3.M,P. cassotis,4.09,D. plexippus,A. incarnata,1.28,0.340277778,2,1,0,Attempt,Wasps emerged,0016-03
+BEC.3.25.3.W,P. cassotis,4.09,D. plexippus,A. incarnata,1.382,0.222222222,2,1,0,Attempt,Wasps emerged,0016-03
+PC15.6.9.2,P. cassotis,4.104,D. plexippus,A. incarnata,1.26,0.0625,2,1,0,Attempt,Wasps emerged,0015-06
+PCO16.2.13.1,P. cassotis,4.104,D. plexippus,A. incarnata,0.933,0.020833333,2,1,0,Attempt,Wasps emerged,0016-02
+PCTOX15.7.20.1,P. cassotis,4.115,D. plexippus,A. curassavica,0.894,0.15625,0,0,1,No attempt,Butterfly,0015-07
+I74,P. cassotis,4.125,D. plexippus,A. incarnata,0.711,0.739583333,2,1,0,Attempt,Wasps emerged,0014-10
+I75,P. cassotis,4.125,D. plexippus,A. incarnata,1.23,0.78125,2,1,0,Attempt,Wasps emerged,0014-10
+I76,P. cassotis,4.125,D. plexippus,A. incarnata,1.23,0.795138889,0,0,1,No attempt,Butterfly,0014-10
+PCO16.9.27.1,P. cassotis,4.125,D. plexippus,A. incarnata,1.067,0.822916667,2,1,0,Attempt,Wasps emerged,0016-09
+PC15.5.18.2,P. cassotis,4.163,D. plexippus,A. curassavica,1.29,0.163194444,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.5.18.4,P. cassotis,4.163,D. plexippus,A. incarnata,1.07,0.111111111,2,1,0,Attempt,Wasps emerged,0015-05
+PC16.3.25.1,P. cassotis,4.188,D. plexippus,A. curassavica,1.158,0.1875,2,1,0,Attempt,Wasps emerged,0016-03
+PC15.7.20.18,P. cassotis,4.191,D. plexippus,A. curassavica,1.045,0.107638889,0,0,1,No attempt,Butterfly,0015-07
+PC15.7.20.19,P. cassotis,4.191,D. plexippus,A. curassavica,0.821,0.107638889,2,1,0,Attempt,Wasps emerged,0015-07
+PC15.7.20.20,P. cassotis,4.201,D. plexippus,A. curassavica,1.442,0.034722222,2,1,0,Attempt,Wasps emerged,0015-07
+PCO16.8.18.1,P. cassotis,4.208,D. plexippus,A. curassavica,1.25,0.770833333,1d,0,0,Attempt,Dead wasps in host,0016-08
+PC14.9.5.2,P. cassotis,4.222,D. plexippus,A. incarnata,1.32,0.888888889,2,1,0,Attempt,Wasps emerged,0014-09
+PC16.8.13.1,P. cassotis,4.24,D. plexippus,A. incarnata,1.186,0.267361111,2,1,0,Attempt,Wasps emerged,0016-08
+PC15.9.2.5,P. cassotis,4.25,D. plexippus,A. curassavica,0.996,0.145833333,2,1,0,Attempt,Wasps emerged,0015-09
+PC16.2.23.2,P. cassotis,4.26,D. plexippus,A. curassavica,0.582,0.09375,2,1,0,Attempt,Wasps emerged,0016-02
+PC14.9.4.7,P. cassotis,4.292,D. plexippus,A. incarnata,1.38,0.135416667,0,0,1,No attempt,Butterfly,0014-09
+PC14.9.4.8,P. cassotis,4.292,D. plexippus,A. incarnata,1.31,0.145833333,2,1,0,Attempt,Wasps emerged,0014-09
+PC14.9.4.9,P. cassotis,4.292,D. plexippus,A. incarnata,1.55,0.090277778,2,1,0,Attempt,Wasps emerged,0014-09
+PCF16.8.19.3,P. cassotis,4.302,D. plexippus,A. curassavica,0.961,0.260416667,2,1,0,Attempt,Wasps emerged,0016-08
+5c6l1,P. puparum,4.344,D. plexippus,A. curassavica,0.68,0.59375,1b,0,1,Attempt,Butterfly,0013-10
+BSL-PC11,P. cassotis,4.344,D. plexippus,A. curassavica,1.471,0.84375,1d,0,0,Attempt,Dead wasps in host,0016-09
+I40,P. cassotis,4.354,D. plexippus,A. incarnata,1.37,0.208333333,2,1,0,Attempt,Wasps emerged,0014-09
+I41,P. cassotis,4.354,D. plexippus,A. incarnata,1.14,0.208333333,2,1,0,Attempt,Wasps emerged,0014-09
+I42,P. cassotis,4.354,D. plexippus,A. incarnata,1.29,-0.020833333,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-09
+PC16.8.5.2,P. cassotis,4.41,D. plexippus,A. incarnata,0.983,0.659722222,2,1,0,Attempt,Wasps emerged,0016-08
+PC15.9.2.3,P. cassotis,4.542,D. plexippus,A. curassavica,1.065,0.208333333,0,0,1,No attempt,Butterfly,0015-09
+w4,P. puparum,4.667,D. plexippus,A. incarnata,1.24,0.006944444,0,0,1,No attempt,Butterfly,0013-09
+w10,P. puparum,4.757,D. plexippus,A. curassavica,1.1,0.006944444,0,0,1,No attempt,Butterfly,0013-09
+w5,P. puparum,4.757,D. plexippus,A. incarnata,0.88,0.020833333,0,0,1,No attempt,Butterfly,0013-09
+w6,P. puparum,4.757,D. plexippus,A. incarnata,0.99,0.020833333,0,0,1,No attempt,Butterfly,0013-09
+w7,P. puparum,4.757,D. plexippus,A. incarnata,1.02,0.020833333,1b,0,1,Attempt,Butterfly,0013-09
+w8,P. puparum,4.757,D. plexippus,A. incarnata,1.04,0.020833333,0,0,1,No attempt,Butterfly,0013-09
+w9,P. puparum,4.757,D. plexippus,A. incarnata,1.18,0.006944444,0,0,1,No attempt,Butterfly,0013-09
+w11,P. puparum,4.764,D. plexippus,A. incarnata,1.16,0.024305556,1b,0,1,Attempt,Butterfly,0013-09
+w12,P. puparum,4.764,D. plexippus,A. incarnata,1.42,0.014583333,1b,0,1,Attempt,Butterfly,0013-09
+w13,P. puparum,4.764,D. plexippus,A. incarnata,1.34,0.041666667,0,0,1,No attempt,Butterfly,0013-09
+w14,P. puparum,4.764,D. plexippus,A. incarnata,1.16,0.041666667,1b,0,1,Attempt,Butterfly,0013-09
+ok3a,P. cassotis,4.868,D. plexippus,A. curassavica,1.47,0.159722222,1b,0,1,Attempt,Butterfly,0013-10
+PC.DIAP.14.11,P. cassotis,4.903,D. plexippus,A. curassavica,1.4,0.090277778,0,0,1,No attempt,Butterfly,0014-09
+PC15.5.19.6,P. cassotis,4.931,D. plexippus,A. incarnata,1.188,0.003472222,2,1,0,Attempt,Wasps emerged,0015-05
+BEC.3.12.1.C,P. cassotis,4.941,D. plexippus,A. curassavica,1.48,0.232638889,0,0,1,No attempt,Butterfly,0016-03
+BEC.3.12.1.W,P. cassotis,4.941,D. plexippus,A. curassavica,1.375,0.232638889,2,1,0,Attempt,Wasps emerged,0016-03
+PCTOX15.7.15.2,P. cassotis,4.958,D. plexippus,A. curassavica,1.164,0.027777778,2,1,0,Attempt,Wasps emerged,0015-07
+PC15.5.22.2,P. cassotis,4.99,D. plexippus,A. incarnata,1.343,0.09375,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.5.22.6,P. cassotis,4.99,D. plexippus,A. curassavica,1.01,0.024305556,2,1,0,Attempt,Wasps emerged,0015-05
+PC16.8.27.1,P. cassotis,4.99,D. plexippus,A. curassavica,0.89,0.572916667,0,0,1,No attempt,Butterfly,0016-08
+ok3b,P. cassotis,5.021,D. plexippus,A. incarnata,0.95,0.003472222,2,1,0,Attempt,Wasps emerged,0013-10
+PC16.2.27.1,P. cassotis,5.024,D. plexippus,A. curassavica,1.355,0.09375,2,1,0,Attempt,Wasps emerged,0016-02
+PC16.2.27.2,P. cassotis,5.024,D. plexippus,A. curassavica,0.989,0.086805556,2,1,0,Attempt,Wasps emerged,0016-02
+PC15.5.7.1,P. cassotis,5.042,D. plexippus,A. curassavica,1.288,0.125,2,1,0,Attempt,Wasps emerged,0015-05
+PC16.4.30.1,P. cassotis,5.052,D. plexippus,A. incarnata,1.011,0.427083333,2,1,0,Attempt,Wasps emerged,0016-04
+PC16.9.28.1,P. cassotis,5.062,D. plexippus,A. incarnata,1.083,0.479166609,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-09
+PC15.5.19.1,P. cassotis,5.076,D. plexippus,A. curassavica,1.172,0.003472222,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.9.11.2,P. cassotis,5.115,D. plexippus,A. curassavica,1.115,0.28125,1b,0,1,Attempt,Butterfly,0015-09
+PC15.5.21.1,P. cassotis,5.125,D. plexippus,A. incarnata,1.431,0.166666667,2,1,0,Attempt,Wasps emerged,0015-05
+PC16.8.6.1,P. cassotis,5.16,D. plexippus,A. incarnata,0.844,0.701388889,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-08
+PC16.8.14.1,P. cassotis,5.167,D. plexippus,A. curassavica,1.11,0.416666667,1d,0,0,Attempt,Dead wasps in host,0016-08
+PCF16.8.14.1,P. cassotis,5.167,D. plexippus,A. incarnata,1.422,0.416666667,2,1,0,Attempt,Wasps emerged,0016-08
+PCF16.8.14.3,P. cassotis,5.167,D. plexippus,A. incarnata,1.071,0.416666667,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-08
+PCF16.8.14.4,P. cassotis,5.167,D. plexippus,A. incarnata,1.1,0.416666667,2,1,0,Attempt,Wasps emerged,0016-08
+PCO16.9.28.1,P. cassotis,5.187,D. plexippus,A. incarnata,0.971,0.937499942,2,1,0,Attempt,Wasps emerged,0016-09
+PCO16.9.28.2,P. cassotis,5.187,D. plexippus,A. incarnata,1.13,0.479166609,2,1,0,Attempt,Wasps emerged,0016-09
+PCO16.2.14.2,P. cassotis,5.188,D. plexippus,A. incarnata,0.809,0.069444444,2,1,0,Attempt,Wasps emerged,0016-02
+PC15.5.19.4,P. cassotis,5.191,D. plexippus,A. curassavica,1.553,0.086805556,1b,0,1,Attempt,Butterfly,0015-05
+PC15.9.2.4,P. cassotis,5.208,D. plexippus,A. curassavica,1.222,0.145833333,2,1,0,Attempt,Wasps emerged,0015-09
+PC16.4.22.1,P. cassotis,5.215,D. plexippus,A. incarnata,1.212,0.034722222,2,1,0,Attempt,Wasps emerged,0016-04
+PC14.9.5.3,P. cassotis,5.222,D. plexippus,A. incarnata,1.16,0.909722222,2,1,0,Attempt,Wasps emerged,0014-09
+PC14.9.5.4,P. cassotis,5.222,D. plexippus,A. incarnata,1.64,0.065972222,2,1,0,Attempt,Wasps emerged,0014-09
+PC14.7.22.2,P. cassotis,5.229,D. plexippus,A. incarnata,1.38,0.277777778,2,1,0,Attempt,Wasps emerged,0014-07
+PC15.6.9.1,P. cassotis,5.229,D. plexippus,A. incarnata,1.237,0.083333333,1b,0,1,Attempt,Butterfly,0015-06
+PC16.2.26.1,P. cassotis,5.25,D. plexippus,A. incarnata,1.288,0.125,2,1,0,Attempt,Wasps emerged,0016-02
+PCO16.2.26.1,P. cassotis,5.25,D. plexippus,A. incarnata,1.072,0.125,2,1,0,Attempt,Wasps emerged,0016-02
+PC16.4.23.2,P. cassotis,5.271,D. plexippus,A. incarnata,NA,0.604166609,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-04
+PC16.8.28.1,P. cassotis,5.281,D. plexippus,A. incarnata,1.002,0.614583333,0,0,0,No attempt,"Dead butterfly, no wasps",0016-08
+PC15.7.21.2,P. cassotis,5.285,D. plexippus,A. curassavica,1.059,0.159722222,0,0,1,No attempt,Butterfly,0015-07
+PCF16.8.29.2,P. cassotis,5.302,D. plexippus,A. incarnata,0.792,0.010416667,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-08
+PC14.9.6.3,P. cassotis,5.323,D. plexippus,A. incarnata,1.32,0.239583333,2,1,0,Attempt,Wasps emerged,0014-09
+PC14.9.6.4,P. cassotis,5.323,D. plexippus,A. incarnata,1.49,0.239583333,2,1,0,Attempt,Wasps emerged,0014-09
+C65,P. cassotis,5.365,D. plexippus,A. curassavica,1.45,0.270833333,2,1,0,Attempt,Wasps emerged,0014-10
+I81,P. cassotis,5.365,D. plexippus,A. incarnata,1.32,0.979166667,0,0,1,No attempt,Butterfly,0014-10
+I82,P. cassotis,5.365,D. plexippus,A. incarnata,1.03,0.979166667,2,1,0,Attempt,Wasps emerged,0014-10
+I83,P. cassotis,5.365,D. plexippus,A. incarnata,0.909,0.145833333,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-10
+PCF16.8.25.3,P. cassotis,5.396,D. plexippus,A. incarnata,1.071,0.121527778,2,1,0,Attempt,Wasps emerged,0016-08
+PCF16.8.26.3,P. cassotis,5.417,D. plexippus,A. incarnata,0.992,0.104166667,0,0,0,No attempt,Butterfly,0016-08
+I77,P. cassotis,5.438,D. plexippus,A. incarnata,0.821,0.979166667,2,1,0,Attempt,Wasps emerged,0014-10
+I78,P. cassotis,5.438,D. plexippus,A. incarnata,0.938,0.979166667,0,0,1,No attempt,Butterfly,0014-10
+I79,P. cassotis,5.438,D. plexippus,A. incarnata,1.05,0.979166667,2,1,0,Attempt,Wasps emerged,0014-10
+I80,P. cassotis,5.438,D. plexippus,A. incarnata,0.73,0.979166667,2,1,0,Attempt,Wasps emerged,0014-10
+5c6a1,P. puparum,5.583,D. plexippus,A. curassavica,1.05,0.666666667,1b,0,1,Attempt,Butterfly,0013-10
+5c6h1,P. puparum,5.75,D. plexippus,A. curassavica,0.82,0.25,0,0,1,No attempt,Butterfly,0013-10
+PC15.5.20.7,P. cassotis,5.823,D. plexippus,A. curassavica,1.246,0.03125,2,1,0,Attempt,Wasps emerged,0015-05
+w15,P. puparum,5.847,D. plexippus,A. incarnata,1.09,0.055555556,0,0,1,No attempt,Butterfly,0013-09
+BEC.3.13.1.W,P. cassotis,5.965,D. plexippus,A. curassavica,1.15,0.215277778,0,0,1,No attempt,Butterfly,0016-03
+PC15.5.22.1,P. cassotis,6.031,D. plexippus,A. incarnata,1.316,0.15625,2,1,0,Attempt,Wasps emerged,0015-05
+PCO16.4.7.1,P. cassotis,6.031,D. plexippus,A. incarnata,1.306,0.53125,2,1,0,Attempt,Wasps emerged,0016-04
+PC15.5.23.1,P. cassotis,6.042,D. plexippus,A. incarnata,1.302,0.5,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.6.10.4,P. cassotis,6.056,D. plexippus,A. incarnata,1.168,0.222222222,2,1,0,Attempt,Wasps emerged,0015-06
+PC15.5.20.4,P. cassotis,6.083,D. plexippus,A. curassavica,1.208,0.083333333,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.5.20.5,P. cassotis,6.083,D. plexippus,A. curassavica,1.165,0.083333333,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.5.17.1,P. cassotis,6.097,D. plexippus,A. curassavica,0.993,0.180555556,2,1,0,Attempt,Wasps emerged,0015-05
+PCO16.2.5.16,P. cassotis,6.163,D. plexippus,A. incarnata,1.095,0.059027778,2,1,0,Attempt,Wasps emerged,0016-02
+BEC.2.23.2.C,P. cassotis,6.174,D. plexippus,A. curassavica,1.119,0.215277778,0,0,1,No attempt,Butterfly,0016-02
+BEC.2.23.2.M,P. cassotis,6.174,D. plexippus,A. curassavica,1.281,0.131944444,0,0,1,No attempt,Butterfly,0016-02
+PCTOX15.7.16.1,P. cassotis,6.174,D. plexippus,A. curassavica,1.314,0.201388889,1d,0,0,Attempt,"Dead butterfly, no wasps",0015-07
+PCTOX15.7.16.2,P. cassotis,6.174,D. plexippus,A. curassavica,1.07,0.1875,2,1,0,Attempt,Wasps emerged,0015-07
+PCTOX15.7.16.3,P. cassotis,6.174,D. plexippus,A. curassavica,1.166,0.142361111,2,1,0,Attempt,Wasps emerged,0015-07
+PC15.7.15.1,P. cassotis,6.177,D. plexippus,A. curassavica,1.34,0.020833333,2,1,0,Attempt,Wasps emerged,0015-07
+PCO16.2.15.4,P. cassotis,6.181,D. plexippus,A. incarnata,0.594,0.097222222,2,1,0,Attempt,Wasps emerged,0016-02
+PCO16.3.19.1,P. cassotis,6.181,D. plexippus,A. incarnata,1.067,0.024305556,2,1,0,Attempt,Wasps emerged,0016-03
+PCO16.2.27.2,P. cassotis,6.191,D. plexippus,A. curassavica,1.3,0.045138889,0,0,1,No attempt,Butterfly,0016-02
+PC15.5.20.10,P. cassotis,6.229,D. plexippus,A. curassavica,1.394,0.020833333,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.5.20.11,P. cassotis,6.229,D. plexippus,A. incarnata,1.389,0.125,0,0,1,No attempt,Butterfly,0015-05
+PC15.5.20.8,P. cassotis,6.229,D. plexippus,A. curassavica,1.291,0.083333333,2,1,0,Attempt,Wasps emerged,0015-05
+PCO16.4.23.1,P. cassotis,6.229,D. plexippus,A. curassavica,NA,0.020833333,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-04
+PCO16.4.23.2,P. cassotis,6.229,D. plexippus,A. curassavica,1.373,0.1875,2,1,0,Attempt,Wasps emerged,0016-04
+PCF16.8.1.1,P. cassotis,6.257,D. plexippus,A. incarnata,0.888,0.256944444,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-08
+PC14.7.23.2,P. cassotis,6.292,D. plexippus,A. curassavica,1.45,0.177083333,0,0,1,No attempt,Butterfly,0014-07
+PC15.7.15.3,P. cassotis,6.319,D. plexippus,A. curassavica,1.09,0.090277778,2,1,0,Attempt,Wasps emerged,0015-07
+PC14.9.6.1,P. cassotis,6.323,D. plexippus,A. incarnata,1.25,0.239583333,2,1,0,Attempt,Wasps emerged,0014-09
+PC14.9.6.2,P. cassotis,6.323,D. plexippus,A. incarnata,1.33,0.239583333,2,1,0,Attempt,Wasps emerged,0014-09
+PC16.8.5.1,P. cassotis,6.326,D. plexippus,A. incarnata,0.806,0.659722222,0,0,0,No attempt,"Dead butterfly, no wasps",0016-08
+PC15.6.10.3,P. cassotis,6.326,D. plexippus,A. incarnata,0.978,0.118055556,0,0,1,No attempt,Butterfly,0015-06
+5c6h2,P. puparum,6.344,D. plexippus,A. curassavica,0.96,0.59375,0,0,1,No attempt,Butterfly,0013-10
+PC14.7.22.1,P. cassotis,6.354,D. plexippus,A. incarnata,1.43,0.274305556,2,1,0,Attempt,Wasps emerged,0014-07
+C68,P. cassotis,6.375,D. plexippus,A. curassavica,1.13,0.041666667,2,1,0,Attempt,Wasps emerged,0014-10
+PCF16.8.25.1,P. cassotis,6.396,D. plexippus,A. incarnata,1.02,0.104166667,2,1,0,Attempt,Wasps emerged,0016-08
+PC15.9.6.2,P. cassotis,6.406,D. plexippus,A. curassavica,1.147,0.28125,0,0,1,No attempt,Butterfly,0015-09
+PC14.7.22.4,P. cassotis,6.479,D. plexippus,A. incarnata,1.22,0.180555556,2,1,0,Attempt,Wasps emerged,0014-07
+5c6a2,P. puparum,6.535,D. plexippus,A. curassavica,0.97,0.090277778,0,0,1,No attempt,Butterfly,0013-10
+5c6f1,P. puparum,6.618,D. plexippus,A. curassavica,0.74,0.020833333,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-10
+PC14.9.15.2,P. cassotis,6.826,D. plexippus,A. curassavica,1.42,0.902777778,0,0,1,No attempt,Butterfly,0014-09
+PC14.6.17.1,P. cassotis,6.854,D. plexippus,A. incarnata,1.39,0.833333333,2,1,0,Attempt,Wasps emerged,0014-06
+PCO16.3.29.1,P. cassotis,6.917,D. plexippus,A. curassavica,1.057,0.0625,0,0,1,No attempt,Butterfly,0016-03
+PC15.9.1.5,P. cassotis,6.927,D. plexippus,A. curassavica,1.554,0.260416667,1d,0,0,Attempt,"Dead butterfly, no wasps",0015-09
+PC14.8.22.1,P. cassotis,6.938,D. plexippus,A. incarnata,1.36,0,2,1,0,Attempt,Wasps emerged,0014-08
+PC15.5.19.3,P. cassotis,6.941,D. plexippus,A. incarnata,0.98,0.107638889,2,1,0,Attempt,Wasps emerged,0015-05
+PCTOX15.7.17.1,P. cassotis,6.958,D. plexippus,A. curassavica,1.271,0.166666667,2,1,0,Attempt,Wasps emerged,0015-07
+PCTOX15.7.17.2,P. cassotis,6.994,D. plexippus,A. incarnata,0.965,0.01875,2,1,0,Attempt,Wasps emerged,0015-07
+I51,P. cassotis,7.007,D. plexippus,A. incarnata,1.2,0.652777778,2,1,0,Attempt,Wasps emerged,0014-10
+C72,P. cassotis,7.017,D. plexippus,A. curassavica,1.14,0.131944444,0,0,1,No attempt,Butterfly,0014-10
+PC15.5.18.1,P. cassotis,7.08,D. plexippus,A. curassavica,1.406,0.163194444,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.5.18.3,P. cassotis,7.08,D. plexippus,A. curassavica,1.226,0.163194444,2,1,0,Attempt,Wasps emerged,0015-05
+BSL-PP11,P. puparum,7.094,D. plexippus,A. incarnata,1.234,0.84375,0,0,1,No attempt,Butterfly,0016-09
+PC15.6.10.2,P. cassotis,7.139,D. plexippus,A. incarnata,1.203,0.222222222,2,1,0,Attempt,Wasps emerged,0015-06
+PC16.4.15.1,P. cassotis,7.139,D. plexippus,A. incarnata,1.219,0.263888889,2,1,0,Attempt,Wasps emerged,0016-04
+PCO16.4.29.1,P. cassotis,7.153,D. plexippus,A. incarnata,0.848,0.027777778,2,1,0,Attempt,Wasps emerged,0016-04
+PCO16.3.8.1,P. cassotis,7.156,D. plexippus,A. curassavica,1.183,0.135416667,2,1,0,Attempt,Wasps emerged,0016-03
+PC14.7.23.5,P. cassotis,7.167,D. plexippus,A. curassavica,1.46,0.041666667,2,1,0,Attempt,Wasps emerged,0014-07
+PCTOX15.7.17.4,P. cassotis,7.167,D. plexippus,A. curassavica,0.899,0.017361111,2,1,0,Attempt,Wasps emerged,0015-07
+BEC.2.23.1.C,P. cassotis,7.174,D. plexippus,A. curassavica,0.949,0.215277778,2,1,0,Attempt,Wasps emerged,0016-02
+BEC.2.23.1.M,P. cassotis,7.174,D. plexippus,A. curassavica,1.17,0.1875,0,0,1,No attempt,Butterfly,0016-02
+BEC.2.23.1.W,P. cassotis,7.174,D. plexippus,A. curassavica,1.391,0.145833333,0,0,1,No attempt,Butterfly,0016-02
+PC16.3.28.1,P. cassotis,7.198,D. plexippus,A. incarnata,0.876,0.572916667,1d,0,0,Attempt,Dead wasps in host,0016-03
+PC15.6.10.1,P. cassotis,7.212,D. plexippus,A. incarnata,1.06,0.243055556,0,0,1,No attempt,Butterfly,0015-06
+PC14.7.23.6,P. cassotis,7.25,D. plexippus,A. curassavica,1.48,0.041666667,2,1,0,Attempt,Wasps emerged,0014-07
+PC15.5.9.1,P. cassotis,7.25,D. plexippus,A. incarnata,0.93,0.416666667,0,0,1,No attempt,Butterfly,0015-05
+PCO16.9.4.1,P. cassotis,7.278,D. plexippus,A. incarnata,0.828,0.569444444,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-09
+PC15.9.5.4,P. cassotis,7.292,D. plexippus,A. curassavica,1.075,0.208333333,0,0,1,No attempt,Butterfly,0015-09
+PC14.7.23.7,P. cassotis,7.313,D. plexippus,A. curassavica,1.47,0.041666667,0,0,1,No attempt,Butterfly,0014-07
+BEC.2.24.1.W,P. cassotis,7.326,D. plexippus,A. curassavica,0.782,0.118055556,0,0,1,No attempt,Butterfly,0016-02
+PC14.7.23.3,P. cassotis,7.375,D. plexippus,A. curassavica,1.51,0.145833333,2,1,0,Attempt,Wasps emerged,0014-07
+PCN16.9.27.1,P. cassotis,7.417,D. plexippus,A. incarnata,0.875,0.666666667,1b,0,1,Attempt,Butterfly,0016-09
+C73,P. cassotis,7.417,D. plexippus,A. curassavica,1.31,0.041666667,2,1,0,Attempt,Wasps emerged,0014-10
+C74,P. cassotis,7.417,D. plexippus,A. curassavica,0.9,0.166666667,2,1,0,Attempt,Wasps emerged,0014-10
+e1,P. puparum,7.583,D. plexippus,A. curassavica,0.84,0.125,0,0,0,No attempt,"Dead butterfly, no wasps",0013-10
+5c10g1,P. puparum,7.75,D. plexippus,A. curassavica,1.03,0.125,0,0,1,No attempt,Butterfly,0013-10
+PCO16.4.9.1,P. cassotis,8.038,D. plexippus,A. incarnata,0.874,0.871527778,0,0,1,No attempt,Butterfly,0016-04
+PCO16.8.19.3,P. cassotis,8.052,D. plexippus,A. curassavica,1.118,0.260416667,2,1,0,Attempt,Wasps emerged,0016-08
+PC16.8.25.1,P. cassotis,8.104,D. plexippus,A. incarnata,1.269,0.104166667,2,1,0,Attempt,Wasps emerged,0016-08
+PC15.5.22.4,P. cassotis,8.115,D. plexippus,A. curassavica,1.201,0.114583333,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.5.22.5,P. cassotis,8.115,D. plexippus,A. curassavica,1.131,0.15625,2,1,0,Attempt,Wasps emerged,0015-05
+PCO16.2.17.4,P. cassotis,8.188,D. plexippus,A. incarnata,1.074,0.145833333,2,1,0,Attempt,Wasps emerged,0016-02
+PCO16.4.3.2,P. cassotis,8.212,D. plexippus,A. curassavica,0.936,0.003472222,0,0,1,No attempt,Butterfly,0016-04
+PC15.6.13.5,P. cassotis,8.247,D. plexippus,A. curassavica,1.203,0.329861111,2,1,0,Attempt,Wasps emerged,0015-06
+PC15.9.5.2,P. cassotis,8.25,D. plexippus,A. curassavica,1.206,0.208333333,2,1,0,Attempt,Wasps emerged,0015-09
+PC15.9.1.8,P. cassotis,8.26,D. plexippus,A. curassavica,1.336,0.114583333,2,1,0,Attempt,Wasps emerged,0015-09
+PC15.9.1.9,P. cassotis,8.26,D. plexippus,A. curassavica,1.62,0.052083333,2,1,0,Attempt,Wasps emerged,0015-09
+PCO16.9.13.1,P. cassotis,8.264,D. plexippus,A. incarnata,0.952,0.222222222,0,0,1,No attempt,Butterfly,0016-09
+PCO16.9.13.2,P. cassotis,8.264,D. plexippus,A. incarnata,1.073,0.222222222,1d,0,0,Attempt,Dead wasps in host,0016-09
+PCO16.9.13.3,P. cassotis,8.264,D. plexippus,A. incarnata,1.4,0.222222222,2,1,0,Attempt,Wasps emerged,0016-09
+PC16.8.4.2,P. cassotis,8.333,D. plexippus,A. incarnata,1.213,0.583333333,2,1,0,Attempt,Wasps emerged,0016-08
+5c4d1,P. puparum,8.344,D. plexippus,A. curassavica,0.92,0.59375,1b,0,1,Attempt,Butterfly,0013-10
+PC16.9.18.1,P. cassotis,8.354,D. plexippus,A. incarnata,1.043,0.354166667,2,1,0,Attempt,Wasps emerged,0016-09
+PCF16.9.18.1,P. cassotis,8.354,D. plexippus,A. curassavica,0.842,0.354166667,1d,0,0,Attempt,Dead wasps in host,0016-09
+PC15.9.6.1,P. cassotis,8.365,D. plexippus,A. curassavica,1.109,0.28125,0,0,0,No attempt,"Dead butterfly, no wasps",0015-09
+PCF16.8.29.1,P. cassotis,8.385,D. plexippus,A. incarnata,0.895,0.052083333,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-08
+C80,P. cassotis,8.431,D. plexippus,A. curassavica,0.85,0.055555556,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-10
+C81,P. cassotis,8.431,D. plexippus,A. curassavica,1.09,0.055555556,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-10
+PCN16.9.28.1,P. cassotis,8.479,D. plexippus,A. incarnata,1.011,0.916666667,2,1,0,Attempt,Wasps emerged,0016-09
+PC15.9.1.1,P. cassotis,8.51,D. plexippus,A. curassavica,1.44,0.260416667,1d,0,0,Attempt,"Dead butterfly, no wasps",0015-09
+PC15.9.1.2,P. cassotis,8.51,D. plexippus,A. curassavica,1.377,0.197916667,1d,0,0,Attempt,"Dead butterfly, no wasps",0015-09
+5c10h1,P. puparum,8.535,D. plexippus,A. curassavica,1.01,0.104166667,1b,0,1,Attempt,Butterfly,0013-10
+PC15.9.27.1,P. cassotis,8.854,D. plexippus,A. incarnata,1,0.1875,0,0,1,No attempt,Butterfly,0015-09
+PC14.7.26.2,P. cassotis,8.938,D. plexippus,A. curassavica,1.4,0.145833333,1d,0,0,Attempt,Dead wasps in host,0014-07
+ok1b,P. cassotis,9.021,D. plexippus,A. curassavica,0.96,0,2,1,0,Attempt,Wasps emerged,0013-10
+PC16.8.26.2,P. cassotis,9.083,D. plexippus,A. incarnata,1.076,0.666666667,2,1,0,Attempt,Wasps emerged,0016-08
+PC15.7.19.5,P. cassotis,9.153,D. plexippus,A. incarnata,1.386,0.611111111,2,1,0,Attempt,Wasps emerged,0015-07
+BEC.2.26.1.C,P. cassotis,9.208,D. plexippus,A. curassavica,1.2,0.208333333,0,0,1,No attempt,Butterfly,0016-02
+BEC.2.26.1.M,P. cassotis,9.208,D. plexippus,A. curassavica,0.705,0.916666667,0,0,0,No attempt,Butterfly,0016-02
+BEC.2.26.1.W,P. cassotis,9.208,D. plexippus,A. curassavica,1.211,0.0625,0,0,1,No attempt,Butterfly,0016-02
+PC16.4.17.1,P. cassotis,9.267,D. plexippus,A. incarnata,1.168,0.642361111,2,1,0,Attempt,Wasps emerged,0016-04
+PpC1,P. puparum,9.271,D. plexippus,A. curassavica,NA,0.104166667,0,0,1,No attempt,Butterfly,0014-07
+PpC2,P. puparum,9.271,D. plexippus,A. curassavica,NA,0.09375,1b,0,1,Attempt,Butterfly,0014-07
+PpC3,P. puparum,9.271,D. plexippus,A. curassavica,NA,0.09375,1b,0,1,Attempt,Butterfly,0014-07
+PpC4,P. puparum,9.271,D. plexippus,A. curassavica,NA,0.083333333,1b,0,1,Attempt,Butterfly,0014-07
+PpC5,P. puparum,9.271,D. plexippus,A. curassavica,NA,0.076388889,0,0,1,No attempt,Butterfly,0014-07
+PpC6,P. puparum,9.271,D. plexippus,A. curassavica,NA,0.03125,0,0,1,No attempt,Butterfly,0014-07
+PpI1,P. puparum,9.271,D. plexippus,A. incarnata,NA,0.145833333,0,0,1,No attempt,Butterfly,0014-07
+PpI2,P. puparum,9.271,D. plexippus,A. incarnata,NA,0.104166667,1b,0,1,Attempt,Butterfly,0014-07
+PpI3,P. puparum,9.271,D. plexippus,A. incarnata,NA,0.083333333,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-07
+PpI4,P. puparum,9.271,D. plexippus,A. incarnata,NA,0.076388889,0,0,1,No attempt,Butterfly,0014-07
+PpI5,P. puparum,9.271,D. plexippus,A. incarnata,NA,0.0625,0,0,1,No attempt,Butterfly,0014-07
+PpI6,P. puparum,9.271,D. plexippus,A. incarnata,NA,0.055555556,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-07
+PCO16.2.3.2,P. cassotis,9.281,D. plexippus,A. curassavica,0.886,0.0625,0,0,1,No attempt,Butterfly,0016-02
+PC15.5.21.3,P. cassotis,9.295,D. plexippus,A. incarnata,1.357,0.045138889,2,1,0,Attempt,Wasps emerged,0015-05
+PC15.9.6.3,P. cassotis,9.323,D. plexippus,A. curassavica,0.933,0.28125,1d,0,0,Attempt,Dead wasps in host,0015-09
+PCF16.8.4.1,P. cassotis,9.333,D. plexippus,A. incarnata,1.084,0.583333333,1d,0,0,Attempt,Dead wasps in host,0016-08
+5c1zg4,P. puparum,9.344,D. plexippus,A. curassavica,0.71,0.59375,0,0,0,No attempt,"Dead butterfly, no wasps",0013-10
+PC16.8.18.1,P. cassotis,9.354,D. plexippus,A. curassavica,1.071,0.770833333,2,1,0,Attempt,Wasps emerged,0016-08
+PpC7,P. puparum,9.375,D. plexippus,A. curassavica,NA,0.069444444,0,0,1,No attempt,Butterfly,0014-07
+PpC8,P. puparum,9.375,D. plexippus,A. curassavica,NA,0.034722222,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-07
+PpI7,P. puparum,9.375,D. plexippus,A. incarnata,NA,0.125,0,0,1,No attempt,Butterfly,0014-07
+PpI8,P. puparum,9.375,D. plexippus,A. incarnata,NA,0.086805556,1b,0,1,Attempt,Butterfly,0014-07
+PC15.9.2.2,P. cassotis,9.542,D. plexippus,A. curassavica,1.209,0.25,2,1,0,Attempt,Wasps emerged,0015-09
+5c1zg5,P. puparum,9.618,D. plexippus,A. curassavica,0.78,0.010416667,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-10
+PC15.9.27.2,P. cassotis,9.75,D. plexippus,A. incarnata,1.06,0.1875,1d,0,0,Attempt,Dead wasps in host,0015-09
+PC15.9.27.3,P. cassotis,9.75,D. plexippus,A. incarnata,0.947,0.006944444,0,0,1,No attempt,Butterfly,0015-09
+PC15.9.26.1,P. cassotis,9.84,D. plexippus,A. incarnata,0.764,0.048611111,2,1,0,Attempt,Wasps emerged,0015-09
+PC15.7.20.11,P. cassotis,9.948,D. plexippus,A. incarnata,1.295,0.072916667,1b,0,1,Attempt,Butterfly,0015-07
+PC15.7.20.13,P. cassotis,9.948,D. plexippus,A. incarnata,1.577,0.072916667,2,1,0,Attempt,Wasps emerged,0015-07
+PC15.7.20.2,P. cassotis,9.948,D. plexippus,A. curassavica,1.37,0.15625,0,0,1,No attempt,Butterfly,0015-07
+PC15.7.20.8,P. cassotis,9.948,D. plexippus,A. curassavica,1.244,0.072916667,2,1,0,Attempt,Wasps emerged,0015-07
+PC15.5.26.2,P. cassotis,9.986,D. plexippus,A. curassavica,1.273,0.152777778,1b,0,1,Attempt,Butterfly,0015-05
+PC15.7.20.14,P. cassotis,10.024,D. plexippus,A. curassavica,1.395,0.232638889,2,1,0,Attempt,Wasps emerged,0015-07
+PC15.7.20.16,P. cassotis,10.024,D. plexippus,A. curassavica,0.856,0.086805556,2,1,0,Attempt,Wasps emerged,0015-07
+PC15.7.20.17,P. cassotis,10.024,D. plexippus,A. curassavica,1.257,0.086805556,2,1,0,Attempt,Wasps emerged,0015-07
+PC14.7.26.3,P. cassotis,10.063,D. plexippus,A. curassavica,1.47,0.145833333,0,0,0,No attempt,"Dead butterfly, no wasps",0014-07
+PC14.7.26.4,P. cassotis,10.063,D. plexippus,A. curassavica,1.65,0.145833333,0,0,1,No attempt,Butterfly,0014-07
+PpC10,P. puparum,10.132,D. plexippus,A. curassavica,NA,0.045138889,1b,0,1,Attempt,Butterfly,0014-07
+PpC11,P. puparum,10.132,D. plexippus,A. curassavica,NA,0.045138889,1b,0,1,Attempt,Butterfly,0014-07
+PpC12,P. puparum,10.132,D. plexippus,A. curassavica,NA,0.034722222,1b,0,1,Attempt,Butterfly,0014-07
+PpC9,P. puparum,10.132,D. plexippus,A. curassavica,NA,0.059027778,0,0,1,No attempt,Butterfly,0014-07
+PpI10,P. puparum,10.132,D. plexippus,A. incarnata,NA,0.048611111,0,0,1,No attempt,Butterfly,0014-07
+PpI11,P. puparum,10.132,D. plexippus,A. incarnata,NA,0.038194444,0,0,1,No attempt,Butterfly,0014-07
+PpI12,P. puparum,10.132,D. plexippus,A. incarnata,NA,0.027777778,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-07
+PpI9,P. puparum,10.132,D. plexippus,A. incarnata,NA,0.059027778,0,0,1,No attempt,Butterfly,0014-07
+PCO16.2.19.1,P. cassotis,10.146,D. plexippus,A. incarnata,1.235,0.145833333,0,0,1,No attempt,Butterfly,0016-02
+C82,P. cassotis,10.177,D. plexippus,A. curassavica,NA,0.822916667,0,0,0,No attempt,"Dead butterfly, no wasps",0014-10
+PC14.8.31.1,P. cassotis,10.177,D. plexippus,A. incarnata,1.18,0.21875,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-08
+PpC13,P. puparum,10.184,D. plexippus,A. curassavica,NA,0.0625,0,0,1,No attempt,Butterfly,0014-07
+PpC14,P. puparum,10.184,D. plexippus,A. curassavica,NA,0.038194444,1b,0,1,Attempt,Butterfly,0014-07
+PpC15,P. puparum,10.184,D. plexippus,A. curassavica,NA,0.027777778,1b,0,1,Attempt,Butterfly,0014-07
+PpI13,P. puparum,10.184,D. plexippus,A. incarnata,NA,0.059027778,1b,0,1,Attempt,Butterfly,0014-07
+PpI14,P. puparum,10.184,D. plexippus,A. incarnata,NA,0.03125,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-07
+PpI15,P. puparum,10.184,D. plexippus,A. incarnata,NA,0.020833333,0,0,1,No attempt,Butterfly,0014-07
+PpC16,P. puparum,10.208,D. plexippus,A. curassavica,NA,0.020833333,1b,0,1,Attempt,Butterfly,0014-07
+PpC17,P. puparum,10.208,D. plexippus,A. curassavica,NA,-0.006944444,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-07
+PpI16,P. puparum,10.208,D. plexippus,A. incarnata,NA,0.038194444,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-07
+PpI17,P. puparum,10.208,D. plexippus,A. incarnata,NA,0.027777778,1d,0,0,Attempt,"Dead butterfly, no wasps",0014-07
+C75,P. cassotis,10.208,D. plexippus,A. curassavica,0.94,0.25,2,1,0,Attempt,Wasps emerged,0014-10
+C76,P. cassotis,10.208,D. plexippus,A. curassavica,1.29,0.25,2,1,0,Attempt,Wasps emerged,0014-10
+BEC.3.11.1.C,P. cassotis,10.236,D. plexippus,A. curassavica,1.269,0.15277772,0,0,1,No attempt,Butterfly,0016-03
+BEC.3.11.3.C,P. cassotis,10.236,D. plexippus,A. curassavica,1.421,0.236111053,0,0,1,No attempt,Butterfly,0016-03
+PC15.7.19.2,P. cassotis,10.236,D. plexippus,A. curassavica,1.084,0.611111111,1b,0,1,Attempt,Butterfly,0015-07
+PC15.7.19.6,P. cassotis,10.236,D. plexippus,A. incarnata,1.368,0.611111111,2,1,0,Attempt,Wasps emerged,0015-07
+PC16.8.4.1,P. cassotis,10.333,D. plexippus,A. incarnata,1.273,0.583333333,2,1,0,Attempt,Wasps emerged,0016-08
+PC16.8.4.3,P. cassotis,10.333,D. plexippus,A. incarnata,1.102,0.583333333,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-08
+PCF16.8.25.2,P. cassotis,10.396,D. plexippus,A. incarnata,1.056,0.092361111,0,0,0,No attempt,"Dead butterfly, no wasps",0016-08
+PCO16.9.18.2,P. cassotis,10.813,D. plexippus,A. curassavica,1.131,0.354166667,2,1,0,Attempt,Wasps emerged,0016-09
+C1,P. cassotis,10.958,D. plexippus,A. curassavica,1.27,0.958333333,2,1,0,Attempt,Wasps emerged,0014-06
+C2,P. cassotis,10.958,D. plexippus,A. curassavica,1.23,0.9375,2,1,0,Attempt,Wasps emerged,0014-06
+C3,P. cassotis,10.958,D. plexippus,A. curassavica,1.11,0.916666667,2,1,0,Attempt,Wasps emerged,0014-06
+I1,P. cassotis,10.958,D. plexippus,A. incarnata,1.26,0.979166667,2,1,0,Attempt,Wasps emerged,0014-06
+I2,P. cassotis,10.958,D. plexippus,A. incarnata,1.33,0.958333333,2,1,0,Attempt,Wasps emerged,0014-06
+I3,P. cassotis,10.958,D. plexippus,A. incarnata,1.43,0.934027778,0,0,1,No attempt,Butterfly,0014-06
+C10,P. cassotis,11.059,D. plexippus,A. curassavica,1.26,0.913194444,2,1,0,Attempt,Wasps emerged,0014-06
+C11,P. cassotis,11.059,D. plexippus,A. curassavica,1.37,0.142361111,2,1,0,Attempt,Wasps emerged,0014-06
+I10,P. cassotis,11.059,D. plexippus,A. incarnata,1.19,0.871527778,0,0,1,No attempt,Butterfly,0014-06
+I11,P. cassotis,11.059,D. plexippus,A. incarnata,1.21,0.788194444,2,1,0,Attempt,Wasps emerged,0014-06
+PC15.5.26.3,P. cassotis,11.069,D. plexippus,A. curassavica,1.139,0.152777778,1b,0,1,Attempt,Butterfly,0015-05
+C12,P. cassotis,11.125,D. plexippus,A. curassavica,1.54,0.173611111,2,1,0,Attempt,Wasps emerged,0014-06
+C14,P. cassotis,11.125,D. plexippus,A. curassavica,1.27,0.111111111,1b,0,1,Attempt,Butterfly,0014-06
+C15,P. cassotis,11.125,D. plexippus,A. curassavica,1.39,0.097222222,2,1,0,Attempt,Wasps emerged,0014-06
+I12,P. cassotis,11.125,D. plexippus,A. incarnata,1.29,0.177083333,1d,0,0,Attempt,Dead wasps in host,0014-06
+I13,P. cassotis,11.125,D. plexippus,A. incarnata,1.22,0.142361111,2,1,0,Attempt,Wasps emerged,0014-06
+I14,P. cassotis,11.125,D. plexippus,A. incarnata,1.19,0.048611111,2,1,0,Attempt,Wasps emerged,0014-06
+I15,P. cassotis,11.125,D. plexippus,A. incarnata,1.22,-0.006944444,2,1,0,Attempt,Wasps emerged,0014-06
+PC16.4.3.1,P. cassotis,11.135,D. plexippus,A. incarnata,1.2,0.03125,2,1,0,Attempt,Wasps emerged,0016-04
+PC15.6.14.4,P. cassotis,11.142,D. plexippus,A. curassavica,1.123,0.215277778,0,0,0,No attempt,"Dead butterfly, no wasps",0015-06
+PC15.9.4.1,P. cassotis,11.167,D. plexippus,A. curassavica,1.227,0.125,2,1,0,Attempt,Wasps emerged,0015-09
+BEC.2.27.1.C,P. cassotis,11.188,D. plexippus,A. curassavica,1.12,0.083333333,1b,0,1,Attempt,Butterfly,0016-02
+BEC.2.27.1.M,P. cassotis,11.188,D. plexippus,A. curassavica,1.137,0.083333333,0,0,1,No attempt,Butterfly,0016-02
+BEC.2.27.1.W,P. cassotis,11.188,D. plexippus,A. curassavica,1.02,0.166666667,2,1,0,Attempt,Wasps emerged,0016-02
+BEC.2.27.2.C,P. cassotis,11.188,D. plexippus,A. curassavica,1.108,0.166666667,0,0,1,No attempt,Butterfly,0016-02
+BEC.2.27.2.W,P. cassotis,11.188,D. plexippus,A. curassavica,1.243,0.229166667,0,0,1,No attempt,Butterfly,0016-02
+BEC.2.27.3.M,P. cassotis,11.188,D. plexippus,A. curassavica,1.13,0.229166667,0,0,1,No attempt,Butterfly,0016-02
+C78,P. cassotis,11.222,D. plexippus,A. curassavica,0.96,0.388888889,2,1,0,Attempt,Wasps emerged,0014-10
+C79,P. cassotis,11.222,D. plexippus,A. curassavica,1.02,0.055555556,2,1,0,Attempt,Wasps emerged,0014-10
+ok2a,P. cassotis,11.472,D. plexippus,A. incarnata,0.92,0.003472222,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-10
+PC14.9.20.7,P. cassotis,11.969,D. plexippus,A. curassavica,1.28,0.135416667,2,1,0,Attempt,Wasps emerged,0014-09
+PC14.9.20.8,P. cassotis,11.969,D. plexippus,A. curassavica,1.2,0.135416667,2,1,0,Attempt,Wasps emerged,0014-09
+PC15.9.1.7,P. cassotis,12.01,D. plexippus,A. curassavica,1.482,0.197916667,1d,0,0,Attempt,"Dead butterfly, no wasps",0015-09
+PC.DIAP.14.15,P. cassotis,12.132,D. plexippus,A. curassavica,1.2,0.090277778,2,1,0,Attempt,Wasps emerged,0014-09
+PC.DIAP.14.16,P. cassotis,12.132,D. plexippus,A. curassavica,1.24,0.631944444,2,1,0,Attempt,Wasps emerged,0014-09
+PCO16.2.6.10,P. cassotis,12.156,D. plexippus,A. incarnata,1.224,0.15625,2,1,0,Attempt,Wasps emerged,0016-02
+PCO16.2.21.1,P. cassotis,12.174,D. plexippus,A. curassavica,1.076,0.173611111,2,1,0,Attempt,Wasps emerged,0016-02
+PC15.9.20.1,P. cassotis,12.208,D. plexippus,A. incarnata,0.991,0.041666667,1d,0,0,Attempt,"Dead butterfly, no wasps",0015-09
+PC14.9.4.2,P. cassotis,12.208,D. plexippus,A. incarnata,1.49,0.166666667,0,0,1,No attempt,Butterfly,0014-09
+PCO16.9.17.1,P. cassotis,12.229,D. plexippus,A. incarnata,1.154,0.145833333,2,1,0,Attempt,Wasps emerged,0016-09
+PC16.8.25.3,P. cassotis,12.354,D. plexippus,A. incarnata,1.061,0.074305556,2,1,0,Attempt,Wasps emerged,0016-08
+PCN16.9.28.2,P. cassotis,12.479,D. plexippus,A. curassavica,1.286,0.916666667,2,1,0,Attempt,Wasps emerged,0016-09
+5c9i,P. puparum,13.115,D. plexippus,A. curassavica,1,0.666666667,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+5c11a,P. puparum,13.125,D. plexippus,A. curassavica,0.73,0.083333333,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+PC15.5.25.1,P. cassotis,13.132,D. plexippus,A. curassavica,1.029,0.423611111,2,1,0,Attempt,Wasps emerged,0015-05
+PCO16.2.7.1,P. cassotis,13.132,D. plexippus,A. incarnata,1.393,0.256944444,1b,0,1,Attempt,Butterfly,0016-02
+PC14.9.5.1,P. cassotis,13.139,D. plexippus,A. incarnata,1.27,0.868055556,2,1,0,Attempt,Wasps emerged,0014-09
+PCF16.9.19.1,P. cassotis,13.167,D. plexippus,A. curassavica,1.579,0.302083333,0,0,1,No attempt,Butterfly,0016-09
+PC16.2.6.1,P. cassotis,13.198,D. plexippus,A. incarnata,1.212,0.09375,2,1,0,Attempt,Wasps emerged,0016-02
+PCO16.2.22.1,P. cassotis,13.257,D. plexippus,A. curassavica,1.356,0.298611111,0,0,1,No attempt,Butterfly,0016-02
+PC14.9.4.3,P. cassotis,13.292,D. plexippus,A. incarnata,1.25,0.125,2,1,0,Attempt,Wasps emerged,0014-09
+PC14.9.4.4,P. cassotis,13.292,D. plexippus,A. incarnata,0.98,0.125,2,1,0,Attempt,Wasps emerged,0014-09
+PCN16.9.27.2,P. cassotis,13.417,D. plexippus,A. incarnata,1.015,0.75,2,1,0,Attempt,Wasps emerged,0016-09
+ok1f,P. cassotis,13.792,D. plexippus,A. curassavica,1.19,0.291666667,2,1,0,Attempt,Wasps emerged,0013-10
+PC15.9.30.1,P. cassotis,13.944,D. plexippus,A. incarnata,1.051,0.069444444,2,1,0,Attempt,Wasps emerged,0015-09
+PCO16.4.15.4,P. cassotis,14.014,D. plexippus,A. incarnata,1.273,0.263888889,0,0,1,No attempt,Butterfly,0016-04
+5c11b,P. puparum,14.031,D. plexippus,A. curassavica,1,0.15625,1b,0,1,Attempt,Butterfly,0013-09
+PC14.9.4.1,P. cassotis,14.083,D. plexippus,A. incarnata,0.99,0.916666667,0,0,1,No attempt,Butterfly,0014-09
+w17,P. puparum,14.083,D. plexippus,A. curassavica,0.94,0.083333333,0,0,1,No attempt,Butterfly,0013-10
+ok1g,P. cassotis,14.09,D. plexippus,A. curassavica,1.23,0,2,1,0,Attempt,Wasps emerged,0013-10
+PC16.4.4.1,P. cassotis,14.097,D. plexippus,A. incarnata,1.145,0.472222222,2,1,0,Attempt,Wasps emerged,0016-04
+PCO16.8.25.1,P. cassotis,14.146,D. plexippus,A. curassavica,0.922,0.171527778,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-08
+PCO16.8.25.2,P. cassotis,14.146,D. plexippus,A. curassavica,1.174,0.208333333,0,0,1,No attempt,Butterfly,0016-08
+PCO16.8.25.3,P. cassotis,14.146,D. plexippus,A. curassavica,1.121,0.172222222,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-08
+PC16.2.7.1,P. cassotis,14.174,D. plexippus,A. curassavica,1.234,0.048611111,2,1,0,Attempt,Wasps emerged,0016-02
+PC14.9.4.5,P. cassotis,14.25,D. plexippus,A. incarnata,1.23,0.166666667,0,0,1,No attempt,Butterfly,0014-09
+BEC.2.8.1.W,P. cassotis,14.271,D. plexippus,A. curassavica,0.851,0.020833333,2,1,0,Attempt,Wasps emerged,0016-02
+PCO16.9.19.1,P. cassotis,14.417,D. plexippus,A. curassavica,0.861,0.208333333,1d,0,0,Attempt,Dead wasps in host,0016-09
+PCN16.9.28.3,P. cassotis,14.479,D. plexippus,A. curassavica,1.451,0.916666609,2,1,0,Attempt,Wasps emerged,0016-09
+w18,P. puparum,14.677,D. plexippus,A. curassavica,0.81,0.59375,0,0,1,No attempt,Butterfly,0013-10
+5c6m,P. puparum,14.938,D. plexippus,A. curassavica,1.06,0.708333333,0,0,1,No attempt,Butterfly,0013-09
+5c6n,P. puparum,14.938,D. plexippus,A. curassavica,1.06,0.708333333,0,0,1,No attempt,Butterfly,0013-09
+5c6o,P. puparum,14.938,D. plexippus,A. curassavica,NA,0.708333333,0,0,0,No attempt,"Dead butterfly, no wasps",0013-09
+5c6p,P. puparum,14.938,D. plexippus,A. incarnata,1.03,0.708333333,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+PC14.8.1.2,P. cassotis,14.941,D. plexippus,A. curassavica,1.08,0.940972222,0,0,0,No attempt,"Dead butterfly, no wasps",0014-08
+5c11e,P. puparum,14.979,D. plexippus,A. curassavica,1.04,0.604166667,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+ok1j,P. cassotis,15.014,D. plexippus,A. curassavica,1.09,0.003472222,1b,0,1,Attempt,Butterfly,0013-10
+PCO16.4.16.1,P. cassotis,15.014,D. plexippus,A. incarnata,NA,0.513888889,0,0,0,No attempt,"Dead butterfly, no wasps",0016-04
+PCO16.4.16.2,P. cassotis,15.014,D. plexippus,A. incarnata,1.284,0.513888889,2,1,0,Attempt,Wasps emerged,0016-04
+5c11f,P. puparum,15.042,D. plexippus,A. incarnata,0.81,0.041666667,0,0,1,No attempt,Butterfly,0013-09
+PC14.9.15.1,P. cassotis,15.056,D. plexippus,A. curassavica,1.12,0.680555556,2,1,0,Attempt,Wasps emerged,0014-09
+ok1k,P. cassotis,15.118,D. plexippus,A. curassavica,0.97,-0.020833333,2,1,0,Attempt,Wasps emerged,0013-10
+PCO16.8.26.3,P. cassotis,15.125,D. plexippus,A. incarnata,1.173,0.013888889,0,0,1,No attempt,Butterfly,0016-08
+5c4k,P. puparum,15.156,D. plexippus,A. curassavica,0.95,0.666666667,0,0,1,No attempt,Butterfly,0013-09
+5c4l,P. puparum,15.156,D. plexippus,A. curassavica,1.01,0.666666667,0,0,1,No attempt,Butterfly,0013-09
+PC16.4.7.1,P. cassotis,15.208,D. plexippus,A. incarnata,0.969,0.020833333,2,1,0,Attempt,Wasps emerged,0016-04
+C26,P. cassotis,15.229,D. plexippus,A. curassavica,1.1,0.395833333,0,0,1,No attempt,Butterfly,0014-07
+C27,P. cassotis,15.229,D. plexippus,A. curassavica,1.24,0.395833333,1b,0,1,Attempt,Butterfly,0014-07
+C28,P. cassotis,15.229,D. plexippus,A. curassavica,1.33,0.104166667,0,0,1,No attempt,Butterfly,0014-07
+C29,P. cassotis,15.229,D. plexippus,A. curassavica,1.31,0.104166667,0,0,1,No attempt,Butterfly,0014-07
+C30,P. cassotis,15.229,D. plexippus,A. curassavica,1.28,0.0625,2,1,0,Attempt,Wasps emerged,0014-07
+C31,P. cassotis,15.229,D. plexippus,A. curassavica,1.24,0.0625,2,1,0,Attempt,Wasps emerged,0014-07
+C32,P. cassotis,15.229,D. plexippus,A. curassavica,1.53,0.052083333,0,0,1,No attempt,Butterfly,0014-07
+C33,P. cassotis,15.229,D. plexippus,A. curassavica,1.35,0.052083333,2,1,0,Attempt,Wasps emerged,0014-07
+C34,P. cassotis,15.229,D. plexippus,A. curassavica,1.29,0.052083333,2,1,0,Attempt,Wasps emerged,0014-07
+C35,P. cassotis,15.229,D. plexippus,A. curassavica,1.39,0.017361111,2,1,0,Attempt,Wasps emerged,0014-07
+C36,P. cassotis,15.229,D. plexippus,A. curassavica,1,0.013888889,2,1,0,Attempt,Wasps emerged,0014-07
+C37,P. cassotis,15.229,D. plexippus,A. curassavica,1.33,0.0125,0,0,1,No attempt,Butterfly,0014-07
+C38,P. cassotis,15.229,D. plexippus,A. curassavica,1.29,0.003472222,2,1,0,Attempt,Wasps emerged,0014-07
+I26,P. cassotis,15.229,D. plexippus,A. incarnata,1.35,0.145833333,2,1,0,Attempt,Wasps emerged,0014-07
+I27,P. cassotis,15.229,D. plexippus,A. incarnata,1.16,0.104166667,2,1,0,Attempt,Wasps emerged,0014-07
+I28,P. cassotis,15.229,D. plexippus,A. incarnata,1.1,0.045138889,2,1,0,Attempt,Wasps emerged,0014-07
+I29,P. cassotis,15.229,D. plexippus,A. incarnata,1.29,0.03125,2,1,0,Attempt,Wasps emerged,0014-07
+I30,P. cassotis,15.229,D. plexippus,A. incarnata,1.33,0.013888889,2,1,0,Attempt,Wasps emerged,0014-07
+I31,P. cassotis,15.229,D. plexippus,A. incarnata,1.11,-0.006944444,2,1,0,Attempt,Wasps emerged,0014-07
+I32,P. cassotis,15.229,D. plexippus,A. incarnata,1.01,-0.041666667,2,1,0,Attempt,Wasps emerged,0014-07
+PC16.2.8.1,P. cassotis,15.288,D. plexippus,A. curassavica,1.237,0.163194444,2,1,0,Attempt,Wasps emerged,0016-02
+PC16.2.6.2,P. cassotis,16.073,D. plexippus,A. curassavica,1.445,0.03125,2,1,0,Attempt,Wasps emerged,0016-02
+PC15.7.15.2,P. cassotis,16.108,D. plexippus,A. curassavica,1.382,0.045138889,2,1,0,Attempt,Wasps emerged,0015-07
+PCTOX15.7.15.1,P. cassotis,16.125,D. plexippus,A. curassavica,1.059,1,2,1,0,Attempt,Wasps emerged,0015-07
+I33,P. cassotis,16.132,D. plexippus,A. incarnata,1.31,0.027777778,2,1,0,Attempt,Wasps emerged,0014-08
+I34,P. cassotis,16.132,D. plexippus,A. incarnata,1.33,0.027777778,0,0,1,No attempt,Butterfly,0014-08
+I35,P. cassotis,16.132,D. plexippus,A. incarnata,1.43,0.027777778,0,0,1,No attempt,Butterfly,0014-08
+I36,P. cassotis,16.132,D. plexippus,A. incarnata,1.32,0.027777778,2,1,0,Attempt,Wasps emerged,0014-08
+I37,P. cassotis,16.132,D. plexippus,A. incarnata,1.23,0.006944444,2,1,0,Attempt,Wasps emerged,0014-08
+PCO16.4.17.1,P. cassotis,16.142,D. plexippus,A. incarnata,1.227,0.642361111,0,0,1,No attempt,Butterfly,0016-04
+PCO16.2.6.11,P. cassotis,16.156,D. plexippus,A. incarnata,1.251,0.09375,1d,0,0,Attempt,Butterfly,0016-02
+PCO16.2.10.4,P. cassotis,16.188,D. plexippus,A. incarnata,0.934,0.166666667,2,1,0,Attempt,Wasps emerged,0016-02
+PC16.4.8.1,P. cassotis,16.271,D. plexippus,A. incarnata,0.944,0.104166667,2,1,0,Attempt,Wasps emerged,0016-04
+5c3a,P. puparum,17.014,D. plexippus,A. curassavica,NA,0.638888889,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+5c3b,P. puparum,17.014,D. plexippus,A. curassavica,0.68,0.638888889,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+5c3c,P. puparum,17.014,D. plexippus,A. curassavica,1,0.638888889,1b,0,1,Attempt,Butterfly,0013-09
+5c3d,P. puparum,17.014,D. plexippus,A. curassavica,0.98,0.638888889,1b,0,1,Attempt,Butterfly,0013-09
+5c3e,P. puparum,17.014,D. plexippus,A. incarnata,1.1,0.638888889,0,0,1,No attempt,Butterfly,0013-09
+PC15.9.25.1,P. cassotis,17.08,D. plexippus,A. incarnata,0.825,0.163194444,2,1,0,Attempt,Wasps emerged,0015-09
+PCO16.8.5.1,P. cassotis,17.285,D. plexippus,A. incarnata,0.767,0.659722222,2,1,0,Attempt,Wasps emerged,0016-08
+PCO16.8.5.2,P. cassotis,17.285,D. plexippus,A. incarnata,1.171,0.659722222,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-08
+PC14.7.23.1,P. cassotis,17.292,D. plexippus,A. curassavica,1.44,0.1875,2,1,0,Attempt,Wasps emerged,0014-07
+PCO16.8.4.2,P. cassotis,17.333,D. plexippus,A. incarnata,1.289,0.583333333,1d,0,0,Attempt,Dead wasps in host,0016-08
+PCF16.9.27.1,P. cassotis,17.417,D. plexippus,A. incarnata,1.159,0.25,2,1,0,Attempt,Wasps emerged,0016-09
+PCO16.8.29.1,P. cassotis,18.021,D. plexippus,A. incarnata,0.725,0.229166667,0,0,0,No attempt,"Dead butterfly, no wasps",0016-08
+PCO16.8.4.3,P. cassotis,18.292,D. plexippus,A. incarnata,1.02,0.583333333,1b,0,1,Attempt,Butterfly,0016-08
+PCO16.8.5.3,P. cassotis,18.41,D. plexippus,A. incarnata,1.011,0.659722222,1d,0,0,Attempt,Dead wasps in host,0016-08
+5c8c,P. puparum,18.979,D. plexippus,A. curassavica,1.43,0.166666667,0,0,1,No attempt,Butterfly,0013-09
+5c8d,P. puparum,18.979,D. plexippus,A. curassavica,1.27,0.166666667,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+PC16.4.9.1,P. cassotis,19.163,D. plexippus,A. incarnata,0.892,0.871527778,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-04
+5c5a,P. puparum,19.181,D. plexippus,A. curassavica,0.78,0.013888889,0,0,1,No attempt,Butterfly,0013-09
+PC16.2.12.1,P. cassotis,19.208,D. plexippus,A. incarnata,0.734,0.041666667,2,1,0,Attempt,Wasps emerged,0016-02
+PC15.7.18.1,P. cassotis,19.236,D. plexippus,A. curassavica,1.497,0.111111111,0,0,1,No attempt,Butterfly,0015-07
+PC15.7.19.4,P. cassotis,19.319,D. plexippus,A. curassavica,1.298,0.611111111,1d,0,0,Attempt,"Dead butterfly, no wasps",0015-07
+PC14.7.22.3,P. cassotis,19.333,D. plexippus,A. incarnata,1.27,0.291666667,0,0,1,No attempt,Butterfly,0014-07
+dptim1,P. puparum,19.519,D. plexippus,A. incarnata,1.28,0,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+5c8e,P. puparum,19.965,D. plexippus,A. incarnata,1.02,0.006944444,0,0,1,No attempt,Butterfly,0013-09
+5c11g,P. puparum,19.969,D. plexippus,A. curassavica,0.78,0.024305556,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+5c11h,P. puparum,19.969,D. plexippus,A. curassavica,0.8,0.024305556,0,0,1,No attempt,Butterfly,0013-09
+5c8f,P. puparum,20.014,D. plexippus,A. incarnata,1.46,0.041666667,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+5c8g,P. puparum,20.014,D. plexippus,A. incarnata,1.01,0.041666667,1b,0,1,Attempt,Butterfly,0013-09
+5c8h,P. puparum,20.014,D. plexippus,A. incarnata,1.4,0.020833333,1b,0,1,Attempt,Butterfly,0013-09
+5c9j,P. puparum,20.031,D. plexippus,A. curassavica,1.27,0.010416667,0,0,1,No attempt,Butterfly,0013-09
+5c9k,P. puparum,20.031,D. plexippus,A. incarnata,0.95,0.010416667,0,0,1,No attempt,Butterfly,0013-09
+PC14.9.20.11,P. cassotis,20.135,D. plexippus,A. curassavica,1.34,0.135416667,2,1,0,Attempt,Wasps emerged,0014-09
+PC15.7.19.1,P. cassotis,20.319,D. plexippus,A. curassavica,1.033,0.611111111,0,0,1,No attempt,Butterfly,0015-07
+dptim2,P. puparum,20.381,D. plexippus,A. incarnata,1.15,0,1b,0,1,Attempt,Butterfly,0013-09
+PC15.7.20.6,P. cassotis,20.948,D. plexippus,A. curassavica,1.128,0.072916667,1b,0,1,Attempt,Butterfly,0015-07
+5c3i,P. puparum,20.979,D. plexippus,A. curassavica,1.11,0.166666667,0,0,1,No attempt,Butterfly,0013-09
+5c7a,P. puparum,21.007,D. plexippus,A. incarnata,1.02,0.020833333,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+5c7b,P. puparum,21.007,D. plexippus,A. incarnata,1.18,0.041666667,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+5c7c,P. puparum,21.007,D. plexippus,A. curassavica,1.24,0.041666667,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+dptim17,P. puparum,21.021,D. plexippus,A. incarnata,1.18,0.520833333,0,0,1,No attempt,Butterfly,0013-09
+dptim18,P. puparum,21.021,D. plexippus,A. incarnata,1.26,0.520833333,0,0,1,No attempt,Butterfly,0013-09
+dptim19,P. puparum,21.021,D. plexippus,A. incarnata,1.07,0.567361111,0,0,1,No attempt,Butterfly,0013-09
+dptim20,P. puparum,21.021,D. plexippus,A. incarnata,1.25,0.5625,0,0,1,No attempt,Butterfly,0013-09
+5c8i,P. puparum,21.047,D. plexippus,A. incarnata,0.65,0.004861111,0,0,0,No attempt,"Dead butterfly, no wasps",0013-09
+5c8j,P. puparum,21.047,D. plexippus,A. incarnata,0.67,0.004861111,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+PC15.7.20.4,P. cassotis,21.115,D. plexippus,A. curassavica,1.25,0.15625,0,0,1,No attempt,Butterfly,0015-07
+PC15.7.20.5,P. cassotis,21.115,D. plexippus,A. curassavica,1.47,0.15625,0,0,1,No attempt,Butterfly,0015-07
+PC14.6.15.1,P. cassotis,21.149,D. plexippus,A. incarnata,0.93,0.524305556,2,1,0,Attempt,Wasps emerged,0014-06
+5c7f,P. puparum,21.151,D. plexippus,A. curassavica,1.07,0.025694444,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+PCF16.9.28.2,P. cassotis,21.229,D. plexippus,A. incarnata,1.076,0.479166609,0,0,1,No attempt,Butterfly,0016-09
+dptim23,P. puparum,21.408,D. plexippus,A. incarnata,1.1,0,0,0,1,No attempt,Butterfly,0013-09
+dptim4,P. puparum,21.42,D. plexippus,A. incarnata,1.32,0.006944444,0,0,0,No attempt,"Dead butterfly, no wasps",0013-09
+dptim9,P. puparum,21.542,D. plexippus,A. incarnata,1.09,1,0,0,1,No attempt,Butterfly,0013-09
+dptim5,P. puparum,21.552,D. plexippus,A. incarnata,0.94,0.125,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+dptim6,P. puparum,21.552,D. plexippus,A. incarnata,1.3,0.125,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+dptim7,P. puparum,21.563,D. plexippus,A. incarnata,1,0.128472222,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+dptim8,P. puparum,21.563,D. plexippus,A. incarnata,0.99,0.125,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+5c3m,P. puparum,21.927,D. plexippus,A. curassavica,1.42,0.006944444,0,0,1,No attempt,Butterfly,0013-09
+5c3n,P. puparum,21.927,D. plexippus,A. curassavica,1.33,0.006944444,0,0,1,No attempt,Butterfly,0013-09
+PC15.6.27.1,P. cassotis,22.146,D. plexippus,A. incarnata,1.555,0.895833333,0,0,1,No attempt,Butterfly,0015-06
+PC15.7.21.3,P. cassotis,22.222,D. plexippus,A. curassavica,0.756,0.097222222,1d,0,0,Attempt,Dead wasps in host,0015-07
+PC16.2.15.1,P. cassotis,22.222,D. plexippus,A. incarnata,0.641,0.097222222,2,1,0,Attempt,Wasps emerged,0016-02
+5c5h,P. puparum,22.924,D. plexippus,A. curassavica,1.43,0.916666667,0,0,1,No attempt,Butterfly,0013-09
+5c5i,P. puparum,22.924,D. plexippus,A. incarnata,1.07,0.125,1b,0,1,Attempt,Butterfly,0013-09
+5c5j,P. puparum,22.938,D. plexippus,A. incarnata,1,0.166666667,0,0,1,No attempt,Butterfly,0013-09
+PCF16.9.28.1,P. cassotis,22.979,D. plexippus,A. incarnata,1.157,0.479166609,1d,0,0,Attempt,"Dead butterfly, no wasps",0016-09
+5c3o*,P. puparum,23.042,D. plexippus,A. incarnata,0.68,0.041666667,1b,0,1,Attempt,Butterfly,0013-09
+5c2c,P. puparum,24.031,D. plexippus,A. incarnata,1.06,0.010416667,0,0,1,No attempt,Butterfly,0013-09
+PC14.6.15.2,P. cassotis,24.191,D. plexippus,A. incarnata,1.1,0.524305556,2,1,0,Attempt,Wasps emerged,0014-06
+5c1zm,P. puparum,24.976,D. plexippus,A. curassavica,1.23,0.006944444,1d,0,0,Attempt,"Dead butterfly, no wasps",0013-09
+CIY,Control,NA,D. plexippus,A. incarnata,1.16,NA,NA,NA,1,NA,Butterfly,0014-06
+CIZ,Control,NA,D. plexippus,A. incarnata,1.22,NA,NA,NA,1,NA,Butterfly,0014-06
+CI8,Control,NA,D. plexippus,A. incarnata,1.17,NA,NA,NA,1,NA,Butterfly,0014-06
+CI6,Control,NA,D. plexippus,A. incarnata,1.23,NA,NA,NA,1,NA,Butterfly,0014-06
+CC8,Control,NA,D. plexippus,A. curassavica,1.28,NA,NA,NA,1,NA,Butterfly,0014-06
+CC2,Control,NA,D. plexippus,A. curassavica,1.32,NA,NA,NA,1,NA,Butterfly,0014-06
+CC4,Control,NA,D. plexippus,A. curassavica,1.37,NA,NA,NA,1,NA,Butterfly,0014-06
+CC6,Control,NA,D. plexippus,A. curassavica,1.38,NA,NA,NA,1,NA,Butterfly,0014-06
+CI1,Control,NA,D. plexippus,A. incarnata,1.39,NA,NA,NA,1,NA,Butterfly,0014-06
+CI4,Control,NA,D. plexippus,A. incarnata,1.47,NA,NA,NA,1,NA,Butterfly,0014-06
+CI5,Control,NA,D. plexippus,A. incarnata,0.97,NA,NA,NA,1,NA,Butterfly,0014-06
+CI3,Control,NA,D. plexippus,A. incarnata,1.17,NA,NA,NA,1,NA,Butterfly,0014-06
+CI2,Control,NA,D. plexippus,A. incarnata,1.18,NA,NA,NA,1,NA,Butterfly,0014-06
+CC1,Control,NA,D. plexippus,A. curassavica,1.27,NA,NA,NA,1,NA,Butterfly,0014-06
+CC3,Control,NA,D. plexippus,A. curassavica,1.28,NA,NA,NA,1,NA,Butterfly,0014-06
+CC7,Control,NA,D. plexippus,A. curassavica,1.32,NA,NA,NA,1,NA,Butterfly,0014-06
+CC5,Control,NA,D. plexippus,A. curassavica,1.34,NA,NA,NA,1,NA,Butterfly,0014-06
+CI7,Control,NA,D. plexippus,A. incarnata,1.39,NA,NA,NA,1,NA,Butterfly,0014-06
+CI11,Control,NA,D. plexippus,A. incarnata,1.2,NA,NA,NA,1,NA,Butterfly,0014-07
+CI9,Control,NA,D. plexippus,A. incarnata,1.26,NA,NA,NA,1,NA,Butterfly,0014-07
+CC9,Control,NA,D. plexippus,A. curassavica,1.34,NA,NA,NA,1,NA,Butterfly,0014-07
+CI12,Control,NA,D. plexippus,A. incarnata,1.34,NA,NA,NA,1,NA,Butterfly,0014-07
+CC12,Control,NA,D. plexippus,A. curassavica,1.35,NA,NA,NA,1,NA,Butterfly,0014-07
+CI10,Control,NA,D. plexippus,A. incarnata,1.31,NA,NA,NA,1,NA,Butterfly,0014-07
+CC10,Control,NA,D. plexippus,A. curassavica,1.36,NA,NA,NA,1,NA,Butterfly,0014-07
+CC11,Control,NA,D. plexippus,A. curassavica,1.46,NA,NA,NA,1,NA,Butterfly,0014-07
+CIX,Control,NA,D. plexippus,A. incarnata,1.18,NA,NA,NA,1,NA,Butterfly,0014-07
+CCZ,Control,NA,D. plexippus,A. curassavica,1.29,NA,NA,NA,1,NA,Butterfly,0014-07
+CC16,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+CC15,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+CI12,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+CC10*,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+CI10*,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+CI13,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+CC14,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+CI11*,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+CC12,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+CC13,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+CC11*,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+CI21,Control,NA,D. plexippus,A. incarnata,1.17,NA,NA,NA,1,NA,Butterfly,0014-10
+CI20,Control,NA,D. plexippus,A. incarnata,1.31,NA,NA,NA,1,NA,Butterfly,0014-10
+CI22,Control,NA,D. plexippus,A. incarnata,1.33,NA,NA,NA,1,NA,Butterfly,0014-10
+CI24,Control,NA,D. plexippus,A. incarnata,1.32,NA,NA,NA,1,NA,Butterfly,0014-10
+CI23,Control,NA,D. plexippus,A. incarnata,1.37,NA,NA,NA,1,NA,Butterfly,0014-10
+CI27,Control,NA,D. plexippus,A. incarnata,1.38,NA,NA,NA,1,NA,Butterfly,0014-10
+CI25,Control,NA,D. plexippus,A. incarnata,1.49,NA,NA,NA,1,NA,Butterfly,0014-10
+CI26,Control,NA,D. plexippus,A. incarnata,1.57,NA,NA,NA,1,NA,Butterfly,0014-10
+CC41,Control,NA,D. plexippus,A. curassavica,1.09,NA,NA,NA,1,NA,Butterfly,0014-10
+CC42,Control,NA,D. plexippus,A. curassavica,1.25,NA,NA,NA,1,NA,Butterfly,0014-10
+CC40,Control,NA,D. plexippus,A. curassavica,1.38,NA,NA,NA,1,NA,Butterfly,0014-10
+CI40,Control,NA,D. plexippus,A. incarnata,0.98,NA,NA,NA,1,NA,Butterfly,0014-10
+CC44,Control,NA,D. plexippus,A. curassavica,1.13,NA,NA,NA,1,NA,Butterfly,0014-10
+CC43,Control,NA,D. plexippus,A. curassavica,1.28,NA,NA,NA,1,NA,Butterfly,0014-10
+CC45,Control,NA,D. plexippus,A. curassavica,0.82,NA,NA,NA,1,NA,Butterfly,0014-10
+C15.379,Control,NA,D. plexippus,A. curassavica,1.134,NA,NA,NA,1,NA,Butterfly,0015-07
+C15.380,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0015-07
+C15.382,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0015-07
+C15.384,Control,NA,D. plexippus,A. curassavica,1.184,NA,NA,NA,1,NA,Butterfly,0015-07
+C15.385,Control,NA,D. plexippus,A. curassavica,1.254,NA,NA,NA,1,NA,Butterfly,0015-07
+C15.383,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0015-07
+C14.212,Control,NA,D. plexippus,A. incarnata,1.25,NA,NA,NA,1,NA,Butterfly,0014-06
+PpCC3,Control,NA,D. plexippus,A. curassavica,1.16,NA,NA,NA,1,NA,Butterfly,0014-07
+PpCC1,Control,NA,D. plexippus,A. curassavica,1.25,NA,NA,NA,1,NA,Butterfly,0014-07
+PpCI3,Control,NA,D. plexippus,A. incarnata,1.33,NA,NA,NA,1,NA,Butterfly,0014-07
+PpCI2,Control,NA,D. plexippus,A. incarnata,1.4,NA,NA,NA,1,NA,Butterfly,0014-07
+PpCC2,Control,NA,D. plexippus,A. curassavica,1.44,NA,NA,NA,1,NA,Butterfly,0014-07
+PpCI1,Control,NA,D. plexippus,A. incarnata,1.54,NA,NA,NA,1,NA,Butterfly,0014-07
+C14.306,Control,NA,D. plexippus,A. curassavica,1.39,NA,NA,NA,1,NA,Butterfly,0014-07
+PpCI4,Control,NA,D. plexippus,A. incarnata,1.35,NA,NA,NA,1,NA,Butterfly,0014-07
+PpCC4,Control,NA,D. plexippus,A. curassavica,1.42,NA,NA,NA,1,NA,Butterfly,0014-07
+PpCIZ,Control,NA,D. plexippus,A. incarnata,1.3,NA,NA,NA,1,NA,Butterfly,0014-07
+PpCC5,Control,NA,D. plexippus,A. curassavica,1.35,NA,NA,NA,1,NA,Butterfly,0014-07
+PpCI5,Control,NA,D. plexippus,A. incarnata,1.4,NA,NA,NA,1,NA,Butterfly,0014-07
+PpCC6,Control,NA,D. plexippus,A. curassavica,1.51,NA,NA,NA,1,NA,Butterfly,0014-07
+C14.309,Control,NA,D. plexippus,A. curassavica,1.38,NA,NA,NA,1,NA,Butterfly,0014-07
+C14.309,Control,NA,D. plexippus,A. curassavica,1.48,NA,NA,NA,1,NA,Butterfly,0014-07
+C14.308,Control,NA,D. plexippus,A. curassavica,1.55,NA,NA,NA,1,NA,Butterfly,0014-07
+C14.321,Control,NA,D. plexippus,A. curassavica,1.17,NA,NA,NA,1,NA,Butterfly,0014-07
+C14.328,Control,NA,D. plexippus,A. curassavica,1.25,NA,NA,NA,1,NA,Butterfly,0014-07
+C14.329,Control,NA,D. plexippus,A. curassavica,1.29,NA,NA,NA,1,NA,Butterfly,0014-07
+C14.332,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0014-07
+C14.334,Control,NA,D. plexippus,A. curassavica,1.25,NA,NA,NA,1,NA,Butterfly,0014-08
+C14.380,Control,NA,D. plexippus,A. incarnata,1.38,NA,NA,NA,1,NA,Butterfly,0014-08
+C14.392,Control,NA,D. plexippus,A. incarnata,1.4,NA,NA,NA,1,NA,Butterfly,0014-08
+C14.394,Control,NA,D. plexippus,A. incarnata,1.18,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.400,Control,NA,D. plexippus,A. incarnata,1.41,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.399,Control,NA,D. plexippus,A. incarnata,1.48,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.395,Control,NA,D. plexippus,A. incarnata,0.99,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.396,Control,NA,D. plexippus,A. incarnata,1.02,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.403,Control,NA,D. plexippus,A. incarnata,1.09,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.397,Control,NA,D. plexippus,A. incarnata,1.17,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.393,Control,NA,D. plexippus,A. incarnata,1.18,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.398,Control,NA,D. plexippus,A. incarnata,1.28,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.406,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.405,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.404,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.410,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.409,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.419,Control,NA,D. plexippus,A. curassavica,1.37,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.421,Control,NA,D. plexippus,A. curassavica,1.27,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.435,Control,NA,D. plexippus,A. curassavica,1.34,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.437,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.438,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.439,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0014-09
+C14.464,Control,NA,D. plexippus,A. curassavica,1.34,NA,NA,NA,1,NA,Butterfly,0014-10
+C15.251,Control,NA,D. plexippus,A. curassavica,0.96,NA,NA,NA,1,NA,Butterfly,0015-05
+C15.253,Control,NA,D. plexippus,A. curassavica,1.244,NA,NA,NA,1,NA,Butterfly,0015-05
+C15.254,Control,NA,D. plexippus,A. curassavica,1.119,NA,NA,NA,1,NA,Butterfly,0015-05
+C15.256,Control,NA,D. plexippus,A. curassavica,1.239,NA,NA,NA,1,NA,Butterfly,0015-05
+C15.257,Control,NA,D. plexippus,A. incarnata,1.422,NA,NA,NA,1,NA,Butterfly,0015-05
+C15.258,Control,NA,D. plexippus,A. curassavica,1.289,NA,NA,NA,1,NA,Butterfly,0015-05
+C15.259,Control,NA,D. plexippus,A. curassavica,1.384,NA,NA,NA,1,NA,Butterfly,0015-05
+C15.260,Control,NA,D. plexippus,A. curassavica,1.222,NA,NA,NA,1,NA,Butterfly,0015-05
+C15.262,Control,NA,D. plexippus,A. incarnata,1.221,NA,NA,NA,1,NA,Butterfly,0015-05
+C15.261,Control,NA,D. plexippus,A. curassavica,1.311,NA,NA,NA,1,NA,Butterfly,0015-05
+C15.263,Control,NA,D. plexippus,A. curassavica,1.218,NA,NA,NA,1,NA,Butterfly,0015-05
+C15.268,Control,NA,D. plexippus,A. incarnata,1.212,NA,NA,NA,1,NA,Butterfly,0015-06
+C15.271,Control,NA,D. plexippus,A. incarnata,1.119,NA,NA,NA,1,NA,Butterfly,0015-06
+C15.270,Control,NA,D. plexippus,A. incarnata,1.201,NA,NA,NA,1,NA,Butterfly,0015-06
+C15.277,Control,NA,D. plexippus,A. curassavica,1.028,NA,NA,NA,1,NA,Butterfly,0015-06
+C15.276,Control,NA,D. plexippus,A. incarnata,1.08,NA,NA,NA,0,NA,Butterfly,0015-06
+C15.279,Control,NA,D. plexippus,A. incarnata,1.25,NA,NA,NA,1,NA,Butterfly,0015-06
+C15.280,Control,NA,D. plexippus,A. incarnata,0.975,NA,NA,NA,1,NA,Butterfly,0015-06
+C15.284,Control,NA,D. plexippus,A. incarnata,0.948,NA,NA,NA,0,NA,Butterfly,0015-06
+C15.403,Control,NA,D. plexippus,A. incarnata,0.964,NA,NA,NA,1,NA,Butterfly,0015-07
+C15.400,Control,NA,D. plexippus,A. curassavica,1.153,NA,NA,NA,1,NA,Butterfly,0015-07
+C15.410,Control,NA,D. plexippus,A. incarnata,1.111,NA,NA,NA,1,NA,Butterfly,0015-07
+C15.411,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0015-07
+C15.412,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0015-07
+C15.417,Control,NA,D. plexippus,A. incarnata,0.78,NA,NA,NA,1,NA,Butterfly,0015-07
+C15.488,Control,NA,D. plexippus,A. curassavica,1.292,NA,NA,NA,1,NA,Butterfly,0015-09
+C15.487,Control,NA,D. plexippus,A. curassavica,1.423,NA,NA,NA,1,NA,Butterfly,0015-09
+C15.489,Control,NA,D. plexippus,A. curassavica,1.387,NA,NA,NA,1,NA,Butterfly,0015-09
+C15.496,Control,NA,D. plexippus,A. curassavica,0.904,NA,NA,NA,1,NA,Butterfly,0015-09
+C15.499,Control,NA,D. plexippus,A. curassavica,1.12,NA,NA,NA,1,NA,Butterfly,0015-09
+C15.500,Control,NA,D. plexippus,A. curassavica,1.133,NA,NA,NA,1,NA,Butterfly,0015-09
+C15.502,Control,NA,D. plexippus,A. curassavica,1.177,NA,NA,NA,1,NA,Butterfly,0015-09
+C15.501,Control,NA,D. plexippus,A. curassavica,1.335,NA,NA,NA,1,NA,Butterfly,0015-09
+C16.112,Control,NA,D. plexippus,A. curassavica,1.265,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.113,Control,NA,D. plexippus,A. curassavica,1.307,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.114,Control,NA,D. plexippus,A. curassavica,1.45,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.132,Control,NA,D. plexippus,A. incarnata,0.912,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.133,Control,NA,D. plexippus,A. incarnata,0.919,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.131,Control,NA,D. plexippus,A. incarnata,1.114,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.134,Control,NA,D. plexippus,A. incarnata,1.051,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.142,Control,NA,D. plexippus,A. incarnata,0.697,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.143,Control,NA,D. plexippus,A. incarnata,0.796,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.154,Control,NA,D. plexippus,A. incarnata,1.169,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.159,Control,NA,D. plexippus,A. incarnata,0.94,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.162,Control,NA,D. plexippus,A. incarnata,1.098,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.161,Control,NA,D. plexippus,A. incarnata,1.236,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.163,Control,NA,D. plexippus,A. curassavica,1.032,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.166,Control,NA,D. plexippus,A. curassavica,0.891,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.169,Control,NA,D. plexippus,A. curassavica,0.991,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.168,Control,NA,D. plexippus,A. incarnata,1.185,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.171,Control,NA,D. plexippus,A. incarnata,1.319,NA,NA,NA,1,NA,Butterfly,0016-02
+C16.193,Control,NA,D. plexippus,A. incarnata,1.166,NA,NA,NA,1,NA,Butterfly,0016-03
+C16.192,Control,NA,D. plexippus,A. incarnata,1.407,NA,NA,NA,1,NA,Butterfly,0016-03
+C16.202,Control,NA,D. plexippus,A. incarnata,0.888,NA,NA,NA,1,NA,Butterfly,0016-04
+C16.205,Control,NA,D. plexippus,A. incarnata,0.803,NA,NA,NA,1,NA,Butterfly,0016-04
+C16.207,Control,NA,D. plexippus,A. incarnata,0.912,NA,NA,NA,1,NA,Butterfly,0016-04
+C16.210,Control,NA,D. plexippus,A. incarnata,0.819,NA,NA,NA,0,NA,Butterfly,0016-04
+C16.232,Control,NA,D. plexippus,A. curassavica,1.301,NA,NA,NA,1,NA,Butterfly,0016-04
+C16.238,Control,NA,D. plexippus,A. curassavica,1.162,NA,NA,NA,1,NA,Butterfly,0016-04
+C16.239,Control,NA,D. plexippus,A. incarnata,1.488,NA,NA,NA,1,NA,Butterfly,0016-04
+C16.243,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,1,NA,Butterfly,0016-04
+C16.418,Control,NA,D. plexippus,A. incarnata,1.153,NA,NA,NA,1,NA,Butterfly,0016-08
+C16.419,Control,NA,D. plexippus,A. incarnata,1.103,NA,NA,NA,0,NA,"Dead butterfly, no wasps",0016-08
+C16.421,Control,NA,D. plexippus,A. incarnata,1.037,NA,NA,NA,1,NA,Butterfly,0016-08
+C16.428,Control,NA,D. plexippus,A. curassavica,1.215,NA,NA,NA,1,NA,Butterfly,0016-08
+C16.430,Control,NA,D. plexippus,A. curassavica,0.915,NA,NA,NA,1,NA,Butterfly,0016-08
+C16.431,Control,NA,D. plexippus,A. curassavica,0.927,NA,NA,NA,0,NA,"Dead butterfly, no wasps",0016-08
+C16.432,Control,NA,D. plexippus,A. curassavica,1.063,NA,NA,NA,0,NA,"Dead butterfly, no wasps",0016-08
+C16.445,Control,NA,D. plexippus,A. curassavica,1.244,NA,NA,NA,0,NA,Butterfly,0016-08
+C16.472,Control,NA,D. plexippus,A. curassavica,1.034,NA,NA,NA,1,NA,Butterfly,0016-08
+C16.473,Control,NA,D. plexippus,A. curassavica,1.1,NA,NA,NA,1,NA,Butterfly,0016-08
+C16.477,Control,NA,D. plexippus,A. curassavica,1.145,NA,NA,NA,0,NA,"Dead butterfly, no wasps",0016-08
+C16.478,Control,NA,D. plexippus,A. curassavica,NA,NA,NA,NA,1,NA,Butterfly,0016-08
+C16.483,Control,NA,D. plexippus,A. incarnata,NA,NA,NA,NA,0,NA,"Dead butterfly, no wasps",0016-08
+C16.523,Control,NA,D. plexippus,A. incarnata,1.311,NA,NA,NA,1,NA,Butterfly,0016-09
+C16.528,Control,NA,D. plexippus,A. incarnata,1.237,NA,NA,NA,1,NA,Butterfly,0016-09
+C16.529,Control,NA,D. plexippus,A. incarnata,1.414,NA,NA,NA,1,NA,Butterfly,0016-09
+C16.530,Control,NA,D. plexippus,A. incarnata,1.097,NA,NA,NA,0,NA,Butterfly,0016-09
+C16.533,Control,NA,D. plexippus,A. incarnata,1.195,NA,NA,NA,1,NA,Butterfly,0016-09
+C16.534,Control,NA,D. plexippus,A. incarnata,1.224,NA,NA,NA,1,NA,Butterfly,0016-09
+C16.537,Control,NA,D. plexippus,A. curassavica,0.763,NA,NA,NA,1,NA,Butterfly,0016-09
+C16.536,Control,NA,D. plexippus,A. incarnata,0.984,NA,NA,NA,1,NA,Butterfly,0016-09
+C16.538,Control,NA,D. plexippus,A. curassavica,0.859,NA,NA,NA,1,NA,Butterfly,0016-09

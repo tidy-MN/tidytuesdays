@@ -1,0 +1,86 @@
+---
+title: "RChats_OzoneAddition"
+author: "Kristie Ellickson"
+date: "6/16/2020"
+output: 
+  html_document: 
+    code_folding: hide
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE)
+```
+
+## Ozone data annual report
+
+
+### Ozone Data Summary
+
+
+```{r update data, echo = FALSE}
+
+library(tidyverse)
+
+setwd("C:/Users/kmell/Desktop/RChats with Angie and Melinda/data")
+
+all_ozone_files <- list.files()
+
+all_ozone_data <- all_ozone_files %>%
+  lapply(read_csv) %>%
+  bind_rows()
+
+```
+
+
+```{r ozone read, echo = FALSE}
+
+library(tidyverse)
+
+ozone_data <- read_csv("C:/Users/kmell/Desktop/RChats with Angie and Melinda/data/ozone_2016.csv")
+
+ozone_data <- all_ozone_data
+
+ozone_summary <- ozone_data %>%
+  group_by(SITE, YEAR, Latitude, Longitude) %>%
+  summarise(ozone_ppb_mean = mean(OZONE, na.rm = T))
+
+knitr::kable(ozone_summary)
+
+##very good tutorial on kableExtra tables here: http://haozhu233.github.io/kableExtra/awesome_table_in_html.html
+```
+
+<br>
+
+### Ozone Measurement Site Map
+
+<br>
+
+
+```{r ozone map, echo = FALSE}
+library(leaflet)
+
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng = ozone_summary$Longitude, lat = ozone_summary$Latitude)
+
+
+```
+
+<br>
+
+### Temperature vs Ozone concentration line plot
+
+<br>
+
+```{r ozone plot, echo = FALSE}
+
+library(ggplot2)
+
+
+ggplot(ozone_data, aes(x = TEMP_F, y = OZONE, color = as.character(YEAR))) +
+  geom_line()
+
+```
+
+## The End

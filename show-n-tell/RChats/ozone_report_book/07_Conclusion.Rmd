@@ -1,0 +1,9 @@
+
+## Conclusion
+
+I read this https://bookdown.org/yihui/bookdown/usage.html to learn how to knit my chapters together to build this book.
+
+Dorian's primer on making a simple book for our TidyTuesdays is terrific. Follow that for your first book! https://github.com/MPCA-data/tidytuesdays/tree/master/show-n-tell/make_book 
+
+The End
+

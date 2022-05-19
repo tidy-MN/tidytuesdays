@@ -1,0 +1,11 @@
+In R, run
+
+cat(gsub("/", "\\\\", file.path(R.home(), "bin")))
+
+in your console and copy the output. Click on the magnifying glass icon in the lower-left and search for “environment”. Click on “Edit environment variables for your account”. Under “User variables for <your username>” click on “New” if you do not already see a variable named “path” (or “Path” or “PATH”) otherwise edit the existing path. Click “New”, then click “Browse”, paste the directory, then press Enter. Open a Command Prompt (Windows icon search for “command prompt”) then type R. If the path was set correctly, the version information for R should appear in the Command Prompt.
+
+To create a batch file, open a text editor such as notepad and type
+
+R CMD BATCH <“path of your script with the quotes but without these braces<>”  >
+
+Save the file with the .bat extension and Save as type: “All files”. Double click the .bat file to run. If successful, a .Rout file will appear in the same folder as the script.

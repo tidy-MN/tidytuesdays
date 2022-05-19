@@ -1,0 +1,150 @@
+---
+title: "Non-parametric analysis of sulfate concentrations for wild rice"
+author: "Allison Gamble, Barbara Monaco, Derek Nagel"
+date: "8/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+A wild rice water is considered impaired if the average annual sulfate concentration exceeds, with statistical significance, the state water quality standard. A wild rice water is considered fully supporting if the average meets, with statistical significance, the standard. Assessments require data sets of at least 10 independent observations that give an unbiased representation of overall conditions through the year. Determinations of statistical significance are made at an 80 percent confidence level, using the Kaplan-Meier estimator and a boot-strapped confidence interval.
+
+![flow](H:/Acceptance Sampling/www/Sulfate assessment for Wild Rice-Lake V3.png)
+
+## Nonparametric - Why and When
+
+Non-parametric methods are statistical methods that do not rely on assumptions built on known distributions (i.e. parametric methods). By making very few assumptions regarding the data, they often will lack power but will also be more unbiased and can be used on a vast variety of data.
+
+In situations where the distribution is unknown, or varied from group to group, such as the sulfate concentraions, by utilizing non-parametric techniques, there is no need to transform, or make otherwise eroneous assumptions about the data.
+
+```{r, message = FALSE}
+#install.packages(c("tidyverse", "skimr", "janitor", "lubridate", "plotly", "glue", "magrittr", "EnvStats", "data.table"))
+
+library(tidyverse)
+library(skimr)
+library(janitor)
+library(lubridate)
+library(plotly)
+library(glue)
+library(magrittr)
+library(EnvStats)
+library(data.table)
+
+#read in data
+sulfate <- read_csv("https://raw.githubusercontent.com/MPCA-data/tidytuesdays/master/help/water-Sulfate/sulfate_per_wid_with_min10_obs.csv")
+
+#use skim for overview of data
+skim(sulfate)
+```
+
+```{r}
+#clean column names
+sulfate <- clean_names(sulfate)
+
+sulfate <- mutate(sulfate,
+                  #convert integer date to r date object
+                  sample_date = as_date(sample_date, ymd(19000101)),
+                  #convert detect_flag to logical
+                  detect_flag = detect_flag == "Y",
+                  cens = !detect_flag,
+                  #set censoring level to mdl or rdl, whichever is higher
+                  cens_level = pmax(method_detection_limit, 
+                                    reporting_detection_limit, na.rm = T))
+
+#check for any non detects without a censoring level
+filter(sulfate, !detect_flag, is.na(cens_level))
+
+#get sample counts for each stream code
+sample_counts <- sulfate %>% group_by(stream_code) %>% summarise(n())
+sample_counts %>% head()
+
+#create plotly widget to view data
+plot_ly(sulfate, x = ~sample_date, y = ~report_result_value) %>%
+  add_markers(hoverinfo = "text",
+              color = ~detect_flag,
+              colors = c("orange", "blue"),
+              text = ~glue("Stream Code: {stream_code}
+                           Sample date: {sample_date}
+                           Result: {report_result_value} {result_unit}"))
+```
+
+## Methods
+
+`enparCensored` - Estimate the mean, standard deviation, and standard error of the mean nonparametrically given a sample of data from a positive-valued distribution that has been subjected to left- or right-censoring, and optionally construct a confidence interval for the mean.
+
+It can be shown that the mean of a positive-valued distribution is equal to the area under the survival
+curve (Klein and Moeschberger, 2003, p.33):
+
+$\mu = \int\limits_{0}^{\infty}[1 -F(t)]dt = \int_{0}^{\infty}S(t)dt$
+
+where $F(t)$ denotes the cumulative distribution function evaluated at $t$ and $S(t) = 1−F(t)$ denotes
+the survival function evaluated at $t$. When the Kaplan-Meier estimator is used to construct the survival function, you can use the area under this curve to estimate the mean of the distribution, and the
+estimator can be as efficient or more efficient than parametric estimators of the mean (Meier, 2004;
+Helsel, 2012; Lee and Wang, 2003). Let $\hat{F}(t)$ denote the Kaplan-Meier estimator of the empirical
+cumulative distribution function (ecdf) evaluated at $t$, and let $\hat{S}(t) = 1 − \hat{F}(t)$ denote the estimated survival function evaluated at $t$. 
+
+**Kaplan Meier empirical distribution function (EDF)**
+
+Empirical distribution functions (EDF) plot the sample percentiles for each observation in the data set by ranking them from lowest to highest and are estimations of the true cumulative distribution function (CDF) of the population.
+
+The Kaplan Meier method places each non‐detect at its reporting limit prior to ranking and assigns the smallest rank possible in the case of ties. This allows us to account for censored observations in the creation of the EDF. However, if all data are censored or the same value then no EDF can be determined as the Kaplan Meier relies on the number of observations lower than each detected value. (Helsel, 2012)
+
+**Bootstrapping**
+
+Bootstrapping is any test or metric that uses random sampling with replacement, and falls under the broader class of resampling methods. Bootstrapping assigns measures of accuracy (bias, variance, confidence intervals, prediction error, etc.) to sample estimates. This technique allows estimation of the sampling distribution of almost any statistic using random sampling methods.
+
+Bootstrapping estimates the properties of an estimator (such as its variance) by measuring those properties when sampling from an approximating distribution. One standard choice for an approximating distribution is the empirical distribution function of the observed data. In the case where a set of observations can be assumed to be from an independent and identically distributed population, this can be implemented by constructing a number of resamples with replacement, of the observed data set (and of equal size to the observed data set).
+
+```{r}
+#set number of bootstrap samples
+n_bootstrap <- 100
+
+#set seed for reproducability
+set.seed(20200317)
+
+stream_summary <- sulfate %>% group_by(stream_code) %>%
+  #Use group_modify instead of summarize since we want to extract 2 values
+  #out of bootstrap samples (ci_lower and ci_upper)
+  group_modify(~tibble(unique_vals = .x %$% uniqueN(report_result_value[!cens]),
+                       pct_censored = .x %$% mean(cens),
+                       mean = .x %$% if(unique_vals < 2) NA else
+                         if (all(detect_flag)) mean(report_result_value) else
+                           enparCensored(report_result_value, 
+                                         !detect_flag)$parameters["mean"],
+                       #if the mean is NA, the ucl should be as well
+                       ci95 = .x %$% if(is.na(mean)) NA else {
+                         #repeat sampling n times
+                         n = length(cens)
+                         replicate(n_bootstrap,
+                                   #sample two distinct non-censored values as row numbers
+                                   sample((1:n)[!cens & !duplicated(report_result_value * !cens)],
+                                          2, replace = F) %>%
+                                     #sample n-2 rows (censored or non-censored) and combine with the 2 rows
+                                     #from line above
+                                     c(sample(1:n, n - 2, replace = T)) %>% {
+                                       #use elnormAltCensored if any values in bootstrap sample are censored
+                                       if(any(cens[.]))
+                                         enparCensored(report_result_value[.],
+                                                       cens[.])$parameters["mean"]
+                                       else
+                                           #just take the mean if all values in bootstrap sample are detected
+                                           mean(report_result_value[.])
+                                     }
+                         )} %>%
+                         #create list column to get both lower and upper ci bounds
+                         {tibble(ci_lower = quantile(., 0.025), 
+                                 ci_upper = quantile(., 0.975)) %>% list()},
+                       #find min and max value for each stream
+                       min = .x %$% min(report_result_value),
+                       max = .x %$% max(report_result_value),
+                       #get total number of samples for each stream
+                       n = nrow(.x)
+  ),
+  keep = T
+  )
+
+```
+

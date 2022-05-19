@@ -1,0 +1,38 @@
+
+## Plot the Data
+
+```{r get data 3, echo = FALSE, message = F, warning = F}
+
+library(tidyverse)
+
+setwd("C:/Users/kmell/Desktop/RChats with Angie and Melinda/data")
+
+all_ozone_files <- list.files()
+
+all_ozone_data <- all_ozone_files %>%
+  lapply(read_csv) %>%
+  bind_rows()
+
+ozone_data <- all_ozone_data
+
+ozone_summary <- ozone_data %>%
+  group_by(SITE, YEAR, Latitude, Longitude) %>%
+  summarise(ozone_ppb_mean = mean(OZONE, na.rm = T))
+
+```
+
+
+```{r ozone plot, message = FALSE}
+
+library(ggplot2)
+
+
+m <- ggplot(ozone_data, aes(x = TEMP_F, y = OZONE, color = as.character(YEAR))) +
+  geom_line()
+
+show(m)
+
+
+```
+
+

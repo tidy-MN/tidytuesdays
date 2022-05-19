@@ -1,0 +1,295 @@
+---
+title: "penguins_across"
+author: "Kristie Ellickson"
+date: "10/5/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+We will go through the `across()` function using this online tutorial today <https://www.rebeccabarter.com/blog/2020-07-09-across/>.
+
+And, we are gonna use this great penguin data set!
+
+![*Palmer Penguin R Data Package*](https://allisonhorst.github.io/palmerpenguins/reference/figures/logo.png)
+
+
+<br>
+
+## The Data
+
+<br>
+
+First we get the data using `remotes()`
+
+<br>
+
+```{r penguin data, message = FALSE}
+
+#remotes::install_github("allisonhorst/palmerpenguins")
+
+library(palmerpenguins)
+
+library(tidyverse)
+
+head(penguins)
+
+```
+
+<br>
+
+#### This is the older way of summarising data. We haven't grouped by anything, so this will provide a count for the whole dataset of the included species. With one summary, this isn't that difficult.
+
+<br>
+
+
+```{r old way, message = FALSE}
+
+penguins %>%
+  summarise(distinct_species = n_distinct(species))
+
+```
+
+<br>
+
+#### But, what if I wanted to know the distinct number of species in each of the numeric columns? There is a lot of information here! 
+
+<br>
+
+```{r old way lots, message = FALSE}
+
+penguins %>%
+  summarise(distinct_species = n_distinct(species),
+            distinct_island = n_distinct(island),
+            distinct_sex = n_distinct(sex))
+
+```
+
+
+<br>
+
+#### That is a lot of typing. So, we use `across()`.
+
+<br>
+
+```{r across, message = FALSE}
+
+penguins %>%
+  summarise(across(c(species, island, sex), 
+                   n_distinct))
+
+```
+
+<br>
+
+#### We can also asign which columns NOT to count.
+
+<br>
+
+```{r not those, message = FALSE}
+
+penguins %>%
+  summarise(across(!c(species, island, sex), 
+                   n_distinct))
+```
+
+<br>
+
+#### Or maybe we just want to count everything
+
+<br>
+
+```{r everything, message = FALSE}
+
+penguins %>%
+  summarise(across(everything(), n_distinct))
+
+```
+
+<br>
+
+#### Last week we had some column names with similar characters in them, or you might have dates or years in your columns. You can select columns by assigning the start of each of the columns of interest using 'starts_with()'.
+
+<br>
+
+```{r starts, message = FALSE}
+
+penguins %>%
+  summarise(across(starts_with("bill"), n_distinct))
+
+```
+
+<br>
+
+#### Or......`ends_with()`
+
+<br>
+
+```{r ends, message = FALSE}
+
+penguins %>%
+  summarise(across(ends_with("mm"), n_distinct))
+
+```
+
+
+<br>
+
+#### Or if some character is jammed in the middle you can use `contains()`.
+
+<br>
+
+
+```{r distinct, message = FALSE}
+penguins %>%
+  summarise(across(contains("length"), n_distinct))
+```
+
+<br>
+
+#### Or, maybe you have some columns that are dates, some that are characters and some that are numeric. You only want to count the numberic columns, here's how...
+
+<br>
+
+```{r condition, message = FALSE}
+  
+penguins %>%
+  summarise(across(where(is.numeric), n_distinct))
+
+```
+
+<br>
+
+#### We can also do math across several functions. The inline function below counts all of the NA's in every column.
+
+<br>
+
+```{r inline functions, message = FALSE}
+penguins %>%
+  summarise(across(everything(), 
+                   ~sum(is.na(.))))
+```
+
+<br>
+
+#### But, all of this has been applied using an existing functions in R. What if I write all my own functions because that is the way I roll and I am a unique person with unique R needs and no existing function does what i need to do with my data, like add 10 to it?
+
+<br>
+
+```{r functions, message = FALSE}
+
+add_ten <-  function(x) {
+  x + 10}
+
+print(add_ten)
+
+add_ten(10)
+add_ten(50)
+
+```
+
+<br>
+
+#### A way to signal R that a formula is coming, is the `~`. And we use curly brackets `{}` for the expression.
+
+<br>
+
+```{r replace, message = FALSE}
+~{.x + 10}
+
+```
+
+<br>
+
+#### First of all. NEVER DO THIS. DO NOT REPLACE YOUR NA's WITH ZEROES. NO. DONT.
+*But*, as an example we are going to write a function that replaces NAs with 0s.
+
+<br>
+
+```{r function across, message = FALSE}
+
+                   
+                   replace0 <- function(x) {
+  if_else(condition = is.na(x), 
+          true = 0, 
+          false = as.numeric(x))}
+                   
+```
+
+<br>
+
+#### So, say we want to apply this function we wrote to a bunch of columns. It would look like this and there would be a lot of typing.
+
+<br>
+
+```{r many rows, message = FALSE}                   
+penguins %>%
+  mutate(bill_length_mm = replace0(bill_length_mm),
+         bill_depth_mm = replace0(bill_depth_mm),
+         flipper_length_mm = replace0(flipper_length_mm),
+         body_mass_g = replace0(body_mass_g))
+```
+         
+<br>
+
+#### We can simply apply our new function to these numeric columns using. 
+
+<br>
+
+```{r all together, message = FALSE}
+penguins %>%
+  mutate(across(where(is.numeric), replace0))
+  
+```
+
+<br>
+
+#### You can also just a function inline, rather than write a function and then call it using the object name you gave it `replace_na()`, .
+
+<br>
+
+```{r diy, message = FALSE}
+penguins %>%
+  mutate(across(where(is.numeric), ~if_else(is.na(.), mean(., na.rm = T), as.numeric(.))))
+
+```
+
+<br>
+
+#### Or maybe we did a big analysis and need to replace our NAs with means. You can do it this way.
+
+<br>
+
+```{r write it out, message = FALSE}
+penguins %>%
+  group_by(species, island) %>%
+  mutate(across(where(is.numeric), 
+                ~if_else(condition = is.na(.), 
+                         true = mean(., na.rm = T), 
+                         false = as.numeric(.)))) %>%
+  ungroup()
+
+```
+
+<br>
+
+#### The `select()` function in R already has a *kind of* across function in it. So, we can use some of the same helper functions to find certain columns, but `across()` is not necessary with `select()`.
+
+<br>
+
+```{r select, message = FALSE}  
+  penguins %>%
+  select(where(is.numeric))
+
+  #penguins %>%
+  #select(across(where(is.numeric)))
+
+```
+
+<br>
+
+#### The End.
