@@ -27,17 +27,20 @@ May: Work smarter not harder :muscle: :sweat_drops:
 
 June: Work smarter not harder v.2 :muscle: :muscle:                                                                                    
 
+July: Updates, planning and JSON objects v.2 :question: :grey_question:
+
+August: In person training!! :alien: :stars:
+
 <br>
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
 | ---  | --- | --- | --- | 
-| May 17 | | Databases *-(Eileen Campbell)* | 2500 `pts` |
-| May 24 | | Using RODBC to pull from databases *-(Carl, Kristie, Andrea, Dorian)* | 78 `pts` |
-| May 31 | | Regular expressions *-(Kristie, Dorian, Barbara)* | 100 `pts` |
-| June 7 | | Web scraping *-(Dorian, Allison)* | 54 `pts` |
-| June 14 | | getting data from PDFs *-(Derek, Barbara)* | 68 `pts` |
-| June 21 | | make requests of websites to get data *-(USGS packages)* | 900 `pts` |
-| June 28 | | youtube on OCR optical character recognition and audio transcription *-(everyone) | 10000 `pts` |
+| July 5 | | chit chat, catch up and plan the training *-(Kristie, Barbara)* | 250 `pts` |
+| July 12 | | leaflet map with new EJ areas *-(Quinn, Barbara)* | 250 `pts` |
+| July 19 | | JSON objects *-(Barbara, Dorian, Andrea)* | 250 `pts` |
+| July 26 | | writing JSON objects *-(all hands on deck)* | 250 `pts` |
+| August | | In person training!! *-(Barbara, Dorian, Carl, Kristie)* | 250 `pts` |
+
 <br>
 
 <details>
@@ -45,6 +48,12 @@ June: Work smarter not harder v.2 :muscle: :muscle:
   
 | Date | R demo <br> _training_  | Show-n-tell <br> **:tada:** <br> _2nd half_ | :candy:`sugaR pts`   |   
 | ---  | --- | --- | --- | 
+| May 24 | | Using RODBC to pull from databases *-(Carl, Kristie, Andrea, Dorian)* | 78 `pts` |
+| May 31 | | Regular expressions *-(Kristie, Dorian, Barbara)* | 100 `pts` |
+| June 7 | | Web scraping *-(Dorian, Allison)* | 54 `pts` |
+| June 14 | | getting data from PDFs *-(Derek, Barbara)* | 68 `pts` |
+| June 21 | | make requests of websites to get data *-(USGS packages)* | 900 `pts` |
+| June 28 | | youtube on OCR optical character recognition and audio transcription *-(everyone) | 10000 `pts` |
 | May 10 | | scheduled tasks *-(Barbara, Dorian)* |123 `pts`|
 | May 3 | | purrr functions recap *-(Kristie, Dorian, Barbara, Derek, Carl)* | 23 `pts`|
 | Apr 26 | | Nila Hines MPCA Data Governance - Program Manager *-(all)* | 53000 `pts`|
