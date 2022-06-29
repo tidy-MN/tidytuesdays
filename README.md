@@ -36,10 +36,10 @@ August: In person training!! :alien: :stars:
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
 | ---  | --- | --- | --- | 
 | July 5 | | chit chat, catch up, and plan the training *-(Kristie, Barbara)* | 250 `pts` |
-| July 12 | | leaflet map with new EJ areas *-(Quinn, Barbara)* | 250 `pts` |
+| July 12 | | leaflet map with new EJ areas *-(Quinn, Barbara)* | 2050 `pts` |
 | July 19 | | JSON objects *-(Barbara, Dorian, Andrea)* | 250 `pts` |
-| July 26 | | Eric's data *-(all hands on deck)* | 250 `pts` |
-| August | | In person training!! *-(Barbara, Dorian, Carl, Kristie)* | 250 `pts` |
+| July 26 | | Eric's data *-(all hands on deck)* | 250000 `pts` |
+| August | | In person training!! *-(Barbara, Dorian, Carl, Kristie)* | All the `pts` |
 
 <br>
 
