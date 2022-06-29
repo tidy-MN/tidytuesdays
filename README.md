@@ -27,9 +27,9 @@ May: Work smarter not harder :muscle: :sweat_drops:
 
 June: Work smarter not harder v.2 :muscle: :muscle:                                                                                    
 
-July: Updates, planning, and JSON objects v.2 :question: :grey_question:
+July: Updates, planning, and JSON objects v.2 :question: :unicorn: :grey_question:
 
-August: In person training!! :alien: :stars:
+August: In person training!! :alien: :chart: :stars:
 
 <br>
 
