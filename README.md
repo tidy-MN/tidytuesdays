@@ -29,7 +29,7 @@ June: Work smarter not harder v.2 :muscle: :muscle:
 
 July: Updates, planning, and JSON objects v.2 :question: :unicorn: :grey_question:
 
-August: In person training!! :alien: :chart: :stars:
+August: In person training!! August 2nd, 3rd, and 4th :alien: :chart: :stars:
 
 <br>
 
@@ -39,7 +39,7 @@ August: In person training!! :alien: :chart: :stars:
 | July 12 | | leaflet map with new EJ areas *-(Quinn, Barbara)* | 2050 `pts` |
 | July 19 | | JSON objects *-(Barbara, Dorian, Andrea)* | 250 `pts` |
 | July 26 | | Eric's data *-(all hands on deck)* | 250000 `pts` |
-| August | | In person training!! *-(Barbara, Dorian, Carl, Kristie)* | All the `pts` |
+| August | | In person training!! August 2nd, 3rd, 4th *-(Barbara, Dorian, Carl, Kristie)* | All the `pts` |
 
 <br>
 
