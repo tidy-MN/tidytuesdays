@@ -267,7 +267,7 @@ August: In person training!! August 2nd, 3rd, and 4th :alien: :chart: :stars:
 
 | Project | Details | Team contact |  | Wishlist  |  
 | ---  | --- | --- | --- | --- | 
-| R training | - [Star Wars training](https://itep-r.netlify.com/)  <br/> - [Workshops](https://mpca-air.github.io/RTrain/#workshops) (Maps, Connecting to databases, messy data)  <br/> - [Cat training](https://mpca-air.github.io/RCamp/) (the original)  | | | |   
+| R training | - [Star Wars training](https://mn-r.netlify.app/)  <br/> - [Workshops](https://mpca-air.github.io/RTrain/#workshops) (Maps, Connecting to databases, messy data)  <br/> - [Cat training](https://mpca-air.github.io/RCamp/) (the original)  | | | |   
 | [`library(mpcaej)`](https://github.com/MPCA-data/mpcaej#mpcaej) | Shapefiles with MPCA’s criteria for areas of concern for environmental justice | Dorian | | |
 | [`library(mncolors)`](https://github.com/MPCA-data/mncolors#minnesota-color-palettes) | Paint your data with colors from the [MN State Brand style Guide](https://mn.gov/portal/brand/style-guide/colors/), plus a few palettes inspired by local landscapes and wildlife. | Dorian | | |
 | [`library(mpcadb)`](https://github.com/MPCA-data/mpcadb) | Easy R connections to MPCA’s databases: DELTA, TEMPO, EQUIS, RAPIDS, ONBASE...  <br/> - Store common reference data | Derek | | |
