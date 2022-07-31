@@ -21,7 +21,7 @@ Our cat shelter **The Meow House** is overflowing with found cats and we're recr
 
 1. Get to know your cat's personality traits and determine its age as best you can. 
     - Useful packages: `library(tidyverse)`, `library(lubridate)`
-    - Useful functions: `read_csv()`, `today()`, `ymd()`, `duration(10, "years")
+    - Useful functions: `read_csv()`, `today()`, `ymd()`, `duration(10, "years")`
 2. Find the earliest possible birthday 🍰 for your cat. Then find the latest possible birthday for your cat. 
 4. Consult the BIG missing cat list to help find the cat's worried owner.
 *(They will be oh so forever grateful)*
