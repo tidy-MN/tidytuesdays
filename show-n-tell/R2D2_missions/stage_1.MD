@@ -51,9 +51,9 @@ library(dplyr)
 <br>
 
 ## Save and share
-Send us your script and your best recommendation for the time for a Luke rescue mission. Han Solo will really appreciate it. We'll let you know how it goes. 
+Send us your script and your best recommendation for the time of Luke's rescue mission. Han Solo will really appreciate it. We'll let you know how it goes. 
 
 <br>
 
->
+> ❤ 
 > *-the Alliance*
