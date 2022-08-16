@@ -22,7 +22,8 @@ plot(block_groups)
 
 library(tidycensus)
 
-census_api_key("f152f8211beb7be9b03ef7f9f0a01cb63283cb4e", overwrite = TRUE)
+##get a api key
+census_api_key("", overwrite = TRUE)
 
 acs_variables <- load_variables(2018, "acs5", cache = TRUE)
 
