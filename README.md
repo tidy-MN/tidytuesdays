@@ -38,11 +38,10 @@ September: Covering topics requested during the in-person training. 🔙
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
 | ---  | --- | --- | --- | 
 
-
 | September 6 | | Connecting to deltaw EQUIS *-(Andrea)* | 35 `pts` |
-| September 13 | | Connecting to deltaw EQUIS *-(Andrea)* | 35 `pts` |
-| September 20 | | Connecting to deltaw EQUIS *-(Andrea)* | 35 `pts` |
-| September 27 | | Connecting to deltaw EQUIS *-(Andrea)* | 35 `pts` |
+| September 13 | | Intro to tidycensus *-(Quinn, Amanda, Barbara)* | 35000 `pts` |
+| September 20 | | Regression and linear modeling *-(Barbara, Carl)* | 126 `pts` |
+| September 27 | | Review of the sf exercise and shapefiles *-(Dorian)* | 42 `pts` |
 | August | | In person training!! August 2nd, 3rd, 4th *-(Barbara, Dorian, Carl, Kristie)* | All the `pts` |
 
 <br>
