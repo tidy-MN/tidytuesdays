@@ -50,7 +50,7 @@ December: In person training at MDH :anatomical_heart:
 | Oct 11 | | Saving and reading other file types - json, eps, rdata, rds *-(Carl, Dorian)* | 7401 `pts` |
 | Oct 18 | | Shiny app demo *-(Barbara)* | 42 `pts` |
 | Oct 25 | | More complicated examples from peoples' pasts *-(Barbara, Carl, Amanda, Brianna)* | 42 `pts` |
-| Nov 1 | | The meorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
+| Nov 1 | | The meteorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
 | Nov 8 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `degs` |
 | Nov 15 | | Rasters, oh yea! *-(TBD)* | 32 `degs` |
 | ~Dec | | In person training!! at MDH *-(Barbara, Dorian, Carl)* | All the `pts` | :anatomical_heart:
