@@ -31,6 +31,8 @@ July: Updates, planning, and JSON objects v.2 :question: :unicorn: :grey_questio
 
 August: In person training!! August 2nd, 3rd, and 4th :alien: :chart: :stars:
 
+September: Covering topics requested during the in-person training. :check:
+
 <br>
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
