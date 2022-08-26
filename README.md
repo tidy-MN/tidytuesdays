@@ -33,6 +33,10 @@ August: In person training!! August 2nd, 3rd, and 4th :alien: :chart: :stars:
 
 September: Covering topics requested during the in-person training. 🔙
 
+October: Scary challenging stuff from your past 👻 👻 🎃 🎃
+
+November: Return of the meteorologists! 🌩️ ⛈️ 🌨️
+
 <br>
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
@@ -41,6 +45,13 @@ September: Covering topics requested during the in-person training. 🔙
 | Sept 13 | | Intro to tidycensus *-(Quinn, Amanda, Barbara)* | 35000 `pts` |
 | Sept 20 | | Regression and linear modeling *-(Barbara, Carl)* | 126 `pts` |
 | Sept 27 | | Review of the sf exercise and shapefiles *-(Dorian)* | 42 `pts` |
+| Oct 4 | | Complicated examples from peoples' past *-(Carl, Amanda, Brianna)* | 4202 `pts` |
+| Oct 11 | | Saving and reading other file types - json, eps, rdata, rds *-(Carl, Dorian)* | 7401 `pts` |
+| Oct 18 | | Shiny app demo *-(Barbara)* | 42 `pts` |
+| Oct 25 | | More complicated examples from peoples' pasts *-(Barbara, Carl, Amanda, Brianna)* | 42 `pts` |
+| Nov 1 | | The meorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
+| Nov 8 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `degs` |
+| Nov 15 | | Rasters, oh yea! *-(TBD)* | 32 `degs` |
 | August | | In person training!! August 2nd, 3rd, 4th *-(Barbara, Dorian, Carl, Kristie)* | All the `pts` |
 
 <br>
@@ -50,7 +61,6 @@ September: Covering topics requested during the in-person training. 🔙
   
 | Date | R demo <br> _training_  | Show-n-tell <br> **:tada:** <br> _2nd half_ | :candy:`sugaR pts`   |   
 | ---  | --- | --- | --- | 
-
 | July 5 | | chit chat, catch up, and plan the training *-(Kristie, Barbara)* | 250 `pts` |
 | July 12 | | leaflet map with new EJ areas *-(Quinn, Barbara)* | 2050 `pts` |
 | July 19 | | JSON objects *-(Barbara, Dorian, Andrea)* | 250 `pts` |
