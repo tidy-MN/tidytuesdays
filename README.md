@@ -37,10 +37,12 @@ September: Covering topics requested during the in-person training. 🔙
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
 | ---  | --- | --- | --- | 
-| July 5 | | chit chat, catch up, and plan the training *-(Kristie, Barbara)* | 250 `pts` |
-| July 12 | | leaflet map with new EJ areas *-(Quinn, Barbara)* | 2050 `pts` |
-| July 19 | | JSON objects *-(Barbara, Dorian, Andrea)* | 250 `pts` |
-| July 26 | | Eric's data *-(all hands on deck)* | 250000 `pts` |
+
+
+| September 6 | | Connecting to deltaw EQUIS *-(Andrea)* | 35 `pts` |
+| September 13 | | Connecting to deltaw EQUIS *-(Andrea)* | 35 `pts` |
+| September 20 | | Connecting to deltaw EQUIS *-(Andrea)* | 35 `pts` |
+| September 27 | | Connecting to deltaw EQUIS *-(Andrea)* | 35 `pts` |
 | August | | In person training!! August 2nd, 3rd, 4th *-(Barbara, Dorian, Carl, Kristie)* | All the `pts` |
 
 <br>
@@ -50,12 +52,17 @@ September: Covering topics requested during the in-person training. 🔙
   
 | Date | R demo <br> _training_  | Show-n-tell <br> **:tada:** <br> _2nd half_ | :candy:`sugaR pts`   |   
 | ---  | --- | --- | --- | 
-| May 24 | | Using RODBC to pull from databases *-(Carl, Kristie, Andrea, Dorian)* | 78 `pts` |
-| May 31 | | Regular expressions *-(Kristie, Dorian, Barbara)* | 100 `pts` |
+
+| July 5 | | chit chat, catch up, and plan the training *-(Kristie, Barbara)* | 250 `pts` |
+| July 12 | | leaflet map with new EJ areas *-(Quinn, Barbara)* | 2050 `pts` |
+| July 19 | | JSON objects *-(Barbara, Dorian, Andrea)* | 250 `pts` |
+| July 26 | | Eric's data *-(all hands on deck)* | 250000 `pts` |
 | June 7 | | Web scraping *-(Dorian, Allison)* | 54 `pts` |
 | June 14 | | getting data from PDFs *-(Derek, Barbara)* | 68 `pts` |
 | June 21 | | make requests of websites to get data *-(USGS packages)* | 900 `pts` |
 | June 28 | | youtube on OCR optical character recognition and audio transcription *-(everyone) | 10000 `pts` |
+| May 24 | | Using RODBC to pull from databases *-(Carl, Kristie, Andrea, Dorian)* | 78 `pts` |
+| May 31 | | Regular expressions *-(Kristie, Dorian, Barbara)* | 100 `pts` |
 | May 10 | | scheduled tasks *-(Barbara, Dorian)* |123 `pts`|
 | May 3 | | purrr functions recap *-(Kristie, Dorian, Barbara, Derek, Carl)* | 23 `pts`|
 | Apr 26 | | Nila Hines MPCA Data Governance - Program Manager *-(all)* | 53000 `pts`|
