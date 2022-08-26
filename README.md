@@ -37,6 +37,7 @@ October: Scary challenging stuff from your past 👻 👻 🎃 🎃
 
 November: Return of the meteorologists! 🌩️ ⛈️ 🌨️
 
+December: In person training at MDH :anatomical_heart:
 <br>
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
