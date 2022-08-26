@@ -52,7 +52,7 @@ November: Return of the meteorologists! 🌩️ ⛈️ 🌨️
 | Nov 1 | | The meorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
 | Nov 8 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `degs` |
 | Nov 15 | | Rasters, oh yea! *-(TBD)* | 32 `degs` |
-| August | | In person training!! August 2nd, 3rd, 4th *-(Barbara, Dorian, Carl, Kristie)* | All the `pts` |
+| ~Dec | | In person training!! at MDH *-(Barbara, Dorian, Carl)* | All the `pts` | :anatomical_heart:
 
 <br>
 
