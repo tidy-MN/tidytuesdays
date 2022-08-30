@@ -1,4 +1,4 @@
-## Add your Kristie kudos, words of encouragement, and inspiration below.
+## Add your Kristie kudos and cat inspired inspiration below.
 
 
 The party starts meow! --kitty  
