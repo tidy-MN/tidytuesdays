@@ -1,4 +1,4 @@
-# An kudos kitty for Kristie
+# A kudos kitty for Kristie
 ## Add your message to the possible kitty sayings at https://github.com/MPCA-data/tidytuesdays/blob/main/show-n-tell/anniversary/kristie_kudos.MD
 
 # Use:
