@@ -4,7 +4,6 @@
 # source("https://raw.githubusercontent.com/MPCA-data/tidytuesdays/master/show-n-tell/anniversary/encourage_cat.R")
 # encourage_cat()
 
-
 encourage_cat <- function(name = "", cat = T) {
   
   #install.packages("cowsay")
