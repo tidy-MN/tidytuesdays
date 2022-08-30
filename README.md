@@ -357,7 +357,8 @@ Things to talk about.
 source("https://raw.githubusercontent.com/MPCA-data/tidytuesdays/main/show-n-tell/anniversary/text_adventure.R")
 ```
 
-
+### Meows of encouragement
+`> source("https://raw.githubusercontent.com/MPCA-data/tidytuesdays/master/show-n-tell/anniversary/encourage_cat.R")`
 `> encourage_cat()`
 
     Meowwww. Hello R Users! 
