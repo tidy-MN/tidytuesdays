@@ -18,4 +18,4 @@ I am a catalyst for surprises. --kitty
 Breaking Meows! I'm a cat. --kitty
 Not too shabby for a tabby! --kitty
 Time to dig your claws in! --kitty
-I'm half pawsitive this won't be a total catastrophe. --kitty
+I'm pawsitive this won't be a total catastrophe. --kitty
