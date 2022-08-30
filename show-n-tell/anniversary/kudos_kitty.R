@@ -10,7 +10,7 @@ kudos_kitty <- function(show_cat = T) {
   
   name <- "Kristie"
   
-  quotes <- readLines("kristie_kudos.MD")
+  quotes <- readLines("https://gist.githubusercontent.com/dKvale/86bbe8df9f78251176df7c5f29629d73/raw/7280169ac2e41a927359791ef03f94e5035c8f61/kristie_kudos.MD")
   
   # Drop header and short lines
   quotes <- quotes[2:length(quotes)]
