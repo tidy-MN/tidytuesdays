@@ -2,7 +2,7 @@
 ## Add your message to the possible kitty sayings at https://github.com/MPCA-data/tidytuesdays/blob/main/show-n-tell/anniversary/kristie_kudos.MD
 
 # Use:
-# source("https://raw.githubusercontent.com/MPCA-data/tidytuesdays/master/show-n-tell/anniversary/kudos_kitty.R")
+# source("https://gist.githubusercontent.com/dKvale/41fa93f2f39124ee76054248bffb309a/raw/ed6d83109185f5ca51dfae5a358cf40bfd31aa6a/kudos_kitty.R")
 # kudos_cat()
 
 
@@ -116,14 +116,13 @@ the_cat = '\n ------------------------------
  
   
   get_cat <- function(width = 400, height = 400){
-    r <- GET(paste("http://theoldreader.com/kittens", width, height, sep = "/"))
+    r <- httr::GET(paste("http://theoldreader.com/kittens", width, height, sep = "/"))
     stop_for_status(r)
     content(r)
   }
   
-  # Show a cat for the day
-  plot(1:2, type='n', axes = F, ann = FALSE)
+  # Show the cat for the day
+  plot(c(1:2), type='n', axes = F, main = "Today's kitty", xlab = "", ylab = "")
   rasterImage(get_cat(), 1, 1, 2, 2)
-  
   }
 }
