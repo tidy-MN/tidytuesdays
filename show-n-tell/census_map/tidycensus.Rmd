@@ -1,0 +1,210 @@
+---
+title: 'Tutorial: tidycensus'
+author: "Amanda Gorton, MPCA"
+date: "2022-09-07"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+### Why tidycensus?  
+
+- Access to Decennial Census, American Community Survey (ACS), Population Estimates Program, Public Use Microdata Series APIs  
+- Mapping is way easier because census geometries are automatically downloaded  
+- States and counties can be requested by name rather than FIPs codes   
+
+Note that there is **excellent** documentation for tidycensus, including a FREE book by Kyle Walker, who created tidycensus!  
+https://walker-data.com/census-r/index.html  
+
+
+### Getting started 
+
+Before we do anything, let's load our packages. Remember that if you don't have these installed first, you will get an error when you run the code below. 
+
+#### Load packages
+
+```{r}
+library(tidycensus)
+library(dplyr)
+library(ggplot2)
+library(keyring)
+library(tidyr)
+```
+
+#### Get your API key + load
+
+In order to access census data, you will need to request your own census API key. This can be done [here]:  
+(https://api.census.gov/data/key_signup.html)   
+
+```{r, eval = FALSE}
+census_api_key("YOUR API KEY HERE")
+```
+
+Alternatively, if you use keychain (and better for sharing code), you can hide your API key and not have to paste/enter it each time   
+```{r, eval = FALSE}
+# Store your individual API key
+key_set_with_value(service = "census api", 
+                   password = "YOUR API KEY HERE") 
+
+```
+
+```{r}
+census_api_key(key_get("census api")) # If you include, install = TRUE, it will install your API key for use in future sessions
+```
+
+
+### Basics of tidycensus
+
+The two major functions used in tidycensus to pull in census data (2000,2010,2020) and ACS data (5 year, 1 year) are as follows:  
+
+`get_decennial()`  
+`get_acs()`  
+
+Within these functions, you can specify the geography (state, county, tract, block, etc), the census or ACS variable of interest, and the year. There are other functions available as well - see documentation!    
+
+A full list of available geographies is provided here, although note that not all geographies are available for all variables:  
+
+https://walker-data.com/tidycensus/articles/basic-usage.html  
+
+Here are some examples:
+
+```{r}
+# Median age by state for the 2010 Census 
+
+state_median_age <- get_decennial(geography = "state", 
+                                  variables = "P013001", 
+                                  year = 2010)
+head(state_median_age)
+```
+
+```{r}
+# Income estimates by tract, for Hennepin county only. ACS 2016-2020
+
+income_hennepin_tracts <- get_acs(state = "MN",
+                                  county = "Hennepin",
+                                  geography = "tract",
+                                  variables = "B19013_001",
+                                  year = 2020)
+
+head(income_hennepin_tracts)
+
+```
+
+#### Exploring Census and ACS variables 
+
+As you may have noticed, the two examples above involved knowing the variable ID of interest. This can be tricky since there are hundreds of these!  
+
+This is another place where tidycensus is very handy. The function `load_variables()` allows us to view and search all the variables in R Studio.  
+
+You can also use something like Census Reporter (https://censusreporter.org/) to browse tables of interest
+
+You have to specify the year, and then the dataset of interest.More details here:  
+https://walker-data.com/tidycensus/reference/load_variables.html   
+
+Let's load some from the 2010 census and browse:
+```{r}
+census.2010 <- load_variables(2010, "sf2", cache = TRUE)
+
+```
+
+Load some ACS data and browse:
+```{r}
+acs.2020 <- load_variables(2020, "acs5", cache = TRUE)
+```
+
+#### Pulling in spatial data 
+
+tidycensus can pull in the associated spatial data while simultaneously pulling in the ACS/Census data.  
+
+This is specified by adding `geometry = TRUE`   
+
+Note that the default geographic coordinate system is NAD 1983, which you may want to change.  
+
+Let's look at the median household income from the 2016-2020 ACS for Hennepin county again, but this time pull in the simple feature geometry as well.  
+
+```{r, results = HIDE}
+hennepin <- get_acs(
+  state = "MN",
+  county = "Hennepin",
+  geography = "tract",
+  variables = c(median_income = "B19013_001"), # You can rename the variable here
+  geometry = TRUE, #Adding in the spatial component
+  year = 2020
+)
+
+head(hennepin)
+```
+
+#### Making maps!
+
+Since tidycensus uses tidy formatting, the objects can be easily visualized with ggplot2
+
+Let's make a map of Hennepin county with median income, from data pulled above:
+```{r}
+hennepin %>%
+  ggplot(aes(fill = estimate)) + 
+  geom_sf(color = "black") + 
+  scale_fill_viridis_c(option = "magma") 
+```
+
+### Using tidyverse tools to manipulate Census/ACS data
+
+#### Using summary variables to do comparisons
+
+##### Relativizing your data
+
+Much of the ACS and Census data are counts, which are can't really be readily compared. Most people are interested in how these data for a given geography compare *relative* to another. 
+
+As a solution, you can normalize counts by the total population size, which are often found in the same table. This can be done using `summary_var` as an additional argument. 
+
+Let's look at race for Hennepin county. Use `view()` to browse table `B03002` in the ACS data from 2016-2020. From here you can see that the variable `B03002_001' gives us total population.  Using this information, we can compare the population of tracts in Hennepin county by race & Hispanic origin with the total population size.  
+
+```{r}
+
+# Renaming the ACS variables from Table B03002 into more useful names 
+race_vars <- c(
+  White = "B03002_003",
+  Black = "B03002_004",
+  Native = "B03002_005",
+  Asian = "B03002_006",
+  HIPI = "B03002_007",
+  Hispanic = "B03002_012"
+)
+
+
+hennepin_race <- get_acs(
+  state = "MN",
+  county = "Hennepin",
+  geography = "tract",
+  variables = race_vars,
+  summary_var = "B03002_001", # Including the total population as a denominator
+  geometry = TRUE, #Adding in the spatial component
+  year = 2020
+)
+
+```
+
+```{r, eval = FALSE, echo = FALSE}
+hennepin_race %>%
+  ggplot(aes(fill = summary_est), group = variable) + 
+  geom_sf(color = "black") + 
+  scale_fill_viridis_c(option = "magma") 
+
+```
+
+
+##### Calculating percentages
+
+Now that are data are relativized, we can used `mutate()` to calculate a percentage column. This column would correspond to the percentage of each tract's population that is represented by each racial/ethnic group in 2016-2020.
+
+```{r}
+
+hennepin_race_percent <- hennepin_race %>%
+                         mutate(percent = 100 * (estimate / summary_est)) %>%
+                         select(NAME, variable, percent) # Only keep columns of interest and dropping the rest
+head(hennepin_race_percent)
+
+```
+
