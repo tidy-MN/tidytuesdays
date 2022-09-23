@@ -45,10 +45,10 @@ December: In person training at MDH :anatomical_heart:
 | Sept 6 | | Connecting to deltaw EQUIS *-(Andrea)* | 35 `pts` |
 | Sept 13 | | Intro to tidycensus *-(Quinn, Amanda, Barbara)* | 35000 `pts` |
 | Sept 20 | | Regression and linear modeling *-(Barbara, Carl)* | 126 `pts` |
-| Sept 27 | | Review of the sf exercise and shapefiles *-(Dorian)* | 42 `pts` |
+| Sept 27 | | Regression and linear modeling The Sequel: Residuals! *-(Barbara and Carl)* | 42 `pts` |
 | Oct 4 | | Complicated examples from peoples' past *-(Carl, Amanda, Brianna)* | 4202 `pts` |
 | Oct 11 | | Saving and reading other file types - json, eps, rdata, rds *-(Carl, Dorian)* | 7401 `pts` |
-| Oct 18 | | Shiny app demo *-(Barbara)* | 42 `pts` |
+| Oct 18 | | Review of the sf exercise and shapefiles AND Shiny app demo *-(Barbara, Dorian)* | 42 `pts` |
 | Oct 25 | | More complicated examples from peoples' pasts *-(Barbara, Carl, Amanda, Brianna)* | 42 `pts` |
 | Nov 1 | | The meteorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
 | Nov 8 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `degs` |
