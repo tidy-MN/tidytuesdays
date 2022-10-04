@@ -32,7 +32,7 @@ December: Online training with MDH :heart:
 | Nov 1 | | The meteorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
 | Nov 8 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `degs` |
 | Nov 15 | | Rasters, oh yea! *-(TBD)* | 32 `degs` |
-| Dec | | Your idea!!  *-(You)* | All the `pts` | :heart:
+| Dec | | Your idea!  Woop!  *-(You)* | All the `pts` | :heart:
 
 <br>
 
