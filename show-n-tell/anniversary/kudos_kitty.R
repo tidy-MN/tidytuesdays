@@ -2,7 +2,7 @@
 ## Add your message to the possible kitty sayings at https://github.com/MPCA-data/tidytuesdays/blob/main/show-n-tell/anniversary/kristie_kudos.MD
 
 # Use:
-# > source("https://gist.githubusercontent.com/dKvale/41fa93f2f39124ee76054248bffb309a/raw/e55a3a7d253c3433f576de354305bdf45824a98d/kudos_kitty.R")
+# > source("https://gist.githubusercontent.com/dKvale/41fa93f2f39124ee76054248bffb309a/raw/91fef13049591fbad3aa8cfed7cd5f582ccae265/kudos_kitty.R")
 #
 # > kudos_kitty()
 
@@ -108,7 +108,7 @@ the_cat = '\n ------------------------------
     
     rando_cat <- sample(cats, 1)[[1]]
     
-   message(cat(paste0("\n Mrrrreowwww ", name, ". \n ", quote1, "\n --", quote2, rando_cat)))
+   message(cat(paste0("\n Mrrrreowwww ", name, "\n ", quote1, "\n --", quote2, rando_cat)))
     
   # Plot a cat image
   get_cat <- function(width = 400, height = 400){
