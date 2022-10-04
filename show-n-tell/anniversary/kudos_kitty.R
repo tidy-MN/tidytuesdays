@@ -3,12 +3,10 @@
 
 # Use:
 # source("https://gist.githubusercontent.com/dKvale/41fa93f2f39124ee76054248bffb309a/raw/ed6d83109185f5ca51dfae5a358cf40bfd31aa6a/kudos_kitty.R")
-# kudos_cat()
+# kudos_kitty()
 
 
-kudos_kitty <- function(show_cat = T) {
-  
-  name <- "Kristie"
+kudos_kitty <- function(show_cat = T, name = "Kristie") {
   
   quotes <- readLines("https://gist.githubusercontent.com/dKvale/86bbe8df9f78251176df7c5f29629d73/raw/7280169ac2e41a927359791ef03f94e5035c8f61/kristie_kudos.MD")
   
