@@ -10,41 +10,20 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 :rocket: **Explore this week's [[ Data ]](https://github.com/rfordatascience/tidytuesday#datasets) and see what others are [[ Sharing ]](https://twitter.com/hashtag/TidyTuesday)**
 
-
 <br>
-
 
 ## Schedule - Up Next
  
 
-February:  Making connections that last :heart:
-
-March: Spring cleaning :broom:
-
-April: Data flows and showers :droplet:
-
-May: Work smarter not harder :muscle: :sweat_drops:
-
-June: Work smarter not harder v.2 :muscle: :muscle:                                                                                    
-
-July: Updates, planning, and JSON objects v.2 :question: :unicorn: :grey_question:
-
-August: In person training!! August 2nd, 3rd, and 4th :alien: :chart: :stars:
-
-September: Covering topics requested during the in-person training. 🔙
-
-October: Scary challenging stuff from your past 👻 👻 🎃 🎃
+**October:** Scary challenging stuff from your past 👻 👻 🎃 🎃
 
 November: Return of the meteorologists! 🌩️ ⛈️ 🌨️
 
-December: In person training at MDH :anatomical_heart:
+December: Online training with MDH :heart:
 <br>
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
 | ---  | --- | --- | --- | 
-| Sept 6 | | Connecting to deltaw EQUIS *-(Andrea)* | 35 `pts` |
-| Sept 13 | | Intro to tidycensus *-(Quinn, Amanda, Barbara)* | 35000 `pts` |
-| Sept 20 | | Regression and linear modeling *-(Barbara, Carl)* | 126 `pts` |
 | Sept 27 | | Regression and linear modeling The Sequel: Residuals! *-(Barbara and Carl)* | 42 `pts` |
 | Oct 4 | | Complicated examples from peoples' past *-(Carl, Amanda, Brianna)* | 4202 `pts` |
 | Oct 11 | | Saving and reading other file types - json, eps, rdata, rds *-(Carl, Dorian)* | 7401 `pts` |
@@ -53,7 +32,7 @@ December: In person training at MDH :anatomical_heart:
 | Nov 1 | | The meteorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
 | Nov 8 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `degs` |
 | Nov 15 | | Rasters, oh yea! *-(TBD)* | 32 `degs` |
-| ~Dec | | In person training!! at MDH *-(Barbara, Dorian, Carl)* | All the `pts` | :anatomical_heart:
+| Dec | | Your idea!!  *-(You)* | All the `pts` | :heart:
 
 <br>
 
