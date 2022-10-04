@@ -2,11 +2,12 @@
 ## Add your message to the possible kitty sayings at https://github.com/MPCA-data/tidytuesdays/blob/main/show-n-tell/anniversary/kristie_kudos.MD
 
 # Use:
-# source("https://gist.githubusercontent.com/dKvale/41fa93f2f39124ee76054248bffb309a/raw/ed6d83109185f5ca51dfae5a358cf40bfd31aa6a/kudos_kitty.R")
-# kudos_kitty()
+# > source("https://gist.githubusercontent.com/dKvale/41fa93f2f39124ee76054248bffb309a/raw/e55a3a7d253c3433f576de354305bdf45824a98d/kudos_kitty.R")
+#
+# > kudos_kitty()
 
 
-kudos_kitty <- function(show_cat = T, name = "Kristie") {
+kudos_kitty <- function(name = " ", show_cat = T) {
   
   quotes <- readLines("https://gist.githubusercontent.com/dKvale/86bbe8df9f78251176df7c5f29629d73/raw/7280169ac2e41a927359791ef03f94e5035c8f61/kristie_kudos.MD")
   
@@ -107,16 +108,13 @@ the_cat = '\n ------------------------------
     
     rando_cat <- sample(cats, 1)[[1]]
     
-    if (nchar(name) > 0) {
-      message(cat(paste0("\n Mrrrrowwww ", name, ". \n ", quote1, "\n --", quote2, rando_cat)))
-    }
+   message(cat(paste0("\n Mrrrreowwww ", name, ". \n ", quote1, "\n --", quote2, rando_cat)))
     
- 
-  
+  # Plot a cat image
   get_cat <- function(width = 400, height = 400){
     r <- httr::GET(paste("http://theoldreader.com/kittens", width, height, sep = "/"))
-    stop_for_status(r)
-    content(r)
+    httr::stop_for_status(r)
+    httr::content(r)
   }
   
   # Show the cat for the day
