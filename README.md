@@ -30,8 +30,9 @@ December: Online training with MDH :heart:
 | Oct 18 | | Review of the sf exercise and shapefiles AND Shiny app demo *-(Barbara, Dorian)* | 42 `pts` |
 | Oct 25 | | More complicated examples from peoples' pasts *-(Barbara, Carl, Amanda, Brianna)* | 42 `pts` |
 | Nov 1 | | The meteorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
-| Nov 8 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `degs` |
-| Nov 15 | | Rasters, oh yea! *-(TBD)* | 32 `degs` |
+| Nov 8 | | A Text analysis of texts *-(Eric @MDH)* | 76 `pts` |
+| Nov 15 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `pts` |
+| Nov 22 | | Rasters, oh yea! *-(TBD)* | 32 `pts` |
 | Dec | | Your idea!  Woop!  *-(You)* | All the `pts` | :heart:
 
 <br>
