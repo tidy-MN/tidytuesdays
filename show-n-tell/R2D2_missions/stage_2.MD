@@ -27,6 +27,7 @@
 > ``` go
 > library(readr)
 > library(dplyr)
+> library(tidyr)
 > ```
 
 ### Instructions
@@ -81,9 +82,9 @@
 
 7.  Now we only want to keep the columns labeled as **"AT-AT-"** to hone in on the frequencies for the larger machines.
 
-    -   Use `select()` and `contain()` to select the `date` column first, and then only those columns that contain the text `"AT-AT-"` .
+    -   Use `select()` and `contains()` to select the `date` column first, and then only those columns that contains the text `"AT-AT-"` .
 
-    -   As a refresher, we'd write the following if we only wanted columns that contained the text "ppm":
+    -   As a refresher, we'd write the following if we only wanted columns that contains the text "ppm":
 
 > ``` python
 > new_data <- select(new_data, date, contains("ppm"))
