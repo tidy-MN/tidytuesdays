@@ -82,14 +82,14 @@ library(leaflet)
 henn_inc <- st_transform(henn_inc, 4326)
 
 # Create a color legend based on income
+
+## Split into 5 bins / quantiles
 legend_colors <- colorQuantile("Blues", henn_inc$income, n = 5)
 
-legend_colors <- colorNumeric(
-  palette = "viridis",
-  domain = henn_inc$income)
+## Or use a smooth ramp
+legend_colors <- colorNumeric(palette = "viridis", domain = henn_inc$income)
 
 legend_colors(45000)
-
 
 # Polygon map colored by income
 web_map <- leaflet(henn_inc) %>%
@@ -100,7 +100,6 @@ web_map <- leaflet(henn_inc) %>%
               weight      = 1,       # Border width
               popup = paste("Census Tract: ", henn_inc$GEOID,
                             "<br> Median HH Income: ", henn_inc$income)) 
-
 
 # Show map
 web_map
