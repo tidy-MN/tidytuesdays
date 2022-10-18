@@ -27,7 +27,7 @@ December: Online training with MDH :heart:
 | Sept 27 | | Regression and linear modeling The Sequel: Residuals! *-(Barbara and Carl)* | 42 `pts` |
 | Oct 4 | | Complicated examples from peoples' past *-(Carl, Amanda, Brianna)* | 4202 `pts` |
 | Oct 11 | | Saving and reading other file types - json, eps, rdata, rds *-(Carl, Dorian)* | 7401 `pts` |
-| Oct 18 | | Review of the [sf exercise and shapefiles](https://mn-r.netlify.app/page/explore_gis_maps) AND Shiny app demo *-(Barbara, Dorian)* | 42 `pts` |
+| Oct 18 | | Review of the [sf exercise and shapefiles](https://mn-r.netlify.app/page/explore_gis_maps) AND [Leaflet basemap fun](https://github.com/MPCA-data/tidytuesdays/blob/main/show-n-tell/census_map/read_and_write_shapefiles.MD) *-(Dorian)* | 42 `pts` |
 | Oct 25 | | More complicated examples from peoples' pasts *-(Barbara, Carl, Amanda, Brianna)* | 42 `pts` |
 | Nov 1 | | The meteorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
 | Nov 8 | | A Text analysis of texts *-(Eric @MDH)* | 76 `pts` |
