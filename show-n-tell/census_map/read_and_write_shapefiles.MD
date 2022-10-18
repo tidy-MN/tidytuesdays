@@ -12,7 +12,7 @@ options(tigris_use_cache = TRUE)
 ?counties
 
 mn_shp <- counties("MN", cb = FALSE) 
-# cb = more detailed Cartographic Boundary
+# cb = more detailed Cartographic Boundary file
 
 glimpse(mn_shp)
 
@@ -20,6 +20,9 @@ plot(mn_shp)
 
 # Save a shapefile
 write_sf(mn_shp, "County_shapes.shp")
+
+# Read the shapefile into R
+mn_shp <- st_read("County_shapes.shp")
 
 # Get Census ract level boundaries with tracts()
 henn <- tracts(state = "MN", county = "Hennepin", cb = F, year = 2020)
