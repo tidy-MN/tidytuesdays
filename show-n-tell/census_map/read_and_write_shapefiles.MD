@@ -5,6 +5,7 @@ library(sf)
 library(tidycensus)
 library(tigris)
 
+# Set the cache to TRUE to keep a copy of the boundaries and save future time 
 options(tigris_use_cache = TRUE)
 
 # Get county coordinates
