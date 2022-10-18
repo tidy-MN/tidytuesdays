@@ -12,7 +12,7 @@ options(tigris_use_cache = TRUE)
 ?counties
 
 mn_shp <- counties("MN", cb = FALSE) 
-# Cartographic boundary
+# cb = more detailed Cartographic Boundary
 
 glimpse(mn_shp)
 
@@ -21,6 +21,7 @@ plot(mn_shp)
 # Save a shapefile
 write_sf(mn_shp, "County_shapes.shp")
 
+# Get Census ract level boundaries with tracts()
 henn <- tracts(state = "MN", county = "Hennepin", cb = F, year = 2020)
 
 # Median incomes
