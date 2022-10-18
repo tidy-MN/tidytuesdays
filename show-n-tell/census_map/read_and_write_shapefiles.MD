@@ -125,8 +125,8 @@ web_map <- web_map %>%
 
 web_map
 
-
-# Easy basemap
+# Easy basemaps
+# remotes::install_github("MPCA-data/basemap")
 library(basemap)
 
 leaflet(henn_inc) %>%
