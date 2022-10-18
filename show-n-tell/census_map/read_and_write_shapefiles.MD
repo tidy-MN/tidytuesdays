@@ -35,6 +35,7 @@ deca10 <- load_variables(2010, "sf1", cache = TRUE)
 
 acs20 <- load_variables(2020, "acs5", cache = TRUE)
 
+# Get ACS data
 income20 <- get_acs(geography = "tract", 
                     variable  = "B19013_001",
                     state  = "MN",
