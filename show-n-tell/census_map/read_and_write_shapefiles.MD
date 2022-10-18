@@ -1,3 +1,5 @@
+
+```r
 library(tidyverse)
 library(sf)
 library(tidycensus)
@@ -131,3 +133,4 @@ leaflet(henn_inc) %>%
               weight      = 1,       
               popup = paste("Census Tract: ", henn_inc$GEOID,
                             "<br> Median HH Income: ", henn_inc$income)) 
+```
