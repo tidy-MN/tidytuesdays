@@ -32,7 +32,7 @@ December: Online training with MDH :heart:
 | Nov 1 | | The meteorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
 | Nov 8 | | A Text analysis of texts *-(Eric @MDH)* | 76 `pts` |
 | Nov 15 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `pts` |
-| Nov 22 | | Rasters, oh yea! *-(TBD)* | 32 `pts` |
+| Nov 22 | | Using R for transportation accessibility analysis *-(Kevin Shen from Union of Concerned Scientists)* | 32000 `pts` |
 | Dec | | Your idea!  Woop!  *-(You)* | All the `pts` | :heart:
 
 <br>
