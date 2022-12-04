@@ -25,14 +25,14 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 <br>
 
-## Schedule - Up Next
+## Up Next
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
 | ---  | --- | --- | --- | 
 | Nov 8 | | A Text analysis of texts *-(Eric @MDH)* | 76 `pts` |
 | Nov 15 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `pts` |
 | Nov 22 | | Using R for transportation accessibility analysis *-(Kevin Shen from Union of Concerned Scientists)* | 32000 `pts` |
-| Dec 6 | | Your idea!  Woop!  *-(You)* | All the `pts` | :heart:
+| Dec 6 | | Your idea!  *-(You)* | All the `pts` | :heart:
 
 <br>
 
@@ -271,11 +271,11 @@ Each week features a new data set to explore. Come see examples of how others cl
 | Project | Details | Team contact |  | Wishlist  |  
 | ---  | --- | --- | --- | --- | 
 | [R training](https://mn-r.netlify.app/) | - [Star Wars training](https://mn-r.netlify.app/)  <br/> - [Workshops](https://mpca-air.github.io/RTrain/#workshops) (Maps, Connecting to databases, messy data)  <br/> - [Cat training](https://mpca-air.github.io/RCamp/) (the original)  | Barbara | | |   
-| [`library(mpcaej)`](https://github.com/MPCA-data/mpcaej#mpcaej) | Shapefiles with MPCA’s criteria for areas of concern for environmental justice | Dorian | | |
-| [`library(mncolors)`](https://github.com/MPCA-data/mncolors#minnesota-color-palettes) | Paint your data with colors from the [MN State Brand style Guide](https://mn.gov/portal/brand/style-guide/colors/), plus a few palettes inspired by local landscapes and wildlife. | Dorian | | |
-| [`library(mpcadb)`](https://github.com/MPCA-data/mpcadb) | Easy R connections to MPCA’s databases: DELTA, TEMPO, EQUIS, RAPIDS, ONBASE...  <br/> - Store common reference data | Derek | | |
-|[MPCA Data Guide](https://mpca-data.github.io/Data-Guide/) | MPCA guide to find data for water, land, air, and more  <img src="images/data_guide.png" width="44%"> | Dorian | | Add data publishing/sharing tips  |
-| [`library(mpcareports)`](https://github.com/MPCA-data/mpcareports#mpcareports) | MPCA templates for Markdown reports w/ logo, header, etc. <img src="images/mpca_template.png" width="44%">  | Dorian | | | 
+| [`library(mpcaej)`](https://github.com/tidy-MN/mpcaej#mpcaej) | Shapefiles with MPCA’s criteria for areas of concern for environmental justice | Dorian | | |
+| [`library(mncolors)`](https://github.com/tidy-MN/mncolors#minnesota-color-palettes) | Paint your data with colors from the [MN State Brand style Guide](https://mn.gov/portal/brand/style-guide/colors/), plus a few palettes inspired by local landscapes and wildlife. | Dorian | | |
+| [`library(mpcadb)`](https://github.com/tidy-MN/mpcadb) | Easy R connections to MPCA’s databases: DELTA, TEMPO, EQUIS, RAPIDS, ONBASE...  <br/> - Store common reference data | Derek | | |
+|[MPCA Data Guide](https://tidy-MN.github.io/Data-Guide/) | MPCA guide to find data for water, land, air, and more  <img src="images/data_guide.png" width="44%"> | Dorian | | Add data publishing/sharing tips  |
+| [`library(mpcareports)`](https://github.com/tidy-MN/mpcareports#mpcareports) | MPCA templates for Markdown reports w/ logo, header, etc. <img src="images/mpca_template.png" width="44%">  | Dorian | | | 
 | [Analysis Methods Guide](https://mpca-air.github.io/air-methods/) | How we analyze monitoring data in R _(currently air focused)_ | Derek | | | 
 
 <br>
