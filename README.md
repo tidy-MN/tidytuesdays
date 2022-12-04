@@ -339,11 +339,12 @@ Things to talk about.
 
 ### 🐈 Save DEREK! 
 ```.go
-source("https://raw.githubusercontent.com/MPCA-data/tidytuesdays/main/show-n-tell/anniversary/text_adventure.R")
+source("https://raw.githubusercontent.com/tidy-MN/tidytuesdays/main/show-n-tell/anniversary/text_adventure.R")
 ```
 
 ### Meows of encouragement
-`> source("https://raw.githubusercontent.com/MPCA-data/tidytuesdays/master/show-n-tell/anniversary/encourage_cat.R")`
+`> source("https://raw.githubusercontent.com/tidy-MN/tidytuesdays/master/show-n-tell/anniversary/encourage_cat.R")`  
+  
 `> encourage_cat()`
 
     Meowwww. Hello R Users! 
@@ -365,9 +366,9 @@ source("https://raw.githubusercontent.com/MPCA-data/tidytuesdays/main/show-n-tel
 
 <br>
 
-> Track your progress on the **[R2D2 Mission board](https://mpca-data.github.io/R2D2_rescue_mission/)** 
+> Track your progress on the **[R2D2 Mission board](https://tidy-MN.github.io/R2D2_rescue_mission/)** 
 >
-> <a href="https://mpca-data.github.io/R2D2_rescue_mission/"><img src="https://raw.githubusercontent.com/MPCA-data/tidytuesdays/main/images/R2D2_board.png" width="45%"></a>
+> <a href="https://tidy-MN.github.io/R2D2_rescue_mission/"><img src="https://raw.githubusercontent.com/tidy-MN/tidytuesdays/main/images/R2D2_board.png" width="45%"></a>
 >
 
 <br>
