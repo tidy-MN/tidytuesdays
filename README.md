@@ -12,28 +12,27 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 <br>
 
-## Schedule - Up Next
- 
 
-**October:** Scary challenging stuff from your past 👻 👻 🎃 🎃
+## Monthly themes
 
-November: Return of the meteorologists! 🌩️ ⛈️ 🌨️
+|  Jan  | Feb  |  Mar | Apr  | May | June |
+| --- | --- | --- | --- |  --- |  --- | 
+| Best of the year: tips & tricks | Making connections :heart: | Spring cleaning | Data flows |  Working smarter |  Training | 
 
-December: Online training with MDH :heart:
+| July | Aug  | Sep | Oct | Nov | Dec |
+| ---  | --- | --- | --- |  --- |  --- | 
+| Charts | Maps | Reports, websites, & Shiny | Spooky data objects :ghost: |  Guest speakers |  Training | 
+
 <br>
+
+## Schedule - Up Next
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
 | ---  | --- | --- | --- | 
-| Sept 27 | | Regression and linear modeling The Sequel: Residuals! *-(Barbara and Carl)* | 42 `pts` |
-| Oct 4 | | Complicated examples from peoples' past *-(Carl, Amanda, Brianna)* | 4202 `pts` |
-| Oct 11 | | Saving and reading other file types - json, eps, rdata, rds *-(Carl, Dorian)* | 7401 `pts` |
-| Oct 18 | | Review of the [sf exercise and shapefiles](https://mn-r.netlify.app/page/explore_gis_maps) AND [Leaflet basemap fun](https://github.com/MPCA-data/tidytuesdays/blob/main/show-n-tell/census_map/read_and_write_shapefiles.MD) *-(Dorian)* | 42 `pts` |
-| Oct 25 | | More complicated examples from peoples' pasts *-(Barbara, Carl, Amanda, Brianna)* | 42 `pts` |
-| Nov 1 | | The meteorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
 | Nov 8 | | A Text analysis of texts *-(Eric @MDH)* | 76 `pts` |
 | Nov 15 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `pts` |
 | Nov 22 | | Using R for transportation accessibility analysis *-(Kevin Shen from Union of Concerned Scientists)* | 32000 `pts` |
-| Dec | | Your idea!  Woop!  *-(You)* | All the `pts` | :heart:
+| Dec 6 | | Your idea!  Woop!  *-(You)* | All the `pts` | :heart:
 
 <br>
 
@@ -42,6 +41,12 @@ December: Online training with MDH :heart:
   
 | Date | R demo <br> _training_  | Show-n-tell <br> **:tada:** <br> _2nd half_ | :candy:`sugaR pts`   |   
 | ---  | --- | --- | --- | 
+| Nov 1 | | The meteorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
+| Oct 25 | | More examples from peoples' pasts *-(Barbara, Carl, Amanda, Brianna)* | 42 `pts` |
+| Oct 18 | | Review of the [sf exercise and shapefiles](https://mn-r.netlify.app/page/explore_gis_maps) AND [Leaflet basemap fun](https://github.com/MPCA-data/tidytuesdays/blob/main/show-n-tell/census_map/read_and_write_shapefiles.MD) *-(Dorian)* | 42 `pts` |
+| Oct 11 | | Saving and reading other file types - json, eps, rdata, rds *-(Carl, Dorian)* | 7401 `pts` |
+| Oct 4 | | Complicated examples from peoples' past *-(Carl, Amanda, Brianna)* | 4202 `pts` |
+| Sept 27 | | Regression and linear modeling The Sequel: Residuals! *-(Barbara and Carl)* | 42 `pts` |
 | July 5 | | chit chat, catch up, and plan the training *-(Kristie, Barbara)* | 250 `pts` |
 | July 12 | | leaflet map with new EJ areas *-(Quinn, Barbara)* | 2050 `pts` |
 | July 19 | | JSON objects *-(Barbara, Dorian, Andrea)* | 250 `pts` |
