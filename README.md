@@ -176,7 +176,6 @@ Each week features a new data set to explore. Come see examples of how others cl
 | (hex) |  Package | Functions |  What it does | Website |   
 | ---  | --- | --- | --- | --- | 
 |  <img src="https://blognoeliagonz.files.wordpress.com/2019/03/0_vpp28-xhhftjjg9s.png" width="60">  | **esquisse** | `esquisser()` | Drag-n drop-ggplots like Tableau | [Get started `esquisse`](https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html) |  
-|  <img src="https://d33wubrfki0l68.cloudfront.net/621a9c8c5d7b47c4b6d72e8f01f28d14310e8370/193fc/css/images/hex/dplyr.png" width="60">  | **dplyr** |  `select()`, `arrange()`, `filter()`, `mutate()`, `summarize()`, `group_by()` | Toolbox for exploring, re-arranging, and summarizing data | [Intro to `dplyr`](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html) |  
 |  <img src="http://lubridate.tidyverse.org/logo.png" width="60">  | **lubridate** | `today()`,`mdy()`, `wday()`, `tz()` | Convert text columns to date objects, extract parts of dates and time such as month, hour, week day. | [Dates & times](https://r4ds.had.co.nz/dates-and-times.html) |
 | <img src = "https://tidyr.tidyverse.org/logo.png" width = "60"> | **tidyr** | ['pivot_wider'](https://cmdlinetips.com/2020/11/reshape-tidy-data-to-wide-data-with-pivot_wider-from-tidyr/) and ['pivot_longer'](https://cmdlinetips.com/2020/11/reshape-wide-data-to-tidy-data-with-pivot_longer-tidyr/)| Make your data do WHAT YOU WANT IT TO | [Overview of tidyr](https://tidyr.tidyverse.org/)
 
@@ -188,6 +187,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 | (hex) |  Package    | Function |  What it does | Website |  
 | ---  | --- | --- | --- | --- | 
 |  <img src="https://magrittr.tidyverse.org/logo.png" width="60">  | **magrittr** |  `%>%`, `(.)` | Make code readable from left to right | [`%>%` Overview](https://magrittr.tidyverse.org/index.html) |  
+|  <img src="https://d33wubrfki0l68.cloudfront.net/621a9c8c5d7b47c4b6d72e8f01f28d14310e8370/193fc/css/images/hex/dplyr.png" width="60">  | **dplyr** |  `select()`, `arrange()`, `filter()`, `mutate()`, `summarize()`, `group_by()` | Toolbox for exploring, re-arranging, and summarizing data | [Intro to `dplyr`](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html) |  
 |  | **FCUK** | `library(FCUK)` | Suggests typo corrections when code doesn't run. | [Examples & setup](https://github.com/ThinkR-open/fcuk) |
 |  | **fitdistrplus** | `denscomp()`, `qqcomp()`, `cdfcomp()`, `ppcomp()` | Provide plots for comparing the fit of various continuous distributions. | [Vignette](https://cran.r-project.org/web/packages/fitdistrplus/vignettes/paper2JSS.pdf) |
   
