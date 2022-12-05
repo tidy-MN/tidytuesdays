@@ -306,33 +306,6 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 <br>
 
-## Discussion
-
-Things to talk about.
-
-<details>
-<summary> 1 </summary>
-    
-> How do we approach reproducibility, collaboration and communication about data?
-
-</details>
-
-<details>
-<summary> 2 </summary>
-
-> What would a team workflow using open data science tools look like? How do we get there?
-
-</details>
-
-<details>
-<summary> 3 </summary>
-    
-> How do we store and share our methods and code? Do your analyses have versions?
-
-</details>
-
-<br>
-
 > Track your progress on the **[R2D2 Mission board](https://tidy-MN.github.io/R2D2_rescue_mission/)** 
 >
 > <a href="https://tidy-MN.github.io/R2D2_rescue_mission/"><img src="https://raw.githubusercontent.com/tidy-MN/tidytuesdays/main/images/R2D2_board.png" width="45%"></a>
