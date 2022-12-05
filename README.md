@@ -12,16 +12,15 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 <br>
 
-
 ## Monthly themes
 
-|  Jan  | Feb  |  Mar | Apr  | May | June |
-| --- | --- | --- | --- |  --- |  --- | 
-| Best of the year: tips & tricks | Making connections :heart: | Spring cleaning | Data flows |  Working smarter |  Training | 
+| Jan | Feb | Mar | Apr | May | Jun |
+|-----|-----|-----|-----|-----|-----|
+| Best of the year: tips & tricks | Making connections :heart: | Spring cleaning :broom: &nbsp;&nbsp;&nbsp;&nbsp; | Forecasts and data flows 🌦️ | Working smarter  | Learning resources &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
-| July | Aug  | Sep | Oct | Nov | Dec |
-| ---  | --- | --- | --- |  --- |  --- | 
-| Charts | Maps | Reports, websites, & Shiny | Spooky data objects :ghost: |  Guest speakers |  Training | 
+| Jul | Aug | Sep | Oct | Nov | Dec |
+|-----|-----|-----|-----|-----|-----|
+| Web/PDF Reports + Shiny | Statistics and Maps &nbsp;&nbsp;&nbsp; | Charts: Publish ready 📰 | Spooky data objects :ghost: |  Guest speakers &nbsp;&nbsp;&nbsp; | Training &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 
 
 <br>
 
@@ -29,8 +28,8 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
 | ---  | --- | --- | --- | 
-| Nov 8 | | A Text analysis of texts *-(Eric @MDH)* | 76 `pts` |
-| Nov 15 | | Pulling data to answer cool climate questions *-(Carl)* | 32 `pts` |
+| Nov 8 | | Text analysis of phone texts *-(Eric @MDH)* | 76 `pts` |
+| Nov 15 | | Pulling data to answer climate questions *-(Carl)* | 32 `pts` |
 | Nov 22 | | Using R for transportation accessibility analysis *-(Kevin Shen from Union of Concerned Scientists)* | 32000 `pts` |
 | Dec 6 | | Your idea!  *-(You)* | All the `pts` | :heart:
 
