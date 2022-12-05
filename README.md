@@ -192,12 +192,9 @@ Each week features a new data set to explore. Come see examples of how others cl
 |  | **fitdistrplus** | `denscomp()`, `qqcomp()`, `cdfcomp()`, `ppcomp()` | Provide plots for comparing the fit of various continuous distributions. | [Vignette](https://cran.r-project.org/web/packages/fitdistrplus/vignettes/paper2JSS.pdf) |
   
 
-
 </details>
 
-
-<br><br>
-
+<br>
 
 ## Upcoming Events 🌏
 
@@ -245,7 +242,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 - [lme4 package vignette](https://cran.r-project.org/web/packages/lme4/vignettes/lmer.pdf) 
 - Jim Peterson syllabus, data, scripts for [Data management and R for fisheries and wildlife](https://sites.google.com/site/rforfishandwildlifegrads/home/)
 
-<br><br><br>
+<br><br>
 
 ## :book: Readings
 
@@ -258,7 +255,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 - Hadley Wickham's [Mastering Shiny](https://mastering-shiny.org/)
 - Helsel's books at [Practical Stats](http://www.practicalstats.com/info2use/books.html)
 
-<br/>
+<br>
 
 
 ## :earth_africa::busts_in_silhouette: Community projects
@@ -278,8 +275,6 @@ Each week features a new data set to explore. Come see examples of how others cl
 | [Analysis Methods Guide](https://mpca-air.github.io/air-methods/) | How we analyze monitoring data in R _(currently air focused)_ | Derek | | | 
 
 <br>
-
-
 
 ## Future topics
 
@@ -308,8 +303,8 @@ Each week features a new data set to explore. Come see examples of how others cl
 >    - <img src="https://d33wubrfki0l68.cloudfront.net/68c4238194b9e2a403f144836aeb0dd8dec6cec8/51cfa/art/005_genesis/genesis4563_hu094ca1b1a2a99a63b276daf95703c5da_1678978_500x500_fill_box_center_2.png" width="25%"/> <img src="https://d33wubrfki0l68.cloudfront.net/d2690abfd68ec3d3abd3a0d84d79b2ff449f7aac/e0f3d/art/005_genesis/genesis9458_hu00b8f3fe8c7f8351b6b4597d079006d8_4379029_500x500_fill_box_center_2.png" width="25%"/> 
 
 </details>
-<br>
 
+<br>
 
 ## Discussion
 
@@ -335,33 +330,6 @@ Things to talk about.
 > How do we store and share our methods and code? Do your analyses have versions?
 
 </details>
-
-### 🐈 Save DEREK! 
-```.go
-source("https://raw.githubusercontent.com/tidy-MN/tidytuesdays/main/show-n-tell/anniversary/text_adventure.R")
-```
-
-### Meows of encouragement
-`> source("https://raw.githubusercontent.com/tidy-MN/tidytuesdays/master/show-n-tell/anniversary/encourage_cat.R")`  
-  
-`> encourage_cat()`
-
-    Meowwww. Hello R Users! 
-      \
-       \
-        \
-            |\___/|
-          ==) ^Y^ (==
-            \  ^  /
-             )=*=(
-            /     \
-            |     |
-           /| | | |\
-           \| | |_|/\
-      jgs  //_// ___/
-               \_)
-
-<br>
 
 <br>
 
