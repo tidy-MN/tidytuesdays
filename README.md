@@ -31,7 +31,10 @@ Each week features a new data set to explore. Come see examples of how others cl
 | Nov 8 | | Text analysis of phone texts *-(Eric @MDH)* | 76 `pts` |
 | Nov 15 | | Pulling data to answer climate questions *-(Carl)* | 32 `pts` |
 | Nov 22 | | Using R for transportation accessibility analysis *-(Kevin Shen from Union of Concerned Scientists)* | 32000 `pts` |
-| Dec 6 | | Your idea!  *-(You)* | All the `pts` | :heart:
+| Dec 6 | | Your idea!  *-(You)* | All the `pts` | :heart: |
+| Dec 13th | | Outliers and existential questions *-(Alison)* :cat:| 4200 `pts` |
+| Dec 20th | | Text clean-up - clean_names to case_when *-(Barbara)| 560 `pts`|
+| Dec 27th | | HAPPY HOLIDAYS WE ARE NOT MEETING :snowflake: :snowflake:| 0 `pts`|
 
 <br>
 
