@@ -28,13 +28,13 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
 | ---  | --- | --- | --- | 
-| Nov 8 | | Text analysis of phone texts *-(Eric @MDH)* | 76 `pts` |
-| Nov 15 | | Pulling data to answer climate questions *-(Carl)* | 32 `pts` |
-| Nov 22 | | Using R for transportation accessibility analysis *-(Kevin Shen from Union of Concerned Scientists)* | 32000 `pts` |
-| Dec 6 | | Your idea!  *-(You)* | All the `pts` | :heart: |
-| Dec 13th | | Outliers and existential questions *-(Alison)* :cat:| 4200 `pts` |
-| Dec 20th | | Text clean-up - clean_names to case_when *-(Barbara)| 560 `pts`|
-| Dec 27th | | HAPPY HOLIDAYS WE ARE NOT MEETING :snowflake: :snowflake:| 0 `pts`|
+| Jan 3rd | | Outliers and existential questions *-(Alison)* :cat:| 76 `pts` |
+| Jan 10th | | Bad maps, bad pies, hillarity ensued *-(All)* | 32 `pts` |
+| Jan 17th | | Demos from friends *-(All)* | 32000 `pts` |
+| Jan 24th | | Basics of Git and GitLab - why version control is AWESOME :heart: *-(Eric and Barbara)*| All the `pts` |
+| Jan 31st | | |  `pts` |
+| Dec 20th | | |  `pts`|
+| Dec 27th | | |  `pts`|
 
 <br>
 
@@ -43,6 +43,11 @@ Each week features a new data set to explore. Come see examples of how others cl
   
 | Date | R demo <br> _training_  | Show-n-tell <br> **:tada:** <br> _2nd half_ | :candy:`sugaR pts`   |   
 | ---  | --- | --- | --- | 
+| Dec 20th | | Text clean-up - clean_names to case_when *-(Barbara)| 560 `pts`|
+| Dec 6 | | Your idea!  *-(You)* | All the `pts` | :heart: |
+| Nov 22 | | Using R for transportation accessibility analysis *-(Kevin Shen from Union of Concerned Scientists)* | 32000 `pts` |
+| Nov 15 | | Pulling data to answer climate questions *-(Carl)* | 32 `pts` |
+| Nov 8 | | Text analysis of phone texts *-(Eric @MDH)* | 76 `pts` |
 | Nov 1 | | The meteorologists present something really COOL *-(Nick, Matt, David, Daniel)* | 32 `degs` |
 | Oct 25 | | More examples from peoples' pasts *-(Barbara, Carl, Amanda, Brianna)* | 42 `pts` |
 | Oct 18 | | Review of the [sf exercise and shapefiles](https://mn-r.netlify.app/page/explore_gis_maps) AND [Leaflet basemap fun](https://github.com/MPCA-data/tidytuesdays/blob/main/show-n-tell/census_map/read_and_write_shapefiles.MD) *-(Dorian)* | 42 `pts` |
