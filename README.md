@@ -32,7 +32,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 | Jan 10th | | Bad maps, bad pies, hillarity ensued *-(All)* | 32 `pts` |
 | Jan 17th | | Demos from friends *-(All)* | 32000 `pts` |
 | Jan 24th | | Basics of Git and GitLab - why version control is AWESOME :heart: *-(Eric and Barbara)*| All the `pts` |
-| Jan 31st | | |  `pts` |
+| Jan 31st | | Best packages and functions of 2022 | 31 `pts` |
 | Dec 20th | | |  `pts`|
 | Dec 27th | | |  `pts`|
 
