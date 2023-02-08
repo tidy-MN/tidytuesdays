@@ -262,6 +262,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 - [Modern Statistics for Modern Biology](https://web.stanford.edu/class/bios221/book/Chap-Generative.html)
 - Hadley Wickham's [Mastering Shiny](https://mastering-shiny.org/)
 - Helsel's books at [Practical Stats](http://www.practicalstats.com/info2use/books.html)
+- [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html)
 
 <br>
 
