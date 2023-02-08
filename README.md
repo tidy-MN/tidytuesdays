@@ -16,7 +16,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 | Jan | Feb | Mar | Apr | May | Jun |
 |-----|-----|-----|-----|-----|-----|
-| Best of the year: tips & tricks | Data connections :heart: | Spring cleaning :broom: &nbsp;&nbsp;&nbsp;&nbsp; | Forecasts and data flows 🌦️ | Work smarter  | Learning resources &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Best of the year: tips & tricks | Reproducible code :heart: | Spring cleaning :broom: &nbsp;&nbsp;&nbsp;&nbsp; | Forecasts and data flows 🌦️ | Work smarter  | Learning resources &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
 | Jul | Aug | Sep | Oct | Nov | Dec |
 |-----|-----|-----|-----|-----|-----|
