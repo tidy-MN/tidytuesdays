@@ -1,0 +1,50 @@
+---
+title: "Zotero citation primer"
+author: "Me^1^, Someone else^2,\\*^"
+date: "^1^I UCS, another place"
+output:
+  pdf_document:
+    keep_md: true
+
+bibliography: My library.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+I am writing and may want to cite something, [@amiriWorkingEnvironmentalJustice2019] And, then sometimes I just want the citation to show up in the text, [@alvesEPAAuthorityUse2012] And then I will knit this to show you what it looks like in the R Markdown document. 
+
+As I am typing and writing my paper, I come upon something I want to cite  [@arquetteHolisticRiskbasedEnvironmental2002].
+
+These are the youtube videos and primers I read to learn how to do this:
+
+This one helps you install Zotero and Better-bibtext:
+https://dewey.dunnington.ca/post/2020/getting-started-zotero-better-bibtex-rmarkdown/
+
+This got me over the hump in learning how to set up Zotero,
+https://www.youtube.com/watch?v=Nm5BsfMfO9M
+
+Here is the Zotero webpage. You will have to download Zotero and create a Zotero account online. That way you can share your bibs with other authors.
+https://www.zotero.org/
+
+And better-bibtex download and installation instructions are here,
+https://retorque.re/zotero-better-bibtex/
+
+You will need the R Studio add-in, citr. Due to COVID related timing issues, citr is not updated on CRAN, but can be downloaded using devtools. 
+
+That documentation is here: 
+https://github.com/crsh/citr
+
+When you are knitting and re-knitting the Word Document, you have to close it or R Studio will throw an error.
+
+```{r packages}
+
+#devtools::install_github("crsh/citr")
+
+library(citr)
+
+```
+
