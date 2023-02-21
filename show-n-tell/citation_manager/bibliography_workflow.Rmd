@@ -3,7 +3,7 @@ title: "Zotero citation primer"
 author: "Me^1^, Someone else^2,\\*^"
 date: "^1^I UCS, another place"
 output:
-  pdf_document:
+  word_document:
     keep_md: true
 
 bibliography: My library.bib
