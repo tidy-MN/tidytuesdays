@@ -32,7 +32,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 | Jan 31st | | Best packages and functions of 2022 | 31 `pts` |
 | Fab 7th | | Programming with dplyr intro - ‼️ *-(Derek)* | 144 `pts` |
 | Feb 14th | | Valentines aRt projects❤️ and weekly exercises *-(Dorian)* | 580 `pts` |
-| Feb 21st | | Zotero bibliography for references - workflow and other reproducible tips and tricks *-(Kristie and others)* | 5100 `pts` |
+| Feb 21st | | [Zotero](https://www.zotero.org/) bibliography for references - workflow and other reproducible tips and tricks *-(Kristie and others)* | 5100 `pts` |
 
 <br>
 
