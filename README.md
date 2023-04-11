@@ -28,11 +28,8 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
 | ---  | --- | --- | --- | 
-| Jan 24th | | Basics of Git and GitLab - why version control is AWESOME :heart: *-(Eric and Barbara)*| All the `pts` |
-| Jan 31st | | Best packages and functions of 2022 | 31 `pts` |
-| Fab 7th | | Programming with dplyr intro - ‼️ *-(Derek)* | 144 `pts` |
-| Feb 14th | | Valentines aRt projects❤️ and weekly exercises *-(Dorian)* | 580 `pts` |
-| Feb 21st | | [Zotero](https://www.zotero.org/) bibliography for references - workflow and other reproducible tips and tricks *-(Kristie and others)* | 5100 `pts` |
+| Apr 18th | | Spring Cleaning! Bring a script that you would like clean-up *-(Everyone)*| All the `pts` |
+| Apr 25th | | Review solution for monthly exercise *-(Dorian)* | 425 `pts` |
 
 <br>
 
@@ -41,6 +38,9 @@ Each week features a new data set to explore. Come see examples of how others cl
   
 | Date | R demo <br> _training_  | Show-n-tell <br> **:tada:** <br> _2nd half_ | :candy:`sugaR pts`   |   
 | ---  | --- | --- | --- | 
+| Feb 21st | | [Zotero](https://www.zotero.org/) bibliography for references - workflow and other reproducible tips and tricks *-(Kristie and others)* | 5100 `pts` |
+| Feb 14th | | Valentines aRt projects❤️ and weekly exercises *-(Dorian)* | 580 `pts` |
+| Fab 7th | | Programming with dplyr intro - ‼️ *-(Derek)* | 144 `pts` |
 | Jan 31st | | Best packages and functions of 2022 | 31 `pts` |
 | Jan 24th | | Basics of Git and GitLab - why version control is AWESOME :heart: *-(Eric and Barbara)*| All the `pts` |
 | Jan 17th | | Demos from friends *-(All)* | 32000 `pts` |
@@ -220,6 +220,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 | Year | Event  | Topic | Event link | Group webpage |  
 | ---  | --- | --- | --- | --- |
+| 2021 | Presentation | David Robinson - dbcooper: Turn any database into an R package | [2021 New York R Conference](https://www.youtube.com/watch?v=Sy4PHR1GmUc) |
 | 2021 | Workshop | Rmarkdown: Tips & Tricks w/ the amazing Allison Horst | [Google Drive recording](https://drive.google.com/file/d/1s2eRC8ENiaDFo_6h_W7NwE_kx2xxZLE-/view) | [R-Ladies global](https://rladies.org/) |
 | 2021 | Live demo | First steps: Exploring deforestation data (TidyTuesday) w/ Mr. Robinson | [Screencast](https://www.youtube.com/watch?v=0q-qmNkhWyY)| [Past weeks](https://www.youtube.com/playlist?list=PL19ev-r1GBwkuyiwnxoHTRC8TTqP8OEi8) |
 | 2021 | Presentation | ggplot: Take a Sad Plot & Make it Better w/ Alison Hill | [Take a Sad Plot & Make it Better](https://www.youtube.com/watch?v=JeRRSGWODBQ)| [R-Ladies global](https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng) |
