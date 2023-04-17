@@ -211,8 +211,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 | Date | Time | Event  | Event link | Group webpage |  
 | ---  | --- | --- | --- | --- |
-| Feb 24, 2022 | 7pm CST | Data Mishaps Night | https://datamishapsnight.com/ | https://www.littlemissdata.com/ |
-| June 20-23, 2022 | Virtual Hybrid Conference | useR! 2022 - Nashville TN | https://user2022.r-project.org/ |  |
+| Sept 17-20, 2023 |  |  RStudio - POSIT::CONF(2023) - In-person Conference and workshops  | https://posit.co/conference/|  |
 
 <br>
 
@@ -220,6 +219,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 | Year | Event  | Topic | Event link | Group webpage |  
 | ---  | --- | --- | --- | --- |
+| 2023 |  Virtual Hybrid Conference | useR! 2022 - Nashville TN  | https://user2022.r-project.org/ |
 | 2021 | Presentation | David Robinson - dbcooper: Turn any database into an R package | [2021 New York R Conference](https://www.youtube.com/watch?v=Sy4PHR1GmUc) |
 | 2021 | Workshop | Rmarkdown: Tips & Tricks w/ the amazing Allison Horst | [Google Drive recording](https://drive.google.com/file/d/1s2eRC8ENiaDFo_6h_W7NwE_kx2xxZLE-/view) | [R-Ladies global](https://rladies.org/) |
 | 2021 | Live demo | First steps: Exploring deforestation data (TidyTuesday) w/ Mr. Robinson | [Screencast](https://www.youtube.com/watch?v=0q-qmNkhWyY)| [Past weeks](https://www.youtube.com/playlist?list=PL19ev-r1GBwkuyiwnxoHTRC8TTqP8OEi8) |
