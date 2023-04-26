@@ -28,8 +28,11 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 |      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
 | ---  | --- | --- | --- | 
-| Apr 18th | | Spring Cleaning! Bring a script that you would like clean-up *-(Everyone)*| All the `pts` |
-| Apr 25th | | Review solution for monthly exercise *-(Dorian)* | 425 `pts` |
+| May 2nd | | R Projects and code conventions *-(Barbara, Dorian, Kristie, and Derek)* | 425 `pts` |
+| May 9th | | How to write functions *-(Kristie and Derek)* | 425 `pts` |
+| May 16th | | Regular Expressions *-(Barbara)* | 425 `pts` |
+| May 23rd | | Rmarkdown *-(Dorian)* | 425 `pts` |
+| May 30th | | purrr - eliminate code repetition *-(Derek)* | 425 `pts` |
 
 <br>
 
@@ -38,6 +41,8 @@ Each week features a new data set to explore. Come see examples of how others cl
   
 | Date | R demo <br> _training_  | Show-n-tell <br> **:tada:** <br> _2nd half_ | :candy:`sugaR pts`   |   
 | ---  | --- | --- | --- | 
+| Apr 25th | | Review solution for monthly exercise *-(Dorian)* | 425 `pts` |
+| Apr 18th | | Spring Cleaning! Bring a script that you would like clean-up *-(Everyone)*| All the `pts` |
 | Feb 21st | | [Zotero](https://www.zotero.org/) bibliography for references - workflow and other reproducible tips and tricks *-(Kristie and others)* | 5100 `pts` |
 | Feb 14th | | Valentines aRt projects❤️ and weekly exercises *-(Dorian)* | 580 `pts` |
 | Fab 7th | | Programming with dplyr intro - ‼️ *-(Derek)* | 144 `pts` |
