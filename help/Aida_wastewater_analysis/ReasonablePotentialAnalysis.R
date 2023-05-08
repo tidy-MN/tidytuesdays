@@ -6,7 +6,7 @@
 
 ### OBJECTIVE
 
-# Compute the reasonable potential analysis for the effluent toxic concentrations 
+# Compute the reasonable potential analysis for the effluent toxic concentrations
 # of a wastewater treatment plant
 
 
@@ -25,16 +25,16 @@
 #############################
 ### NEEDED EDITS TO SCRIPT
 
-# Wastewater treatment plant ID (line 104), outfall (line 133) ADWDF, Background (stream) concentrations and 7Q10 flow: 
+# Wastewater treatment plant ID (line 104), outfall (line 133) ADWDF, Background (stream) concentrations and 7Q10 flow:
 # lines 234 - 259
 
-#################### 
+####################
 ### SET DIRECTORY
 
-directory <- "X:\\Agency_Files\\Water\\Standards\\Effluent Limit Review Documents\\Aida Mendez\\ROutput"
-#setwd()
-setwd(directory)
-getwd()
+# directory <- "X:\\Agency_Files\\Water\\Standards\\Effluent Limit Review Documents\\Aida Mendez\\ROutput"
+# #setwd()
+# setwd(directory)
+# getwd()
 
 ###########################################
 ### INSTALL AND/OR CALL DESIRED PACKAGES
@@ -45,30 +45,29 @@ getwd()
 ### Install the below packages if you haven't done so yet
 library(RODBC)
 library(sqldf)
-library(readr)
+library(tidyverse)
 library(janitor)
 library(lubridate)
-library(dplyr)
-library(readr)
 library(plotrix)
-library(tidyr)
 library(openxlsx)
+
+options(scipen=999)
 ####################################
 ### LOAD CREDENTIALS AND CONNNECT
 
-odbcDataSources()
-credentials <- read_csv("H:/Aida/R/credentials.csv")
-user      <- credentials$delta_user
-password  <- credentials$delta_pwd
+# odbcDataSources()
+# credentials <- read_csv("H:/Aida/R/credentials.csv")
+# user      <- credentials$delta_user
+# password  <- credentials$delta_pwd
 # Or use your own
 #user      <- "ta*******"
 #password  <- "da**_*******"
 
 # Connect to Delta
-deltaw <- odbcConnect("deltaw", 
-                      uid = user, 
-                      pwd = password,
-                      believeNRows = FALSE)  
+# deltaw <- odbcConnect("deltaw",
+#                       uid = user,
+#                       pwd = password,
+#                       believeNRows = FALSE)
 
 #########################################################
 ######## PULL DAILY SAMPLE VALUES FOR A FACILITY ########
@@ -76,46 +75,41 @@ deltaw <- odbcConnect("deltaw",
 ### In the below code, the sql query ("Filter") is designed to pull all the data for Permit ID MN0029815; change the ID to pull data for a different permittee
 
 
-daily <- sqlQuery(deltaw, "SELECT
-                
-                l.MASTER_AI_ID,
-                l.PREFERRED_ID,
-                l.HUC8_CODE,
-                l.WATERSHED_NAME,
-                l.FACILITY_DESIGN_FLOW,
-                l.ind_vs_dom,
-                l.permit_status,
-                r.SAMPLE_RPT_ID,
-                r.SEQUENCE_NUM,
-                r.DMR_INT_DOC_ID,
-                r.SUBJECT_ITEM_DESIGNATION,
-                r.PARAMETER_CODE,
-                r.PARAMETER_DESC,
-                r.ABBR_UNITS_DESC,
-                r.SAMPLE_DATE,
-                r.VALUE_QUALIFIER_IND,
-                r.SAMPLE_VALUE,
-                s.OPERATIONAL_FLAG,
-                s.SUBMITTED_FLAG,
-                s.LATEST_SUBMITTAL_FLAG
-                                
-                FROM WH_TEMPO.WW_FACILITY l
-                JOIN WH_TEMPO.DMR_SAMPLE_DTL r ON l.MASTER_AI_ID=r.MASTER_AI_ID
-                JOIN WH_TEMPO.DMR_SAMPLE_RPT s ON r.SAMPLE_RPT_ID=s.SAMPLE_RPT_ID
-                
-                WHERE l.PREFERRED_ID = 'MN0051284'
-                
-                ")
-                
+# daily <- sqlQuery(deltaw, "SELECT
+#
+#                 l.MASTER_AI_ID,
+#                 l.PREFERRED_ID,
+#                 l.HUC8_CODE,
+#                 l.WATERSHED_NAME,
+#                 l.FACILITY_DESIGN_FLOW,
+#                 l.ind_vs_dom,
+#                 l.permit_status,
+#                 r.SAMPLE_RPT_ID,
+#                 r.SEQUENCE_NUM,
+#                 r.DMR_INT_DOC_ID,
+#                 r.SUBJECT_ITEM_DESIGNATION,
+#                 r.PARAMETER_CODE,
+#                 r.PARAMETER_DESC,
+#                 r.ABBR_UNITS_DESC,
+#                 r.SAMPLE_DATE,
+#                 r.VALUE_QUALIFIER_IND,
+#                 r.SAMPLE_VALUE,
+#                 s.OPERATIONAL_FLAG,
+#                 s.SUBMITTED_FLAG,
+#                 s.LATEST_SUBMITTAL_FLAG
+#
+#                 FROM WH_TEMPO.WW_FACILITY l
+#                 JOIN WH_TEMPO.DMR_SAMPLE_DTL r ON l.MASTER_AI_ID=r.MASTER_AI_ID
+#                 JOIN WH_TEMPO.DMR_SAMPLE_RPT s ON r.SAMPLE_RPT_ID=s.SAMPLE_RPT_ID
+#
+#                 WHERE l.PREFERRED_ID = 'MN0051284'
+#
+#                 ")
 
-### export raw daily data
-getwd()
-write.xlsx(daily,'DailySampleValues_Raw.xlsx')
- 
 ### DO SOME FILTERING OF RAW DATA AND EXPORT
 
-options(scipen=999)
-
+daily <- read_csv("https://github.com/tidy-MN/tidytuesdays/raw/main/help/Aida_wastewater_analysis/MN0051284_DailySampleValues_Raw.csv")
+params <- read_csv("https://github.com/tidy-MN/tidytuesdays/raw/main/help/Aida_wastewater_analysis/reasonable_potential_analysis_params.csv")
 names(daily)
 
 daily2 <- daily %>%
@@ -124,339 +118,155 @@ daily2 <- daily %>%
 
 # Convert the date column from character to date
 
-daily2$SAMPLE_DATE<-as.Date(daily2$SAMPLE_DATE,format = "%m/%d/%Y")
-Analytes<-mutate(daily2,"Month"=month(SAMPLE_DATE)) %>% mutate(daily2,"Year"=year(SAMPLE_DATE)) 
+# daily2$SAMPLE_DATE<-as.Date(daily2$SAMPLE_DATE,format = "%m/%d/%Y")
+Analytes <- mutate(daily2,
+                   # across(SAMPLE_DATE, mdy),
+                   across(SAMPLE_DATE, list(Month = month, Year = year), .names = "{.fn}")
+                   ) %>%
+  filter(
+    # Keep only stations that are SD stations
+    SUBJECT_ITEM_DESIGNATION == "SD 001",
+    # Keep data newer than specific year.
+    Year > 2011,
+    # Keep data older than specific year.
+    Year < 2020,
+    # Keep only the concentrations or the specific conductance
+    ABBR_UNITS_DESC %in% c("mg/L", "umhos/cm")
+    )
 
-# Keep only stations that are SD stations
-Analytes <- filter(Analytes,SUBJECT_ITEM_DESIGNATION == "SD 001")
-
-# Keep data newer than specific year.  Keep data newer than specific year.
-Analytes <- filter(Analytes, Analytes$Year >=2011 & Analytes$Year< 2020)
-
-head (Analytes)
+head(Analytes)
 tail(Analytes)
 
-# Keep only the concentrations or the specific conductance
+ReasonablPotDF <- Analytes %>%
+  distinct(PARAMETER_CODE, PARAMETER_DESC, SAMPLE_DATE, SAMPLE_VALUE, ABBR_UNITS_DESC, VALUE_QUALIFIER_IND) %>%
+  mutate(ln_sv = log(SAMPLE_VALUE)) %>%
+  group_by(PARAMETER_CODE, PARAMETER_DESC) %>%
+  summarize(across(ln_sv, list(
+    Var = var,
+    STD = sd,
+    Count = length,
+    Max = max,
+    median = median
+  ),
+  .names = "{.fn}"
+  )) %>%
+  ungroup() %>%
+  mutate(
+    across(c(Var, STD), ~round(., digits = 3)),
+    CV = round(sqrt(exp(Var) - 1),digits =3),
+    short_desc = str_extract(PARAMETER_DESC, "^\\w+"),
+    median = median %>% set_names(short_desc),
+    SAR = ((median['Sodium']/23)/((median['Calcium']/20.03 + median['Magnesium']/12.16)/2)^0.5)
+    )
 
-Analytes <- filter(Analytes,ABBR_UNITS_DESC %in% c("mg/L", "umhos/cm"))
-
-ChlorideDF <- Analytes %>% filter(PARAMETER_DESC == "Chloride, Total") %>%
-  rename("Chloride" = "SAMPLE_VALUE") %>%
-  select(-SAMPLE_RPT_ID, -SEQUENCE_NUM, -PARAMETER_CODE, -DMR_INT_DOC_ID, 
-         -LATEST_SUBMITTAL_FLAG, - SUBMITTED_FLAG)
-
-  ChlorideDF <- unique(ChlorideDF)
-  ChlorideDF <- mutate (ChlorideDF, lnCl = log(Chloride))
-  ChlorideDFSummary <-summarize(ChlorideDF, Var = round(var(lnCl),digits =3),
-                                STD = round(Var^0.5,digits=3), Count = n(), 
-                                CV = round((exp(Var) - 1)^0.5,digits =3),
-                                Max = max(Chloride) )
-
-SulfateDF <- Analytes %>% filter(PARAMETER_DESC == "Sulfate, Total (as SO4)") %>%
-  rename("Sulfate" = "SAMPLE_VALUE", "Sulfate_units" = "ABBR_UNITS_DESC", "Sulfate_Value_qual" = "VALUE_QUALIFIER_IND" ) %>%
-  select (SAMPLE_DATE, Sulfate, Sulfate_units,Sulfate_Value_qual)
-  SulfateDF <- unique(SulfateDF)
-  SulfateDF <- mutate (SulfateDF, lnSulf = log(Sulfate))
-  SulfateDFSummary <- summarize(SulfateDF, Var = round(var(lnSulf),digits =3),
-                                STD = round(Var^0.5,digits=3), Count = n(), 
-                                CV = round((exp(Var) - 1)^0.5,digits =3),
-                                Max = max(Sulfate) )
-  
-TDSDF <- Analytes %>% filter(PARAMETER_DESC == "Solids, Total Dissolved (TDS)") %>%
-  rename("TDS" = "SAMPLE_VALUE", "TDS_units" = "ABBR_UNITS_DESC", 
-          "TDS_Value_qual" = "VALUE_QUALIFIER_IND" )%>%
-  select (SAMPLE_DATE, TDS, TDS_units,TDS_Value_qual)
-  TDSDF <- unique(TDSDF)
-  TDSDF <- mutate (TDSDF, lnTDS = log(TDS))
-  TDSDFSummary <- summarize(TDSDF, Var = round(var(lnTDS),digits =3),
-                            STD = round(Var^0.5,digits=3), Count = n(), 
-                            CV = round((exp(Var) - 1)^0.5,digits =3),
-                                Max = max(TDS) )
-
-  SpecCondDF <- Analytes %>% filter(PARAMETER_DESC == "Specific Conductance") %>%
-   rename("Specific_Conductance" = "SAMPLE_VALUE", "SpecCond_units" = "ABBR_UNITS_DESC", 
-       "SpecCond_Value_qual" = "VALUE_QUALIFIER_IND" )%>%
-   select (SAMPLE_DATE, Specific_Conductance, SpecCond_units,SpecCond_Value_qual)
-   SpecCondDF <- unique(SpecCondDF)
-   SpecCondDF <- mutate (SpecCondDF, lnSpecCond = log(Specific_Conductance))
-   SpecCondDFSummary <- summarize(SpecCondDF, Var = round(var(lnSpecCond),digits =3),
-                                  STD = round(Var^0.5,digits=3), Count = n(), 
-                                  CV = round((exp(Var) - 1)^0.5,digits =3),
-                          Max = max(Specific_Conductance) )
-
-
-Bicarbonates<- Analytes %>% filter(PARAMETER_DESC == "Bicarbonates (HCO3)")
-Hardness <- Analytes %>% filter(PARAMETER_DESC == "Hardness, Calcium & Magnesium, Calculated (as CaCO3)")
-
-CalciumDF <- Analytes %>% filter(PARAMETER_DESC == "Calcium, Total (as Ca)") %>%
-  rename("Calcium" = "SAMPLE_VALUE")%>%
-  select (SAMPLE_DATE, Calcium, ABBR_UNITS_DESC,VALUE_QUALIFIER_IND)
-  CalciumDF <- unique(CalciumDF)
-CaDFSummary <-summarize(CalciumDF, CaMedian = median(Calcium) )
- 
-MagnesiumDF <- Analytes %>% filter(PARAMETER_DESC == "Magnesium, Total (as Mg)") %>%
-  rename("Magnesium" = "SAMPLE_VALUE")%>%
-  select (SAMPLE_DATE, Magnesium, ABBR_UNITS_DESC,VALUE_QUALIFIER_IND)
-  MagnesiumDF <- unique(MagnesiumDF)
-MgDFSummary <-summarize(MagnesiumDF, MgMedian = median(Magnesium) )
-
-PotassiumDF <- Analytes %>% filter(PARAMETER_DESC == "Potassium, Total (as K)")%>%
-  rename("Potassium" = "SAMPLE_VALUE")%>%
-  select (SAMPLE_DATE, Potassium, ABBR_UNITS_DESC,VALUE_QUALIFIER_IND)
-  PotassiumDF <- unique(PotassiumDF)
-KDFSummary <-summarize(PotassiumDF, KMedian = median(Potassium) )
-
-SodiumDF <- Analytes %>% filter(PARAMETER_DESC == "Sodium, Total (as Na)")%>%
-  rename("Sodium" = "SAMPLE_VALUE")%>%
-  select (SAMPLE_DATE, Sodium, ABBR_UNITS_DESC,VALUE_QUALIFIER_IND)
-  SodiumDF <- unique(SodiumDF)
-NaDFSummary <-summarize(SodiumDF, NaMedian = median(Sodium) )
-
-CaMgKNaSARSummary <-data.frame(CaDFSummary, MgDFSummary, KDFSummary,NaDFSummary, 
-                  SAR = ((NaDFSummary$NaMedian/23)/((CaDFSummary$CaMedian/20.03 + MgDFSummary$MgMedian/12.16)/2)^0.5))
-
-Together <- left_join(ChlorideDF, SulfateDF, by = "SAMPLE_DATE")
-
+CaMgKNaSARSummary <- filter(
+  ReasonablPotDF,
+  PARAMETER_CODE %in% c("META0003", "META0005", "META0007", "META0107")
+  ) %>%
+  transmute(
+    param_desc = str_extract(PARAMETER_DESC, "\\w{1,2}(?=\\))") %>%
+      paste0("Median"),
+    median,
+    SAR) %>%
+  pivot_wider(names_from = param_desc, values_from = median) %>%
+  select(-SAR, SAR)
 
 # Reasonable potential calculations
 
-#options(scipen=999)
-
-ReasonablPotDF <-rbind(ChlorideDFSummary,SulfateDFSummary,TDSDFSummary,SpecCondDFSummary)
-WQ_Parameter <- c("Chloride","Sulfate","TDS","Spec_Cond")
-ReasonablPotDF <- mutate(ReasonablPotDF,WQ_Parameter)
-ReasonablPotDF <- select(ReasonablPotDF,WQ_Parameter, everything())
-
-
-
-### Waste Load Allocations
-#
-# Cr = chronic
-# Ac = acute
-#
-#  Acute, chronic and FAV standards
-
-ClCrStandard = 230.0
-ClAcStandard = 860
-ClsFAV       = 1720
-ClStandardDur = 4
-  
-SO4CrStandard = 600.0
-SO4StandardDur = 30
-
-TDSCrStandard = 3000.0
-TDSStandardDur = 30
-
-# The specific conductance no longer has a Chronic value, therefore I am calling this a reference value
-SpecConCrRef = 1500
-SpecCondStandardDur = 30
-
-# Effluent ADWDF or MDF and river 7Q10
-
-EffFlow_MGD = 5.89
-X7Q10Flow_CFS = 9.3
-
-EffFlow = c(EffFlow_MGD,EffFlow_MGD,EffFlow_MGD,EffFlow_MGD)
-X7Q10Flow = c(X7Q10Flow_CFS, X7Q10Flow_CFS, X7Q10Flow_CFS, X7Q10Flow_CFS)
-# Receiving/background water quality
-
-BckgrCl = 22.15
-BckgrTDS = 295
-BckgrSO4 = 55
-BckgrSpecCon = 694
-
-Bckgr = c(BckgrCl,BckgrSO4,BckgrTDS, BckgrSpecCon)
-
-# Creating a vector to store the chronic WQ standards
-
-CrStd = c(ClCrStandard,SO4CrStandard,TDSCrStandard,SpecConCrRef)
-
-AcStd = c(ClAcStandard,NA,NA,NA)
-
-FAV = c(ClsFAV,NA,NA,NA)
-
-
-#AcStd <- as.numeric(AcStd)
-
-Duration = c(ClStandardDur,SO4StandardDur,TDSStandardDur,SpecCondStandardDur)
-
-ReasonablPotDF <- mutate(ReasonablPotDF,CrStd,AcStd,FAV,Duration, Bckgr,EffFlow,X7Q10Flow)
-
-
+ReasonablPotDFall <- left_join(ReasonablPotDF, params, by = "PARAMETER_CODE")
+ReasonablPotDF <- inner_join(ReasonablPotDF, params, by = "PARAMETER_CODE")
 
 # WLA chronic & WLA acute
 
-#ClWLACr <- ((EffFlow_MGD + X7Q10Flow_CFS/1.547)* ClCrStandard - (X7Q10Flow_CFS/1.547)*BckgrCl)/EffFlow_MGD
-#SO4WLACr<-((EffFlow_MGD + X7Q10Flow_CFS/1.547)* SO4CrStandard - (X7Q10Flow_CFS/1.547)*BckgrSO4)/EffFlow_MGD
-#TDSWLACr<- ((EffFlow_MGD + X7Q10Flow_CFS/1.547)* TDSCrStandard - (X7Q10Flow_CFS/1.547)*BckgrTDS)/EffFlow_MGD
-#SpecConWLACr<-((EffFlow_MGD + X7Q10Flow_CFS/1.547)* SpecConCrRef - (X7Q10Flow_CFS/1.547)*BckgrSpecCon)/EffFlow_MGD
-#WLACr <- c(ClWLACr,SO4WLACr,TDSWLACr,SpecConWLACr)
-
-
-ClWLAAc <- round(((EffFlow_MGD + X7Q10Flow_CFS/1.547)* ClAcStandard - (X7Q10Flow_CFS/1.547)*BckgrCl)/EffFlow_MGD, digits=2)
-WLAAc <- c(ClWLAAc,NA,NA,NA)
-
-ReasonablPotDF <- mutate(ReasonablPotDF,WLACr=round(((EffFlow + X7Q10Flow/1.547)* CrStd - 
-                                                 (X7Q10Flow/1.547)*Bckgr)/EffFlow, digits =1),WLAAc)
-
-#ReasonablPotDF <- mutate(ReasonablPotDF,WLACr=((EffFlow + X7Q10Flow/1.547)* CrStd - 
-#                                                (X7Q10Flow/1.547)*Bckgr)/EffFlow,WLAAc)
-
-# Long Term Average for the chronic standard
-
- colnames(ReasonablPotDF)
- 
- ReasonablPotDF <- mutate(ReasonablPotDF,u4U30= round(log(ReasonablPotDF$WLACr)-2.326*
-                           sqrt(log(1+((exp(ReasonablPotDF$Var)-1))/ReasonablPotDF$Duration)), digits=2))
- 
- ReasonablPotDF <- mutate(ReasonablPotDF,u = round(ReasonablPotDF$u4U30-0.5*
-                           ReasonablPotDF$Var+0.5*log(1+((exp(ReasonablPotDF$Var)-1)/ReasonablPotDF$Duration)),digits =2))
-
-# ReasonablPotDF <- mutate(ReasonablPotDF,u = ReasonablPotDF$u4U30-0.5*
-#                            ReasonablPotDF$Var+0.5*log(1+((exp(ReasonablPotDF$Var)-1)/ReasonablPotDF$Duration)))
- ReasonablPotDF <- mutate(ReasonablPotDF,LTA_chronic = round(exp(ReasonablPotDF$u+0.5*ReasonablPotDF$Var), digits = 1))
- 
- 
- # Long Term average for maximum/acute standard
- 
- ReasonablPotDF<- mutate(ReasonablPotDF,u1 = ifelse(!is.na(ReasonablPotDF$WLAAc), 
-                                                    round(log(ReasonablPotDF$WLAAc)-2.326*
-                                                            ReasonablPotDF$STD, digits=1), NA))
-
- ReasonablPotDF<- mutate(ReasonablPotDF, LTA_acute = ifelse(!is.na(ReasonablPotDF$u1), 
-                                                            round(exp(ReasonablPotDF$u1+0.5*
-                                                                        ReasonablPotDF$Var), digits=1), NA))
- 
- 
- # Selecting the either the mean of the LTA_acute or the mean of the LTA_chronic 
- # to compute the daily maximum limit. Computation of the daily max limit
-
- ReasonablPotDF <- mutate(ReasonablPotDF, 
-                           Daily_Max_Lmt = case_when(is.na(LTA_acute) ~ 
-                                                       round(exp(ReasonablPotDF$u+
-                                                              2.326*ReasonablPotDF$STD),digits=2),
-                                                  LTA_chronic < LTA_acute ~ 
-                                                    round(exp(ReasonablPotDF$u+
-                                                              2.326*ReasonablPotDF$STD),digits=2),
-                                                  LTA_chronic > LTA_acute ~ 
-                                                    round(exp(ReasonablPotDF$u1+
-                                                              2.326*ReasonablPotDF$STD),digits=2),
-                                                  LTA_chronic == LTA_acute ~ 
-                                                    round(exp(ReasonablPotDF$u+
-                                                              2.326*ReasonablPotDF$STD),digits=2),
-                                                  TRUE ~ NA))
-
- #for (i in ReasonablPotDF$id) {
-#  #i <- '2068SD002'
-#  if (ReasonablPotDF$LTAas_Over_LTAcs[ReasonablPotDF$id==i]=='FALSE'){
-#    ReasonablPotDF$Daily_Max[ReasonablPotDF$id==i] <- round(exp(ReasonablPotDF$u1[ReasonablPotDF$id==i]+2.326*ReasonablPotDF$STDEV_LnNData[ReasonablPotDF$id==i]),digits=2)
-#  } else{
-#    ReasonablPotDF$Daily_Max[ReasonablPotDF$id==i] <- round(exp(ReasonablPotDF$u[ReasonablPotDF$id==i]+2.326*ReasonablPotDF$STDEV_LnNData[ReasonablPotDF$id==i]),digits=2)
-#  }
-#}
-
-#ReasonablPotDF$Daily_Max <- exp(ReasonablPotDF$u+2.326*ReasonablPotDF$STDEV_LnNData)
- 
-
- # Selecting the either the mean of the LTA_acute or the mean of the LTA_chronic 
- # to compute the average monthly limit. Computation of the average monthly limit
-
-
-ReasonablPotDF <- mutate(ReasonablPotDF,S2n = round(log(1+((exp(ReasonablPotDF$Var)-1))/2), digits=3))
-
-ReasonablPotDF <- mutate(ReasonablPotDF,Sn = round(sqrt(log(1+((exp(ReasonablPotDF$Var)-1))/2)), digits=3))
-
-
-ReasonablPotDF <- mutate(ReasonablPotDF, 
-                         Un = case_when(is.na(LTA_acute) ~ round(ReasonablPotDF$u+(ReasonablPotDF$Var-ReasonablPotDF$S2n)/2, digits=2),
-                                                LTA_chronic < LTA_acute ~ 
-                                          round(ReasonablPotDF$u+(ReasonablPotDF$Var-ReasonablPotDF$S2n)/2, digits=2),
-                                                LTA_chronic > LTA_acute ~ 
-                                          round(ReasonablPotDF$u1+(ReasonablPotDF$Var-ReasonablPotDF$S2n)/2, digits=2),
-                                                LTA_chronic == LTA_acute ~ 
-                                          round(ReasonablPotDF$u+(ReasonablPotDF$Var-ReasonablPotDF$S2n)/2, digits=2),
-                                                TRUE ~ NA))
-
-ReasonablPotDF <- mutate(ReasonablPotDF, Monthly_Avg_Lmt = round(exp(ReasonablPotDF$Un+1.645*ReasonablPotDF$Sn), digits=2))
-#}
-# for (i in ReasonablPotDF$id) {
-  #i <- '2068SD002'
-#  if (ReasonablPotDF$LTAas_Over_LTAcs[ReasonablPotDF$id==i]=='FALSE'){
-#    ReasonablPotDF$Un[ReasonablPotDF$id==i] <- ReasonablPotDF$u1[ReasonablPotDF$id==i]+(ReasonablPotDF$VAR_LnNData[ReasonablPotDF$id==i]-ReasonablPotDF$S2n[ReasonablPotDF$id==i])/2
-#  } else{
-#    ReasonablPotDF$Un[ReasonablPotDF$id==i] <- ReasonablPotDF$u[ReasonablPotDF$id==i]+(ReasonablPotDF$VAR_LnNData[ReasonablPotDF$id==i]-ReasonablPotDF$S2n[ReasonablPotDF$id==i])/2
-#  }
-# }
-#ReasonablPotDF$Un <- ReasonablPotDF$u+(ReasonablPotDF$VAR_LnNData-ReasonablPotDF$S2n)/2
-
-
-
-### PEQ
-
 PEQ_pvalue <- 0.95
-ReasonablPotDF <- mutate(ReasonablPotDF,S= round(sqrt(log(ReasonablPotDF$CV^2+1)), digits =3))
-ReasonablPotDF <- mutate(ReasonablPotDF,Pn = round((1-0.95)^(1/ReasonablPotDF$Count), digits =3))
-ReasonablPotDF <- mutate(ReasonablPotDF,
-                         PEQFCalc = 
-                          round(exp((qnorm(PEQ_pvalue))*ReasonablPotDF$S-0.5*
-                                                  (ReasonablPotDF$S^2))/
-                           exp((qnorm(ReasonablPotDF$Pn))*ReasonablPotDF$S-0.5*(ReasonablPotDF$S^2)), digits =2))
 
-### Force PEQ factor to 1.5 if greater than 2
-#high <- subset(ReasonablPotDF,ReasonablPotDF$PEQFCalc > 2)
-#ok <- subset(ReasonablPotDF,ReasonablPotDF$PEQFCalc <= 2)
-#high$PEQFCalc <- 1.5
-#high$PEQFCalc
-#ReasonablPotDF <- rbind(ok,high)
-#write.csv(high,'High_PEQFCalc.csv')
-#getwd()
+WLA <- function(std) expr(((EffFlow + X7Q10Flow / 1.547) * !!enquo(std) - (X7Q10Flow/1.547)*Bckgr)/EffFlow)
 
-
-ReasonablPotDF<- mutate(ReasonablPotDF,PEQ = round(ReasonablPotDF$Max*ReasonablPotDF$PEQFCalc, digits=2))
-
-### RP
-
-ReasonablPotDF$PEQoverDailyMax[ReasonablPotDF$PEQ > ReasonablPotDF$Daily_Max_Lmt] <- 'Y'  
-ReasonablPotDF$PEQoverDailyMax[ReasonablPotDF$PEQ < ReasonablPotDF$Daily_Max_Lmt] <- 'N' 
-
-ReasonablPotDF$PEQoverFAV[ReasonablPotDF$PEQ > ReasonablPotDF$FAV] <- 'Y'
-ReasonablPotDF$PEQoverFAV[ReasonablPotDF$PEQ < ReasonablPotDF$FAV] <- 'N' 
-ReasonablPotDF$PEQoverFAV[is.na(ReasonablPotDF$FAV)] <- 'N'
-
-ReasonablPotDF$PEQoverMonAvg[ReasonablPotDF$PEQ > ReasonablPotDF$Monthly_Avg_Lmt] <- 'Y'  
-ReasonablPotDF$PEQoverMonAvg[ReasonablPotDF$PEQ < ReasonablPotDF$Monthly_Avg_Lmt] <- 'N'  
-
-ReasonablPotDF$RP[ReasonablPotDF$PEQoverDailyMax=='Y' & ReasonablPotDF$PEQoverMonAvg=='Y' & ReasonablPotDF$PEQoverFAV=='Y' ] <- 'Yes' 
-ReasonablPotDF$RP[ReasonablPotDF$PEQoverDailyMax=='Y' & ReasonablPotDF$PEQoverMonAvg=='Y' & ReasonablPotDF$PEQoverFAV=='N' ] <- 'Yes'
-ReasonablPotDF$RP[ReasonablPotDF$PEQoverDailyMax=='Y' & ReasonablPotDF$PEQoverMonAvg=='N' & ReasonablPotDF$PEQoverFAV=='Y' ] <- 'Yes'   
-ReasonablPotDF$RP[ReasonablPotDF$PEQoverDailyMax=='Y' & ReasonablPotDF$PEQoverMonAvg=='N' & ReasonablPotDF$PEQoverFAV=='N' ] <- 'Yes'  
-ReasonablPotDF$RP[ReasonablPotDF$PEQoverDailyMax=='N' & ReasonablPotDF$PEQoverMonAvg=='Y' & ReasonablPotDF$PEQoverFAV=='Y' ] <- 'Yes'  
-ReasonablPotDF$RP[ReasonablPotDF$PEQoverDailyMax=='N' & ReasonablPotDF$PEQoverMonAvg=='Y' & ReasonablPotDF$PEQoverFAV=='N'] <- 'Yes'  
-ReasonablPotDF$RP[ReasonablPotDF$PEQoverDailyMax=='N' & ReasonablPotDF$PEQoverMonAvg=='N' & ReasonablPotDF$PEQoverFAV=='Y'] <- 'Yes'  
-ReasonablPotDF$RP[ReasonablPotDF$PEQoverDailyMax=='N' & ReasonablPotDF$PEQoverMonAvg=='N' & ReasonablPotDF$PEQoverFAV=='N'] <- 'No'
-
-
+ReasonablPotDF <- mutate(
+  ReasonablPotDF,
+  WLAAc = round(!!WLA(AcStd), 2),
+  WLACr = round(!!WLA(CrStd), 1),
+  u4U30= round(log(WLACr)-2.326*
+                 sqrt(log(1+((exp(Var)-1))/Duration)), digits=2),
+  u = round(u4U30-0.5*
+              Var+0.5*log(1+((exp(Var)-1)/Duration)),digits =2),
+  u1 = round(log(WLAAc) - 2.326 * STD, digits=1),
+  LTA_chronic = round(exp(u + 0.5 * Var), digits = 1),
+  LTA_acute = round(exp(u1 + 0.5 * Var), digits=1),
+  # Selecting the either the mean of the LTA_acute or the mean of the LTA_chronic
+  # to compute the daily maximum limit. Computation of the daily max limit
+  u_or_u1 = case_when(
+    is.na(LTA_acute) | LTA_chronic <= LTA_acute ~ u,
+    LTA_chronic > LTA_acute ~ u1,
+    TRUE ~ NA
+  ),
+  Daily_Max_Lmt = round(exp(u_or_u1 + 2.326 * STD), digits=2),
+  # Selecting the either the mean of the LTA_acute or the mean of the LTA_chronic
+  # to compute the average monthly limit. Computation of the average monthly limit
+  s2n = log(1+((exp(Var)-1))/2),
+  sn = round(sqrt(s2n), digits = 3),
+  s2n = round(s2n, digits = 3),
+  Un = round(u_or_u1 + (Var-s2n) / 2, digits=2),
+  Monthly_Avg_Lmt = round(exp(Un+1.645*sn), digits=2),
+  ### PEQ
+  S= round(sqrt(log(CV^2+1)), digits =3),
+  Pn = round((1 - PEQ_pvalue)^(1 / Count), digits =3),
+  PEQFCalc = round(exp((qnorm(PEQ_pvalue)) * S - 0.5 *
+                (S^2)) / exp((qnorm(Pn)) * S - 0.5*(S^2)), digits =2),
+  PEQ = round(Max * PEQFCalc, digits=2),
+  ### RP
+  across(c(Daily_Max_Lmt, FAV, Monthly_Avg_Lmt),
+         ~ifelse(PEQ > ., "Y", "N") %>% replace_na("N"),
+         .names = "PEQover{.col}"
+         ),
+  RP = ifelse(if_any(starts_with("PEQover"), ~. == "Y"), "Y", "N")
+)
 
 # Reorganize the columns in the Reasonable Potential data frame so that it looks like our
-# spreadsheet 
+# spreadsheet
 
-colnames(ReasonablPotDF)
-
-ReasonablPotDF1 <-select(ReasonablPotDF,WQ_Parameter,EffFlow,X7Q10Flow,Bckgr,CrStd, AcStd, FAV,WLACr, WLAAc, CV, Var, STD, Duration,
-       u4U30,u,LTA_chronic,u1,LTA_acute,Daily_Max_Lmt, S2n,Sn, Un,Monthly_Avg_Lmt, Max, Count, 
-       S, Pn,PEQFCalc,PEQ,PEQoverDailyMax,PEQoverFAV,PEQoverMonAvg,RP)
-
-colnames(ReasonablPotDF1)
+ReasonablPotDF1 <- select(
+  ReasonablPotDF,
+  WQ_Parameter,
+  EffFlow,
+  X7Q10Flow,
+  Bckgr,
+  CrStd,
+  AcStd,
+  FAV,
+  WLACr,
+  WLAAc,
+  CV,
+  Var,
+  STD,
+  Duration,
+  u4U30,
+  u,
+  LTA_chronic,
+  u1,
+  LTA_acute,
+  Daily_Max_Lmt,
+  s2n = S2n,
+  sn = Sn,
+  Un,
+  Monthly_Avg_Lmt,
+  Max,
+  Count,
+  S,
+  Pn,
+  PEQFCalc,
+  PEQ,
+  PEQoverDailyMax = PEQoverDaily_Max_Lmt,
+  PEQoverFAV,
+  PEQoverMonAvg = PEQoverMonthly_Avg_Lmt,
+  RP
+)
 
 # Write Reasonable potential data frame and SAR to excel
 
 l2 <- list("Reasonable_Potential" = ReasonablPotDF1,"Cations_SAR" = CaMgKNaSARSummary)
 
 write.xlsx(l2,file = "ReasonablePotential&SAR.xlsx")
- 
-
-
-#write.xlsx(ReasonablPotDF,file = "ReasonablePotAnalysis.xlsx", asTable = TRUE)
 
 # Note, if you want data for a parameter that is text only (e.g., "Stream recreational suitability (choice list)"), then do not use the below step
 #analytesmedian <-analytes2 %>% group_by(PARAMETER_DESC) %>% summarise_if(is.numeric, median, na.rm=TRUE)
