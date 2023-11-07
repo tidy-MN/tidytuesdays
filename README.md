@@ -273,6 +273,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 - Helsel's books at [Practical Stats](http://www.practicalstats.com/info2use/books.html)
 - [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html)
 - [Efficient R Programming](https://csgillespie.github.io/efficientR/)
+- [R for applied epidemiology and public health](https://www.epirhandbook.com/en/)
 
 <br>
 
