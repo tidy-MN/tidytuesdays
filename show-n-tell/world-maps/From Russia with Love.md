@@ -200,10 +200,7 @@ ggplot(countries %>%
                size = 4, fontface = 'bold.italic')+
   theme_map()
 ```
-
-![Region containing Kamchatka Pennisula and Kodiak
-Island](Tidy-Tuesday-Presentation_files/figure-commonmark/unnamed-chunk-4-1.png)
-
+![Overview Map](https://github.com/tidy-MN/tidytuesdays/assets/7883076/11810b1c-9689-4d25-bfa4-6b825caa3323)
 Ta-da!!! This is our first map! Now we are going to do some detail work!
 
 ### Alaska!
@@ -249,7 +246,7 @@ ggplot(countries %>%
   theme_map()
 ```
 
-![](Tidy-Tuesday-Presentation_files/figure-commonmark/unnamed-chunk-6-1.png)
+![Alaska Map](https://github.com/tidy-MN/tidytuesdays/assets/7883076/81d5f326-0d60-4051-93c3-49c2b96f3668)
 
 ### Kodiak Island
 
@@ -317,7 +314,7 @@ ggplot(kib %>%
     Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
     give correct results for longitude/latitude data
 
-![](Tidy-Tuesday-Presentation_files/figure-commonmark/unnamed-chunk-8-1.png)
+![Kodiak map](https://github.com/tidy-MN/tidytuesdays/assets/7883076/97abdc27-d9bf-4caf-9c74-2ad3cb737ca2)
 
 ### Kamchatka!
 
@@ -355,5 +352,6 @@ ggplot(kamchatka)+
     Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
     give correct results for longitude/latitude data
 
-![](Tidy-Tuesday-Presentation_files/figure-commonmark/unnamed-chunk-10-1.png)
+![Kamchatka map](https://github.com/tidy-MN/tidytuesdays/assets/7883076/c7f43ab4-f29a-4901-84ae-e8576b1a3bb0)
+
 
