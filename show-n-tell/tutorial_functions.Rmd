@@ -1,0 +1,329 @@
+---
+title: 'Tutorial: functions'
+subtitle: Design, documentation, and minimal examples
+author: "Abigail Stamm"
+date: "2023-08-31"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE, warning = FALSE, message = FALSE)
+```
+
+# Why create functions?
+
+R is well-suited for reproducibility. How many times have you written some code only for someone to say, "Can you rerun that, but change x?" Even worse, when they make that request a year after you wrote the code and you haven't looked at it since? And still worse, when you wrote it long enough ago that you have no memory of writing it at all?
+
+# A simple example
+
+Let's say you need to calculate the proportion of the population in each county that identify as people of color for an environmental justice project. Then you need to create a choropleth map to visualize your results.
+
+You write the following code, using a Census dataset:
+
+```{r original_script, message = FALSE, warning = FALSE, eval = FALSE}
+library(tidycensus)
+library(tidyverse)
+library(classInt)
+library(RColorBrewer)
+library(sf)
+require(graphics) # may pre-load
+
+vars <- paste0("P3_00", c(1, 3:9), "N") # 2020 race variables
+# read census data
+my_data <- get_decennial(geography = "county", state = "MN", year = 2020, variables = vars, geometry = TRUE)
+
+# manipulate census data
+my_spread <- my_data |> spread(key = "variable", value = "value") |>
+  rename(Total = P3_001N, White = P3_003N, Black = P3_004N, AIAN = P3_005N, Asian = P3_006N, NHPI = P3_007N, Other = P3_008N, Multi = P3_009N) |>
+  mutate(Color = Black + Asian + NHPI + AIAN + Multi + Other, Prop_color = Color / Total, Pct_color = round(100 * Prop_color, digits = 1))
+
+# calculate choropleth settings
+my_class <- classIntervals(var = my_spread$Pct_color, n = 5, style = "quantile", dataPrecision = 1)
+my_colors <- brewer.pal(5, "Blues")
+my_gradient <- findColours(my_class, my_colors)
+
+# plot resulting proportion
+par(mar=c(2.5,0,2,0), mgp = c(0, 0, 0), xpd = TRUE)
+plot(st_geometry(my_spread), col = my_gradient, lwd=.5, main = "Percent people of color by county in MN, 2020")
+
+# add legend
+legend("bottomright", title = "Percent", fill = my_colors, border = "black", legend = names(attr(my_gradient, "table")))
+
+```
+
+That script is long, which is fine if you won't need to change anything. 
+
+But what if ...
+
+1. Your boss wants a revised plot at tract level
+1. Your colleague in Wisconsin wants the same plot of their state
+
+You could copy the script and change the state or geography at the beginning. But if you need to revise all of the maps, say by changing the color scheme, that can get confusing quickly.
+
+Instead, you should create a function. 
+
+We will go step by step through creating a function, formatting the code, adding options, and writing accompanying documentation. We will touch on creating simple examples to illustrate how the function works, but that could be another tutorial on its own.
+
+# Create your function
+
+At this point we have only the original script. Decide on a short descriptive name for the function (under about 16-20 characters) and assign it as a function using the code, `plot_pct_poc <- function() {}`. Then copy-paste the script inside the brackets. 
+
+```{r create_function, eval = FALSE}
+plot_pct_poc <- function() {
+  library(tidycensus)
+  library(tidyverse)
+  library(classInt)
+  library(RColorBrewer)
+  library(sf)
+  require(graphics) # may pre-load
+  
+  vars <- paste0("P3_00", c(1, 3:9), "N") # 2020 race variables
+  # read census data
+  my_data <- get_decennial(geography = "county", state = "MN", year = 2020, variables = vars, geometry = TRUE)
+  
+  # manipulate census data
+  my_spread <- my_data |> spread(key = "variable", value = "value") |>
+    rename(Total = P3_001N, White = P3_003N, Black = P3_004N, AIAN = P3_005N, Asian = P3_006N, NHPI = P3_007N, Other = P3_008N, Multi = P3_009N) |>
+    mutate(Color = Black + Asian + NHPI + AIAN + Multi + Other, Prop_color = Color / Total, Pct_color = round(100 * Prop_color, digits = 1))
+  
+  # calculate choropleth settings
+  my_class <- classIntervals(var = my_spread$Pct_color, n = 5, style = "quantile", dataPrecision = 1)
+  my_colors <- brewer.pal(5, "Blues")
+  my_gradient <- findColours(my_class, my_colors)
+
+  # plot resulting proportion
+  par(mar=c(2.5,0,2,0), mgp = c(0, 0, 0), xpd = TRUE)
+  plot(st_geometry(my_spread), col = my_gradient, lwd=.5, main = "Percent people of color by county in MN, 2020")
+  
+  # add legend
+  legend("bottomright", title = "Percent", fill = my_colors, border = "black", legend = names(attr(my_gradient, "table")))
+
+}
+
+```
+
+Try calling the new function.
+
+```{r example_function, eval = FALSE, warning = FALSE, message = FALSE}
+plot_pct_poc()
+```
+
+Congratulations, we have a working function!
+
+# Format your code
+
+However, if we want to share it with others, especially by including it in a package to publish to CRAN, there are a few issues.
+
+1. **It is bad form to require or load a package inside a function.** Instead, either load it when you load your entire package or reference the package when you call the function. I prefer the second method for two reasons: (1) if I am reviewing your code, I can see exactly where each function came from and (2) if multiple packages contain functions with the same name, such as `lag()` in both the dplyr and stats packages, we can guarantee we will be reading the correct function.
+1. **For readability in text readers, help files, and GitHub, all lines of code should be less than 80 characters.** That will reduce the need for most users to scroll sideways to read all of your code.
+1. **It is bad form to use piping inside functions.** You cannot assume a user will have loaded magrittr (explicitly or via tidyverse) to use `%>%` or that a user has at least R 4.2 to use `|>`.
+
+Let's address these issues in our new function. For the first issue, we may have to do a bit of research if you tend to use constellation packages like tidyverse that load multiple packages simultaneously. For the second issue, RStudio helpfully provides a vertical line after character 80, so we can add line breaks just before the vertical line. For the third issue, we will need to break piped steps into separate calls.
+
+```{r format_function, eval = FALSE}
+plot_pct_poc <- function() {
+  vars <- paste0("P3_00", c(1, 3:9), "N")
+  # read census data
+  my_data <- tidycensus::get_decennial(geography = "county", state = "MN", 
+                                       year = 2020, variables = vars, 
+                                       geometry = TRUE)
+  
+  # manipulate census data
+  my_spread <- tidyr::spread(my_data, key = "variable", value = "value") 
+  my_spread <- dplyr::rename(my_spread, 
+                             Total = P3_001N, White = P3_003N, Black = P3_004N,
+                             AIAN = P3_005N, Asian = P3_006N, NHPI = P3_007N,
+                             Other = P3_008N, Multi = P3_009N)
+  my_spread <- dplyr::mutate(my_spread, 
+                             Color = Black + Asian + NHPI + AIAN + Multi + Other,
+                             Prop_color = Color / Total, 
+                             Pct_color = round(100 * Prop_color, digits = 1))
+  
+  # plot resulting proportion
+  my_class <- classInt::classIntervals(my_spread$Pct_color, n = 5,
+                                       style = "quantile", dataPrecision = 1)
+  my_colors <- RColorBrewer::brewer.pal(5, "Blues")
+  my_gradient <- classInt::findColours(my_class, my_colors)
+  
+  graphics::par(mar=c(2.5,0,2,0), mgp = c(0, 0, 0), xpd = TRUE)
+      # margins: bottom, left, top, right
+      # axes: label, padding, tick (?)
+  
+  plot(sf::st_geometry(my_spread), col = my_gradient, lwd=.5,
+       main = "Percent people of color by county in MN, 2020")
+  
+  # add legend
+  graphics::legend("bottomright", title = "Percent", fill = my_colors, 
+                   legend = names(attr(my_gradient, "table")), border = "black")
+}
+
+```
+
+Now we have a neat easy-to-read function that shows exactly where each function came from. Functions like `plot()` and `names()` are from base R, so their source does not need to be called explicitly.
+
+Try running your function again. Does it still work?
+
+
+# Adding function options
+
+At the moment, our function always runs the same way. But remember, your boss wants tracts in Minnesota and your colleague wants counties in Wisconsin. How can you please both of them?
+
+To add options, you place them inside the parentheses in `function()`. If you usually use the same option, such as Minnesota for the state, you may also want to include a default value. 
+
+We want to add these options:
+
+* `my_state` with a default value of "MN" for Minnesota
+* `my_geography` with the default value of "county"
+
+We added "my_" to the beginning of our options because the function `get_decennial()` uses the options "state" and "geography". For some functions, assigning an object to an option when it has the same name as the option (for example, "state = state") can give unexpected results, so as a general rule you should avoid doing that.  
+
+To add the options, put them inside the function parentheses with the defaults, then update the options for `getdecennial()` to use your new option values instead of "county" and "MN". Remember to keep your lines under 81 characters. We will also need to update the map title to say the correct geography.
+
+```{r adding_options, eval = FALSE}
+plot_pct_poc <- function(my_state = "MN", my_geography = "county") {
+  vars <- paste0("P3_00", c(1, 3:9), "N")
+  # read census data
+  my_data <- tidycensus::get_decennial(geography = my_geography, 
+                                       state = my_state, 
+                                       year = 2020, variables = vars, 
+                                       geometry = TRUE)
+  
+  # manipulate census data
+  my_spread <- tidyr::spread(my_data, key = "variable", value = "value") 
+  my_spread <- dplyr::rename(my_spread, 
+                             Total = P3_001N, White = P3_003N, Black = P3_004N,
+                             AIAN = P3_005N, Asian = P3_006N, NHPI = P3_007N,
+                             Other = P3_008N, Multi = P3_009N)
+  my_spread <- dplyr::mutate(my_spread, 
+                             Color = Black + Asian + NHPI + AIAN + Multi + Other,
+                             Prop_color = Color / Total, 
+                             Pct_color = round(100 * Prop_color, digits = 1))
+  
+  # plot resulting proportion
+  my_class <- classInt::classIntervals(my_spread$Pct_color, n = 5,
+                                       style = "quantile", dataPrecision = 1)
+  my_colors <- RColorBrewer::brewer.pal(5, "Blues")
+  my_gradient <- classInt::findColours(my_class, my_colors)
+  
+  graphics::par(mar=c(2.5,0,2,0), mgp = c(0, 0, 0), xpd = TRUE)
+      # margins: bottom, left, top, right
+      # axes: label, padding, tick (?)
+  
+  plot(sf::st_geometry(my_spread), col = my_gradient, lwd=.5,
+       main = paste0("Percent people of color by ", my_geography, " in ", 
+                     my_state, ", 2020"))
+  
+  # add legend
+  graphics::legend("bottomright", title = "Percent", fill = my_colors, 
+                   legend = names(attr(my_gradient, "table")), border = "black")
+}
+
+```
+
+Load you new function. Note that if you are mapping Minnesota, you can call "my_state" if you want to be explicit, but you do not need to. The function will assume you meant Minnesota unless you explicitly state otherwise.
+
+Try running each of the lines below. What happens?
+
+```{r example_options, eval = FALSE, message = FALSE, warning = FALSE}
+plot_pct_poc()
+plot_pct_poc(my_state = "WI")
+plot_pct_poc(my_geography = "tract")
+plot_pct_poc(my_state = "IA", my_geography = "block")
+
+```
+
+Great, now we have a bunch of cool maps we can share with our friends. Now we can save our function and forget about it until next year, right? 
+
+Not yet. First, we want to add some documentation to help us remember next year what we were doing. Besides, what if we all get awesome new jobs in six months and leave some poor new hire to wade through our mountains of code?
+
+# Add documentation
+
+I like to write my documentation in Roxygen, which is the formatting language used to document functions in many R packages. Roxygen is nice for several reasons.
+
+* It is similar to Markdown, a simple formatting language that can be converted to HTML, Word, or PDF.
+* It can be written directly in the same script as the function, so if you add a new option, for example map colors, you can edit both the function and its documentation at the same time without opening multiple files.
+
+Here is a basic template for Roxygen documentation, but more settings can be added for more complex functions and some other settings, such as `@export`, must be added if you are writing a package. 
+
+```{r roxygen_template, eval = FALSE}
+#' Title
+#'
+#' @description
+# What this function does in about 3-5 lines.
+# Remember each line should be less than 81 characters.
+# Note you can intersperse comment lines (#) and Roxygen lines (#').
+# Only the Roxygen lines will show up if you convert the documentation to a 
+# help file later.
+#'
+#' @param object     What the object is, any limitations.
+#'
+#' @examples
+# code that shows how your function works.
+# if your function is complicated with a lot of options, you may want to 
+# show multiple examples.
+```
+
+Now apply the template to our function. 
+
+
+```{r add_documentation, eval = FALSE}
+#' Plot percent people of color
+#'
+#' @description
+#' This function pulls data from the US Census API via `tidycensus` to create a
+#' choropleth map showing the percent people of color throughout the state.
+#'
+#' @param my_state     A string of the two-letter postal abbreviation for the 
+#'                     state.
+#' @param my_geography A string of the area size to be mapped. Accepts any 
+#'                     geography recognized by the `tidycensus` function 
+#'                     `get_decennial()`.
+#'
+#' @examples
+#' plot_pct_poc(my_state = "RI", my_geography = "county")
+
+plot_pct_poc <- function(my_state = "MN", my_geography = "county") {
+  vars <- paste0("P3_00", c(1, 3:9), "N")
+  # read census data
+  my_data <- tidycensus::get_decennial(geography = my_geography, 
+                                       state = my_state, 
+                                       year = 2020, variables = vars, 
+                                       geometry = TRUE)
+  
+  # manipulate census data
+  my_spread <- tidyr::spread(my_data, key = "variable", value = "value") 
+  my_spread <- dplyr::rename(my_spread, 
+                             Total = P3_001N, White = P3_003N, Black = P3_004N,
+                             AIAN = P3_005N, Asian = P3_006N, NHPI = P3_007N,
+                             Other = P3_008N, Multi = P3_009N)
+  my_spread <- dplyr::mutate(my_spread, 
+                             Color = Black + Asian + NHPI + AIAN + Multi + Other,
+                             Prop_color = Color / Total, 
+                             Pct_color = round(100 * Prop_color, digits = 1))
+  
+  # plot resulting proportion
+  my_class <- classInt::classIntervals(my_spread$Pct_color, n = 5,
+                                       style = "quantile", dataPrecision = 1)
+  my_colors <- RColorBrewer::brewer.pal(5, "Blues")
+  my_gradient <- classInt::findColours(my_class, my_colors)
+  
+  graphics::par(mar=c(2.5,0,2,0), mgp = c(0, 0, 0), xpd = TRUE)
+      # margins: bottom, left, top, right
+      # axes: label, padding, tick (?)
+  
+  plot(sf::st_geometry(my_spread), col = my_gradient, lwd=.5,
+       main = paste0("Percent people of color by ", my_geography, " in ", 
+                     my_state, ", 2020"))
+  
+  # add legend
+  graphics::legend("bottomright", title = "Percent", fill = my_colors, 
+                   legend = names(attr(my_gradient, "table")), border = "black")
+}
+
+```
+
+Is the documentation clear enough that you will remember in a year what the function does and how its options work? If not, revise it. It can help to show your function and documentation to a coworker who knows R, but does not know your function, and ask if they can understand it.
+
+Good luck in your own adventures writing and documenting functions!
+
+
