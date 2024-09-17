@@ -216,7 +216,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 | Date | Time | Event  | Event link | Group webpage |  
 | ---  | --- | --- | --- | --- |
-| Sept 17-20, 2023 |  |  RStudio - POSIT::CONF(2023) - In-person Conference and workshops  | https://posit.co/conference/|  |
+| Sept 16-18, 2024 |  |  RStudio - POSIT::CONF(2024) - In-person and hybrid conference and workshops  | https://posit.co/conference/|  |
 
 <br>
 
@@ -253,6 +253,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 <br><br>
 
 - [Cute giraffe stats](https://tinystats.github.io/teacups-giraffes-and-statistics/01_introToR.html)
+- [Intro to SQL - CS50](https://cs50.harvard.edu/sql/2024/weeks/0/)
 - [Coursera courses](https://www.coursera.org/specializations/jhu-data-science#courses)
 - [Intro to modeling & predictions](https://supervised-ml-course.netlify.com/chapter1)
 - [Mixed model tutorial](https://ourcodingclub.github.io/tutorials/mixed-models/)
