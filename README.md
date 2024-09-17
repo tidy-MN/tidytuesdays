@@ -1,4 +1,4 @@
-# ` tidy( Tuesdays )`
+# ` tidy(Tuesdays)`
 
 <img src="https://cdn-images.threadless.com/threadless-shop/products/5979/1272x920design_01.jpg?w=183&h=183" align="left" alt="An image of a cartoon seal with a speech line from its head to text that says 'I approve'.">
 
