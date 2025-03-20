@@ -176,4 +176,4 @@ ggsave(filename = "Duluth_poster.png",
        width = 14,
        height = 12,
        units = "in",
-       dpi   = 50)   #500
+       dpi   = 500)   # Use 50 for testing quickly
