@@ -303,10 +303,10 @@ Contestants will be given a dataset and you will be tasked with answering specif
 | Project | Details | Team contact |  | Wishlist  |  
 | ---  | --- | --- | --- | --- | 
 | [R training]([https://mn-r.netlify.app/](https://tidy-mn.github.io/R-camp-penguins/index.html)) | - [Baking bots and training videos](https://tidy-mn.github.io/R-camp-penguins/index.html) <br/> - [Star Wars training](https://mn-r.netlify.app/)  <br/> - [Workshops](https://mpca-air.github.io/RTrain/#workshops) (Maps, Connecting to databases, messy data)  <br/> - [Cat training](https://mpca-air.github.io/RCamp/) (the original)  | Barbara | | |   
-| [`library(mpcaej)`](https://github.com/tidy-MN/mpcaej#mpcaej) | Shapefiles with MPCA’s criteria for areas of concern for environmental justice | Dorian | | |
+| [`library(mpcaej)`](https://github.com/tidy-MN/mpcaej#mpcaej) | Shapefiles with MPCA's criteria for areas of concern for environmental justice | Dorian | | |
 | [`library(mncolors)`](https://github.com/tidy-MN/mncolors#minnesota-color-palettes) | Paint your data with colors from the [MN State Brand style Guide](https://mn.gov/portal/brand/style-guide/colors/), plus a few palettes inspired by local landscapes and wildlife. | Dorian | | |
-|[MPCA Data Guide](https://tidy-MN.github.io/Data-Guide/) | MPCA guide to find data for water, land, air, and more  <img src="images/data_guide.png" width="44%"> | Dorian | | Add data publishing/sharing tips  |
-| [`library(mnreports)`]([https://github.com/tidy-MN/mpcareports#mpcareports](https://github.com/tidy-MN/mnreports)) | MPCA templates for Markdown reports w/ logo, header, etc. <img src="images/mpca_template.png" width="44%">  | Dorian | | | 
+|[Environmental Data Guide](https://tidy-MN.github.io/Data-Guide/) | Guide to find environmental data for water, land, air, and more  <img src="images/data_guide.png" width="44%"> | Dorian | | Add data publishing/sharing tips  |
+| [`library(mnreports)`](https://github.com/tidy-MN/mnreports) | MN templates for Markdown reports with logo, header, etc. <img src="images/mpca_template.png" width="44%">  | Dorian | | | 
 | [Analysis Methods Guide](https://mpca-air.github.io/air-methods/) | How we analyze monitoring data in R _(currently air focused)_ | Derek | | | 
 
 <br>
