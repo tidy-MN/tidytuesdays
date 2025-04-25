@@ -34,7 +34,7 @@ library(dplyr)
     - Click the `[ Download ]` button near the lower right-hand side.
     - Save directly to or move the files to a folder named `data` in your project folder.
 1. Open each Excel file and save it as a.CSV file *(later on we'll learn how to read data directly from Excel & other data sources)*
-    - <img src="https://spreadsheetweb.com/wp-content/uploads/2021/11/How-to-export-each-sheet-as-CSV-in-Excel-01.png" width="50%" >
+    - <img src="https://spreadsheetweb.com/wp-content/uploads/2021/11/How-to-export-each-sheet-as-CSV-in-Excel-01.png" width="66%" >
     - Save the 2 CSV files to your project's `data` folder.
     - Keep clicking `Yes` if Excel trys to warn you about...losing formatting...yada-yada...
 2. Read each of the CSV files into R using `read_csv()`
