@@ -302,12 +302,11 @@ Contestants will be given a dataset and you will be tasked with answering specif
 
 | Project | Details | Team contact |  | Wishlist  |  
 | ---  | --- | --- | --- | --- | 
-| [R training](https://mn-r.netlify.app/) | - [Star Wars training](https://mn-r.netlify.app/)  <br/> - [Workshops](https://mpca-air.github.io/RTrain/#workshops) (Maps, Connecting to databases, messy data)  <br/> - [Cat training](https://mpca-air.github.io/RCamp/) (the original)  | Barbara | | |   
+| [R training]([https://mn-r.netlify.app/](https://tidy-mn.github.io/R-camp-penguins/index.html)) | - [Baking bots and training videos](https://tidy-mn.github.io/R-camp-penguins/index.html) <br/> - [Star Wars training](https://mn-r.netlify.app/)  <br/> - [Workshops](https://mpca-air.github.io/RTrain/#workshops) (Maps, Connecting to databases, messy data)  <br/> - [Cat training](https://mpca-air.github.io/RCamp/) (the original)  | Barbara | | |   
 | [`library(mpcaej)`](https://github.com/tidy-MN/mpcaej#mpcaej) | Shapefiles with MPCA’s criteria for areas of concern for environmental justice | Dorian | | |
 | [`library(mncolors)`](https://github.com/tidy-MN/mncolors#minnesota-color-palettes) | Paint your data with colors from the [MN State Brand style Guide](https://mn.gov/portal/brand/style-guide/colors/), plus a few palettes inspired by local landscapes and wildlife. | Dorian | | |
-| [`library(mpcadb)`](https://github.com/tidy-MN/mpcadb) | Easy R connections to MPCA’s databases: DELTA, TEMPO, EQUIS, RAPIDS, ONBASE...  <br/> - Store common reference data | Derek | | |
 |[MPCA Data Guide](https://tidy-MN.github.io/Data-Guide/) | MPCA guide to find data for water, land, air, and more  <img src="images/data_guide.png" width="44%"> | Dorian | | Add data publishing/sharing tips  |
-| [`library(mpcareports)`](https://github.com/tidy-MN/mpcareports#mpcareports) | MPCA templates for Markdown reports w/ logo, header, etc. <img src="images/mpca_template.png" width="44%">  | Dorian | | | 
+| [`library(mnreports)`]([https://github.com/tidy-MN/mpcareports#mpcareports](https://github.com/tidy-MN/mnreports)) | MPCA templates for Markdown reports w/ logo, header, etc. <img src="images/mpca_template.png" width="44%">  | Dorian | | | 
 | [Analysis Methods Guide](https://mpca-air.github.io/air-methods/) | How we analyze monitoring data in R _(currently air focused)_ | Derek | | | 
 
 <br>
@@ -318,13 +317,12 @@ Contestants will be given a dataset and you will be tasked with answering specif
 <summary> <b> See ideas </b></summary>
  
 > 1. Automate report updating on an R server?
-> 1. Download tables of data from websites _(Sarah)_
+> 1. Download tables of data from websites
 > 1. Loops: `purrr` package or `for()` loops or `lapply()`?
-> 1. Find data in TEMPO database _(Aida)_
+> 1. Find data in TEMPO database
 > 1. Combine, clean and read output from environmental models such as AERMOD
 > 1. Compare large files submitted by consultants: k-diff or `waldo` package
 > 1. Intro to Rmarkdown
->     - Create a manual for training or methods documentation
 > 1. Maps and shapefiles
 >     - Kriging / Spatial interpolating between map points
 > 1. Is it an outlier?
@@ -333,7 +331,7 @@ Contestants will be given a dataset and you will be tasked with answering specif
 > 1. `gganimate` Add movement to your charts, make gifs to share
 > 1. Project swap - Will it run?
 > 1. Working in GitHub
-> 1. `data.table` *(Derek)*
+> 1. `data.table` 
 > 1. Write tests for your code / functions - `testthat` pkg
 > 1. [R generative art](https://www.data-imaginist.com/art)
 >    - <img src="https://d33wubrfki0l68.cloudfront.net/68c4238194b9e2a403f144836aeb0dd8dec6cec8/51cfa/art/005_genesis/genesis4563_hu094ca1b1a2a99a63b276daf95703c5da_1678978_500x500_fill_box_center_2.png" width="25%"/> <img src="https://d33wubrfki0l68.cloudfront.net/d2690abfd68ec3d3abd3a0d84d79b2ff449f7aac/e0f3d/art/005_genesis/genesis9458_hu00b8f3fe8c7f8351b6b4597d079006d8_4379029_500x500_fill_box_center_2.png" width="25%"/> 
