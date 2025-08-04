@@ -26,25 +26,39 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 ## Upcoming Events
 
-### Spectacular Data Visualizations! A contest of epic proportions.
+### Tidy Tuesday worst chart contest
 
-Contestants will be given a dataset and you will be tasked with answering specific questions using data visualizations that look awesome. There are multiple areas of entry including:
-1. **Most Accessible** - fonts, labels, color palettes, and ease of use will all be judged
-2. **Least Accessible** - just the worst thing you can make for someone
-3. **Most Interactive** - think plotly and leaflet!
-4. **Overall Winner** - the one that takes the 🍰
+We're having a contest in August to make the worst chart! Criteria include:
+
+- Lack of accessibility
+- Difficult to understand
+- Looking like it was made before 2000
+- It should be bad, but needs to look like an actual chart
+- Having the best makeover/renovation to fix the issues of your "worst" chart
+
+After writing an R script to make the worst chart you can, add some code to the same script to make a good chart that fixes the problems in your terrible chart.
+
+#### Data
+
+You can use any dataset you want to create any chart you want, but if you're struggling to think of ideas, here are a few:
+
+- [Measles cases](https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-06-24/readme.md) ```tuesdata <- tidytuesdayR::tt_load(2025, week = 25)```
+  - How are measles cases changing over time by country?
+  - What is the breakdown of measles cases by country?
+  - How does the percentage of cases which are lab confirmed, epi linked, and clincal vary by country and/or month?
+
+- [Sydney beaches water quality](https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-05-20/readme.md) ```tuesdata <- tidytuesdayR::tt_load(2025, week = 20)```
+  - Which locations have the highest E-coli levels?
+  - How are E-coli levels changing by location over time?
+
+- [4/20 accidents](https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-04-22/readme.md) ```tuesdata <- tidytuesdayR::tt_load(2025, week = 16)```
+  - Which popular holidays in the U.S. have the most accidents?
+  - How are the numbers of accdidents on popular holidays in the U.S. changing over time?
+
 
 ## Up Next
 
-|      | |  👀 Show-n-tell | :candy: `sugaR pts`  | 
-| ---  | --- | --- | --- | 
-| Jan 28th | | Best packages and functions of 2024 | 24 `pts` |
-| Feb 4th | | |`pts` |
-| Feb 11th | | |`pts` |
-| Feb 18th | | |`pts` |
-| Feb 25th | | |`pts` |
-
-<br>
+We're working on new content.
 
 <details>
 <summary> <b> See older topics </b></summary>
