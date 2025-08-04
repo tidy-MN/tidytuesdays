@@ -35,6 +35,7 @@ We're having a contest in August to make the worst chart! Criteria include:
 - Looking like it was made before 2000
 - It should be bad, but needs to look like an actual chart
 - Having the best makeover/renovation to fix the issues of your "worst" chart
+- [Upload your submissions here](https://github.com/tidy-MN/tidytuesdays/tree/main/show-n-tell/worst-chart-contest)
 
 After writing an R script to make the worst chart you can, add some code to the same script to make a good chart that fixes the problems in your terrible chart.
 
