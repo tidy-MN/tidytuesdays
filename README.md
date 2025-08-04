@@ -20,7 +20,7 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 | Jul | Aug | Sep | Oct | Nov | Dec |
 |-----|-----|-----|-----|-----|-----|
-| Web/PDF Reports + Shiny | Statistics and Maps &nbsp;&nbsp;&nbsp; | Charts: Publish ready 📰 | Spooky data objects :ghost: |  Guest speakers &nbsp;&nbsp;&nbsp; | Training &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 
+| Web/PDF Reports + Shiny | Charts: The Best of the Worst | Maps | Spooky data objects :ghost: |  Guest speakers &nbsp;&nbsp;&nbsp; | Training &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 
 
 <br>
 
@@ -28,7 +28,9 @@ Each week features a new data set to explore. Come see examples of how others cl
 
 ### Tidy Tuesday worst chart contest
 
-We're having a contest in August to make the worst chart! Criteria include:
+We're having a friendly contest in August to make the worst chart! 
+
+**Criteria include:**
 
 - Lack of accessibility
 - Difficult to understand
@@ -46,7 +48,7 @@ You can use any dataset you want to create any chart you want, but if you're str
 - [Measles cases](https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-06-24/readme.md) ```tuesdata <- tidytuesdayR::tt_load(2025, week = 25)```
   - How are measles cases changing over time by country?
   - What is the breakdown of measles cases by country?
-  - How does the percentage of cases which are lab confirmed, epi linked, and clincal vary by country and/or month?
+  - How does the percentage of cases which are lab confirmed, epi-linked, and clincal vary by country and/or month?
 
 - [Sydney beaches water quality](https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-05-20/readme.md) ```tuesdata <- tidytuesdayR::tt_load(2025, week = 20)```
   - Which locations have the highest E-coli levels?
@@ -54,7 +56,7 @@ You can use any dataset you want to create any chart you want, but if you're str
 
 - [4/20 accidents](https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-04-22/readme.md) ```tuesdata <- tidytuesdayR::tt_load(2025, week = 16)```
   - Which popular holidays in the U.S. have the most accidents?
-  - How are the numbers of accdidents on popular holidays in the U.S. changing over time?
+  - How are the numbers of accidents on popular holidays in the U.S. changing over time?
 
 
 ## Up Next
