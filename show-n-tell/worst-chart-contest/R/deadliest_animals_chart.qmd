@@ -1,0 +1,187 @@
+---
+title: "Bad chart contest entry"
+author: "Abigail Stamm"
+format: html
+---
+
+## Data used
+
+Step one for creating a bad chart: use hard to understand or possibly misleading data.
+
+For this chart, I pulled data from the World Health Organization and a few other sources on what species are responsible for the most deaths of humans. As all of the sources' values were estimates that were not calculated the same way, the values provided here can be considered estimates based on estimates. The table includes two methods of killing, which I call injury (causing direct harm through attack or poisoning) and disease, which is when the species serves as a vector to spread a bacterium or virus to humans. 
+
+```{r}
+#| message: FALSE
+d <- readr::read_csv("data/deadliest-animals.csv", show_col_types = FALSE) |>
+  dplyr::mutate(size = height * 10) 
+d5 <- dplyr::arrange(d, desc(max_death)) |> head(n = 6) # humans listed twice
+d5 <- dplyr::mutate(d5, dplyr::across(c(animal, geography, method), tools::toTitleCase))
+
+knitr::kable(d5)
+```
+
+
+## Chart colors
+
+For fun, I created a series of palettes based on the movie "Yellow Submarine", which is full of bright 1960's colors. Here is the titular submarine with the Beatles.
+
+![](https://media1.fdncms.com/tucsonweekly/imager/u/slideshow/18205285/1275790_yellowsubmarine_titleimage1_433750.jpg){fig-alt="screenshot of the titular yellow submarine from the movie"}
+
+Here is the palette based on the colors of the submarine. I used Colour Contrast Analyser to capture the colors' hex codes.
+
+```{r}
+ys <- data.frame(
+  bg = c("#f9ebcf", "#f9d42a", "#f5bf33", "#dc2c22", "#77291e"),
+  fc = c(rep("black", 3), rep("white", 2))
+)
+
+knitr::kable(ys[, 1], col.names = "Palette Color") |>
+  kableExtra::column_spec(1, background = ys$bg, width = "10em", color = ys$fc) 
+```
+
+
+Note that none of these colors are pre-defined in R. For a full list of all pre-defined R colors, see this [searchable R color chart](https://github.com/EarlGlynn/colorchart/raw/master/ColorChart.pdf).
+
+## Chart structure
+
+To draw the initial chart, I used [`ggrgl`](https://github.com/coolbutuseless/ggrgl), which allows you to create three-dimensional charts that you can spin around with your mouse. `ggrgl` builds on and works with `ggplot` by providing z-scale versions of several `ggplot` geoms.
+
+<!--
+# windowsFonts()
+# extrafont::loadfonts(device = "win")
+# also showtext
+# # https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2
+
+-->
+
+
+```{r}
+g <- ggplot2::ggplot(d5, ggplot2::aes(x = max_death, y = animal,
+                                      fill = method, z = size)) +
+  ggrgl::geom_bar_z(ggplot2::aes(extrude_face_fill = method, fill = method,
+                                 extrude_edge_colour = method), width = 1, 
+                    stat = "identity", extrude = TRUE, colour = ys$bg[5]) + 
+  ggrgl::scale_extrude_face_fill_manual(values = ys$bg[1:2]) +
+  ggrgl::scale_extrude_edge_colour_manual(values = ys$bg[3:4]) +
+  ggplot2::scale_fill_manual(values = ys$bg[1:2]) +
+  ggrgl::theme_ggrgl() + ggplot2::theme(legend.position = "bottom") +
+  ggplot2::labs(title = "What kills the most people and how?", 
+                y = "Killer", x = "Deaths")
+```
+
+If you draw the plot at this point, you won't see anything useful. You will see the empty plot and the legend, but there will be no data. To display the plot properly, you will need to run the graphics driver.
+
+```{r}
+#| fig-alt: "Spinnable bar plot of species that kill the most humans annually. Humans top the list for both death by disease and death by inflicted injury."
+#| warning: FALSE
+devoutrgl::rgldev()
+g
+invisible(dev.off())
+```
+
+That code won't draw the plot, either. To view the plot, you need to invoke an HTML widget. 
+
+Use your mouse to manipulate the plot below.
+
+```{r}
+#| fig-alt: "Spinnable bar plot of species that kill the most humans annually. Humans top the list for both death by disease and death by inflicted injury."
+if (!interactive()) rgl::rglwidget()
+```
+
+In the chart above, bar color is based on means of killing and bar height is based on relative size of species. 
+
+
+## Issues with the chart
+
+This chart has a lot of problems. 
+
+1. The two yellows are too similar. 
+1. The font is too small.
+1. Raw numbers with more than three zeros are hard to understand. 
+1. Stacked bar charts are harder to understand than side-by-side bar charts.
+1. Species size (bar height) adds nothing to the chart. Drop it.
+1. There is no clear message from this chart. Some context explaining the data might be useful.
+1. Spinning the chart might look cool, but the pixelation makes it impossible to read.
+1. A data source should be provided.
+
+
+## Revised static chart
+
+I tackled each of these issues to arrive at the chart below.
+
+```{r}
+#| fig-alt: "Static bar plot of species that kill the most humans annually. Humans top the list for both death by disease and death by inflicted injury."
+#| out-width: 100%
+my_title <- "Disease kills far more people than inflicted injury"
+my_subtitle <- paste("Humans are far more susceptible to vector-borne diseases",
+                     "and to inflicted injury from  other humans than from",
+                     "moquitoes and other animals. Far more humans are killed",
+                     "by  vector-borne diseases than by inflicted injury.")
+my_y <- seq(from = 0, to = ceiling(max(d$max_death/1000000)), by = .5)
+legend_title <- "Method of killing"
+
+ggplot2::ggplot(d5, ggplot2::aes(x = animal, y = max_death / 1000000, fill = method)) +
+  ggplot2::geom_bar(ggplot2::aes(fill = method), width = 0.8, stat = "identity", 
+                    position = ggplot2::position_dodge (), colour = "black") +
+  ggplot2::scale_fill_manual(values = ys$bg[c(3, 5)], name = legend_title) +
+  ggplot2::theme(legend.position = "bottom", 
+                 axis.text = ggplot2::element_text(size = 10),
+                 legend.text = ggplot2::element_text(size = 10),
+                 plot.subtitle = ggplot2::element_text(size = 10)) +
+  ggplot2::labs(title = my_title, subtitle = stringr::str_wrap(my_subtitle, 100),
+                y = "Million deaths", x = "Killer or primary vector",
+                caption = "Source: Mostly the World Health Organization (WHO)") +
+  ggplot2::ylim(min(my_y), max(my_y)) 
+                
+```
+
+## Revised interactive chart
+
+Now that I have a decent looking catsup and mustard colored chart, I want to add a few more accessibility features, including textures and pop-ups. Note that I already included the table with the data in a screen-reader accessible text format above.
+
+```{r}
+#| fig-alt: "Interactive bar plot of species that kill the most humans annually. Humans top the list for both death by disease and death by inflicted injury."
+#| out-width: 100%
+img <- paste("textures", c("spot_black.png", "basket_white.png"), sep = "/")
+d5 <- dplyr::mutate(d5, tooltip = paste("<b>Species:</b>", animal, "<br>",
+                                        "<b>Method:</b>", method, "<br>",
+                                        "<b>Deaths:</b>", 
+                                        formatC(min_death, big.mark=",", 
+                                                format = "f", digits = 0), "to",
+                                        formatC(max_death, big.mark=",", 
+                                                format = "f", digits = 0), "<br>",
+                                        "<b>Location:</b>", geography))
+
+g <- ggplot2::ggplot(d5, ggplot2::aes(x = animal, y = max_death / 1000000, fill = method,
+                                      text = tooltip, group = method, image = method)) +
+  ggiraph::geom_bar_interactive(ggplot2::aes(tooltip = tooltip, data_id = tooltip),
+                                position = ggplot2::position_dodge(),
+                                stat = "identity", color = "black", width = 0.8) +
+  ggplot2::scale_fill_manual(values = ys$bg[c(3, 5)], name = "Method of killing") +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(legend.position = "bottom", 
+                 axis.text = ggplot2::element_text(size = 10),
+                 legend.text = ggplot2::element_text(size = 10),
+                 plot.subtitle = ggplot2::element_text(size = 10)) +
+  ggplot2::labs(title = my_title, subtitle = stringr::str_wrap(my_subtitle, 90),
+                y = "Million deaths", x = "Killer or primary vector",
+                caption = "Source: Mostly the World Health Organization (WHO)",
+                color = legend_title, fill = legend_title, image = legend_title) +
+  ggplot2::ylim(min(my_y), max(my_y)) + 
+  ggtextures::geom_textured_bar(stat = "identity", color = "transparent",
+                                position = ggplot2::position_dodge2(preserve = "single"), 
+                                fill = "transparent") +
+  ggtextures::scale_image_manual(values = img) 
+
+ggiraph::girafe(ggobj = g, width_svg = 6, height_svg = 3, 
+  options = list(
+    ggiraph::opts_tooltip(
+      opacity = 1, offx = 12, offy = 12, use_fill = FALSE, 
+      css = "color: Black; background-color: White; font-family: sans-serif; 
+             padding: 5px; border-radius: 5px; border: 2px solid Black;
+             box-shadow: 5px 5px 5px rgba(0,0,0,0.3);"),
+    # opts_hover needs !important to override chart color settings
+    ggiraph::opts_hover(css = "stroke-width: 3; stroke: red !important ;"),
+    ggiraph::opts_hover_inv(css = "opacity: 0.4;"))) # semi-transparent
+```
+
