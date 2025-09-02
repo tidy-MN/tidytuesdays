@@ -1,0 +1,19 @@
+animal,min_death,max_death,geography,method,method_desc,weight_min,min_unit,weight_max,max_unit,height
+shark,6,10,ocean,injury,bite,2000,lb,4000,lb,4
+wolf,10,10,northern hemisphere,injury,bite,40,lb,175,lb,2
+lion,10,200,africa,injury,bite,270,lb,570,lb,2
+box jellyfish,50,100,ocean,injury,sting,2,lb,2,lb,1
+hippo,500,500,africa,injury,"drown, trample",2200,lb,9900,lb,4
+elephant,500,700,"africa, asia",injury,trample,9900,lb,24000,lb,5
+crocodile,1000,1000,africa,injury,bite,330,lb,2370,lb,3
+snake,81000,138000,worldwide,injury,"poison, strangling",3,lb,595,lb,2
+scorpion,3300,3300,worldwide,injury,poison,2,g,60,g,1
+human,400000,458000,worldwide,injury,various,60,lb,400,lb,3
+tapeworm,700,3000,worldwide,disease,"cysticerosis, echinococcosis",1,lb,5,lb,1
+ascaris roundworm,2500,4500,worldwide,disease,aschariasis,2,lb,10,lb,1
+assassin bug,10000,12000,south america,disease,chagas,0.3,mg,0.5,mg,1
+tsetse fly,3500,10000,africa,disease,sleeping sickness,0.1,g,0.2,g,1
+freshwater snail,10000,20000,africa,disease,schistosomiasis,25,g,5.5,lb,1
+dog,35000,59000,worldwide,disease,rabies,3,lb,170,lb,2
+mosquito,700000,750000,worldwide,disease,"malaria, dengue fever, zika",2.5,mg,5,mg,1
+human,1800000,2000000,worldwide,disease,various,60,lb,400,lb,3
