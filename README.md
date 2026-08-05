@@ -1,6 +1,6 @@
 # ` tidy(Tuesdays)`
 
-<img src="images/seal_of_approval2.jpg?w=184&h=111" align="left" alt="An image of a cartoon seal wearing a foam thumbs up over its flipper.">
+<img src="images/seal_of_approval2.png?w=184&h=111" align="left" alt="An image of a cartoon seal wearing a foam thumbs up over its flipper.">
 
 <br>
 
