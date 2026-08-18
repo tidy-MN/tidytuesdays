@@ -1,0 +1,199 @@
+---
+title: "Derek's best hits"
+format: html
+editor: visual
+execute:
+  echo: false
+---
+
+## Strings
+
+Base R paste0 method
+
+```{r}
+name <- "Derek"
+location <- "Savage, MN"
+interests <- c("cats", "hiking", "board games", "R")
+
+greeting <- paste0("Hello I'm ", name, ", I live in ", location, ", and I like ", head(interests, -1) |> paste(collapse = ", "), ", and ", tail(interests, 1), ".")
+
+print(greeting)
+```
+
+Tidyverse glue() method
+
+```{r}
+library(glue)
+
+name <- "Derek"
+location <- "Savage, MN"
+interests <- c("cats", "hiking", "board games", "R")
+
+greeting <- glue("Hello I'm {name}, I live in {location} and I like {head(interests, -1) |> paste(collapse = ', ')}, and {tail(interests, 1)}.")
+
+print(greeting)
+```
+
+## Re-coding values
+
+If-else chain method
+
+```{r}
+get_capital <- function(state) {
+  if (state == "MN") capital <- "St. Paul"
+  else if (state == "WI") capital <- "Madison"
+  else if (state == "IA") capital <- "Des Moines"
+  else if (state == "ND") capital <- "Bismarck"
+  else if (state == "SD") capital <- "Pierre"
+  
+  return(capital)
+}
+
+print(get_capital("MN"))
+```
+
+dplyr recode_values
+
+```{r}
+library(dplyr)
+
+get_capital <- function(state) {
+  capital <- recode_values(
+    state,
+    "MN" ~ "St. Paul",
+    "WI" ~ "Madison",
+    "IA" ~ "Des Moines",
+    "ND" ~ "Bismarck",
+    "SD" ~ "Pierre",
+  )
+  
+  return(capital)
+}
+
+print(get_capital("MN"))
+```
+
+Mapping vector method
+
+```{r}
+get_capital <- function(state) {
+  capitals <- c(
+    "MN" = "St. Paul",
+    "WI" = "Madison",
+    "IA" = "Des Moines",
+    "ND" = "Bismarck",
+    "SD" = "Pierre"
+  )
+  
+  return(capitals[state] |> unname())
+}
+
+print(get_capital("MN"))
+```
+
+## For loops
+
+```{r}
+library(stringr)
+
+characters <- c(
+  "Mario",
+  "Luigi",
+  "Wario",
+  "Waluigi",
+  "Peach",
+  "Daisy",
+  "Toad",
+  "Bowser",
+  "Bowser Jr.",
+  "Yoshi",
+  "Birdo",
+  "Donkey Kong"
+)
+
+points <- c(15, 12, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+
+set.seed(20260818)
+
+results <- list()
+for (i in 1:4) {
+  results <- c(results, list(sample(characters)))
+}
+
+for (i in results) {
+  print(i)
+  cat("\n") #empty line
+}
+```
+
+For loop method
+
+```{r}
+cat("Course 1:\n\n")
+
+for (i in 1:length(characters)) {
+  name <- results[[1]][i]
+  cat(glue("{i}: {name}"), "\n")
+}
+```
+
+purrr iwalk method
+
+```{r}
+library(purrr)
+
+cat("Course 1:\n\n")
+
+iwalk(results[[1]], \(name, i) {
+  cat(glue("{i}: {name}"))
+  cat("\n")
+})
+```
+
+## Multiple lists
+
+For loop method
+
+```{r}
+for (i in 1:length(characters)) {
+  name <- results[[1]][i]
+  score <- points[i]
+  cat(glue("{name}: {score}"), "\n")
+}
+```
+
+purrr walk2 method
+
+```{r}
+walk2(results[[1]], points, \(name, score) {
+  cat(glue("{name}: {score}"))
+  cat("\n")
+})
+```
+
+## Nested lists
+
+For loop method
+
+```{r}
+scores = c()
+for (name in characters) scores[name] = 0
+
+for (course in results) {
+  for (name in characters) {
+    scores[name] <- scores[name] + points[which(course == name)]
+  }
+}
+
+print(sort(scores, decreasing = TRUE))
+```
+
+purrr / dplyr method
+
+```{r}
+results |>
+  map(\(x) tibble(name = x, points)) |>
+  list_rbind() |>
+  summarize(across(points, sum), .by = name) |>
+  arrange(desc(points))
+```
